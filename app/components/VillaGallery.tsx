@@ -12,18 +12,23 @@ const FALLBACK_SRC = "/villas/fallback.jpg";
 
 export function VillaGallery({ images, alt }: VillaGalleryProps) {
   const [activeIndex, setActiveIndex] = React.useState(0);
-  const [safeSources, setSafeSources] = React.useState<string[]>(() =>
-    images.slice(0, 3).map((src) => src),
-  );
+  const [safeSources, setSafeSources] = React.useState<string[]>(() => images.map((src) => src));
 
-  const activeSrc = safeSources[activeIndex] ?? FALLBACK_SRC;
+  React.useEffect(() => {
+    setSafeSources(images.map((src) => src));
+    setActiveIndex(0);
+  }, [images]);
+
+  const sources = safeSources.length > 0 ? safeSources : [FALLBACK_SRC];
+  const safeActiveIndex = Math.min(activeIndex, sources.length - 1);
+  const activeSrc = sources[safeActiveIndex] ?? FALLBACK_SRC;
 
   function goPrevious() {
-    setActiveIndex((i) => (i - 1 + safeSources.length) % safeSources.length);
+    setActiveIndex((i) => (i - 1 + sources.length) % sources.length);
   }
 
   function goNext() {
-    setActiveIndex((i) => (i + 1) % safeSources.length);
+    setActiveIndex((i) => (i + 1) % sources.length);
   }
 
   function handleImageError(index: number) {
@@ -70,16 +75,16 @@ export function VillaGallery({ images, alt }: VillaGalleryProps) {
         </div>
       </div>
 
-      <div className="grid grid-cols-3 gap-2 p-3">
-        {safeSources.map((src, index) => {
-          const isActive = index === activeIndex;
+      <div className="flex gap-2 overflow-x-auto p-3 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
+        {sources.map((src, index) => {
+          const isActive = index === safeActiveIndex;
           return (
             <button
               key={index}
               type="button"
               onClick={() => setActiveIndex(index)}
               className={
-                "relative aspect-[4/3] overflow-hidden rounded-xl border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-foreground/35 " +
+                "relative aspect-[4/3] w-[92px] shrink-0 overflow-hidden rounded-xl border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-foreground/35 sm:w-[104px] " +
                 (isActive
                   ? "border-foreground/30"
                   : "border-foreground/10 hover:border-foreground/25")
