@@ -1,3 +1,6 @@
+"use client";
+
+import * as React from "react";
 import { Reveal } from "./Reveal";
 import { VillaGallery } from "./VillaGallery";
 
@@ -37,9 +40,45 @@ export function VillaCard({
   amenityLabels,
   factLabels,
 }: VillaCardProps) {
+  const [isOpen, setIsOpen] = React.useState(false);
+
+  React.useEffect(() => {
+    if (!isOpen) return;
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+
+    function onKeyDown(event: KeyboardEvent) {
+      if (event.key === "Escape") setIsOpen(false);
+    }
+
+    window.addEventListener("keydown", onKeyDown);
+    return () => {
+      window.removeEventListener("keydown", onKeyDown);
+      document.body.style.overflow = previousOverflow;
+    };
+  }, [isOpen]);
+
+  function openIfNotInteractiveTarget(event: React.MouseEvent<HTMLElement>) {
+    const target = event.target as HTMLElement | null;
+    if (!target) return;
+    if (target.closest("a,button")) return;
+    setIsOpen(true);
+  }
+
   return (
     <Reveal delayMs={Math.min(index * 80, 240)}>
-      <article className="group flex h-full flex-col rounded-3xl border border-foreground/10 bg-background/60 p-3 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-foreground/20 hover:bg-background">
+      <article
+        className="group flex h-full cursor-pointer flex-col rounded-3xl border border-foreground/10 bg-background/60 p-3 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-foreground/20 hover:bg-background"
+        role="button"
+        tabIndex={0}
+        onClick={openIfNotInteractiveTarget}
+        onKeyDown={(event) => {
+          if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            setIsOpen(true);
+          }
+        }}
+      >
         <VillaGallery images={images} alt={name} />
 
         <div className="flex flex-1 flex-col px-1 pb-2 pt-5">
@@ -73,6 +112,81 @@ export function VillaCard({
           </div>
         </div>
       </article>
+
+      {isOpen ? (
+        <div className="fixed inset-0 z-50">
+          <button
+            type="button"
+            aria-label="Close preview"
+            className="absolute inset-0 bg-black/40 backdrop-blur-sm"
+            onClick={() => setIsOpen(false)}
+          />
+
+          <div className="relative mx-auto flex min-h-screen max-w-6xl items-center px-6 py-10">
+            <div
+              role="dialog"
+              aria-modal="true"
+              aria-label={`${name} preview`}
+              className="w-full overflow-hidden rounded-3xl border border-foreground/10 bg-background"
+            >
+              <div className="flex items-center justify-between gap-4 border-b border-foreground/10 px-6 py-4">
+                <div>
+                  <h3 className="text-lg font-semibold tracking-[-0.02em]">{name}</h3>
+                  <p className="mt-1 text-sm text-foreground/70">{description}</p>
+                </div>
+
+                <button
+                  type="button"
+                  onClick={() => setIsOpen(false)}
+                  className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-foreground/10 bg-background text-foreground/70 transition-colors hover:bg-foreground/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-foreground/35"
+                  aria-label="Close"
+                >
+                  <XIcon className="h-5 w-5" />
+                </button>
+              </div>
+
+              <div className="grid gap-8 p-6 lg:grid-cols-2 lg:items-start">
+                <VillaGallery images={images} alt={name} />
+
+                <div className="flex flex-col">
+                  <div className="flex flex-wrap gap-2 text-xs text-foreground/70">
+                    <Fact label={factLabels.bedrooms} value={bedrooms} />
+                    <Fact label={factLabels.bathrooms} value={bathrooms} />
+                    {typeof maxGuests === "string" ? (
+                      <Fact label={factLabels.sleeps} value={maxGuests} />
+                    ) : null}
+                  </div>
+
+                  <p className="mt-6 text-sm leading-6 text-foreground/70">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Integer nec odio. Praesent libero. Sed cursus ante dapibus
+                    diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.
+                    Duis sagittis ipsum.
+                  </p>
+
+                  <div className="mt-6 flex flex-wrap items-center gap-2 text-xs text-foreground/70">
+                    <Amenity icon={<PoolIcon className="h-4 w-4" />} label={amenityLabels.pool} />
+                    <Amenity icon={<WifiIcon className="h-4 w-4" />} label={amenityLabels.wifi} />
+                    <Amenity icon={<ParkingIcon className="h-4 w-4" />} label={amenityLabels.parking} />
+                    <Amenity icon={<SnowflakeIcon className="h-4 w-4" />} label={amenityLabels.ac} />
+                  </div>
+
+                  <div className="mt-8">
+                    <a
+                      href={bookingUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex h-11 w-full items-center justify-center rounded-full bg-foreground px-6 text-sm font-medium text-background transition-transform duration-200 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-foreground/40"
+                    >
+                      {ctaLabel}
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      ) : null}
     </Reveal>
   );
 }
@@ -83,6 +197,24 @@ function Fact({ label, value }: { label: string; value: number | string }) {
       <span className="text-foreground/60">{label}</span>
       <span className="font-medium text-foreground/85">{value}</span>
     </span>
+  );
+}
+
+function XIcon({ className }: { className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+      aria-hidden="true"
+    >
+      <path d="M18 6L6 18" />
+      <path d="M6 6l12 12" />
+    </svg>
   );
 }
 
