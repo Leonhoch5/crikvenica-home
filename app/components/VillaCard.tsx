@@ -127,7 +127,7 @@ export function VillaCard({
               role="dialog"
               aria-modal="true"
               aria-label={`${name} preview`}
-              className="h-[90vh] w-[92vw] max-w-6xl overflow-hidden rounded-3xl border border-foreground/10 bg-background"
+              className="h-[92vh] w-[96vw] max-w-[1400px] overflow-hidden rounded-3xl border border-foreground/10 bg-background"
             >
               <div className="flex h-full flex-col">
                 <div className="flex items-start justify-between gap-4 border-b border-foreground/10 px-6 py-5">
