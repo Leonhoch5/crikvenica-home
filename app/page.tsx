@@ -1,5 +1,6 @@
 import { Footer } from "./components/Footer";
 import { Hero } from "./components/Hero";
+import { ContactForm } from "./components/ContactForm";
 import { Reveal } from "./components/Reveal";
 import { VillaCard } from "./components/VillaCard";
 import { villaImagesByName, villas } from "./lib/villas";
@@ -49,10 +50,9 @@ export default async function Home() {
                 bedrooms={villa.bedrooms}
                 bathrooms={villa.bathrooms}
                 maxGuests={villa.maxGuests}
-                bookingUrl={villa.bookingUrl}
                 images={villaImagesByName[villa.name]}
                 index={index}
-                ctaLabel={t("villa.ctaBooking")}
+                ctaLabel={t("villa.ctaContact")}
                 amenityLabels={{
                   pool: t("amenities.pool"),
                   wifi: t("amenities.wifi"),
@@ -67,6 +67,52 @@ export default async function Home() {
               />
             ))}
           </div>
+        </section>
+
+        <section id="contact" className="scroll-mt-16 pb-20 sm:pb-28">
+          <Reveal>
+            <div className="rounded-3xl border border-foreground/10 bg-background/60 p-6 backdrop-blur-sm sm:p-10">
+              <div className="grid gap-10 lg:grid-cols-2 lg:items-start">
+                <div>
+                  <p className="text-xs font-medium tracking-[0.22em] text-foreground/60">
+                    {t("sections.contact.kicker")}
+                  </p>
+                  <h2 className="mt-4 text-2xl font-semibold tracking-[-0.02em] sm:text-3xl">
+                    {t("sections.contact.title")}
+                  </h2>
+                  <p className="mt-4 text-sm leading-6 text-foreground/70 sm:text-base">
+                    {t("sections.contact.text")}
+                  </p>
+
+                  <div className="mt-6 rounded-2xl border border-foreground/10 bg-background p-5">
+                    <p className="text-sm text-foreground/70">
+                      <span className="font-medium text-foreground/85">{t("contact.emailLabel")}</span>{" "}
+                      <a
+                        href="mailto:info@crikvenica-villas.com"
+                        className="text-foreground underline underline-offset-4"
+                      >
+                        info@crikvenica-villas.com
+                      </a>
+                    </p>
+                  </div>
+                </div>
+
+                <ContactForm
+                  villaLabel={t("contact.villaLabel")}
+                  nameLabel={t("contact.nameLabel")}
+                  emailLabel={t("contact.yourEmailLabel")}
+                  messageLabel={t("contact.messageLabel")}
+                  submitLabel={t("contact.submit")}
+                  sendingLabel={t("contact.sending")}
+                  successTitle={t("contact.successTitle")}
+                  successText={t("contact.successText")}
+                  errorTitle={t("contact.errorTitle")}
+                  errorText={t("contact.errorText")}
+                  villas={villas.map((v) => v.name)}
+                />
+              </div>
+            </div>
+          </Reveal>
         </section>
 
         <section className="pb-20 sm:pb-28">

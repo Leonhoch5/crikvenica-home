@@ -12,7 +12,6 @@ type VillaCardProps = {
   bedrooms: number;
   bathrooms: number;
   maxGuests: string | null;
-  bookingUrl: string;
   images: readonly string[];
   index: number;
   ctaLabel: string;
@@ -36,7 +35,6 @@ export function VillaCard({
   bedrooms,
   bathrooms,
   maxGuests,
-  bookingUrl,
   images,
   index,
   ctaLabel,
@@ -71,6 +69,12 @@ export function VillaCard({
     if (!target) return;
     if (target.closest("a,button")) return;
     setIsOpen(true);
+  }
+
+  function goToContact() {
+    setIsOpen(false);
+    const contactSection = document.getElementById("contact");
+    contactSection?.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
   return (
@@ -109,14 +113,13 @@ export function VillaCard({
           </div>
 
           <div className="mt-auto pt-6">
-            <a
-              href={bookingUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              type="button"
+              onClick={goToContact}
               className="inline-flex h-11 w-full items-center justify-center rounded-full bg-foreground px-6 text-sm font-medium text-background transition-transform duration-200 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-foreground/40"
             >
               {ctaLabel}
-            </a>
+            </button>
           </div>
         </div>
       </article>
@@ -179,14 +182,13 @@ export function VillaCard({
                         </div>
 
                         <div className="mt-8">
-                          <a
-                            href={bookingUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
+                          <button
+                            type="button"
+                            onClick={goToContact}
                             className="inline-flex h-11 w-full items-center justify-center rounded-full bg-foreground px-6 text-sm font-medium text-background transition-transform duration-200 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-foreground/40"
                           >
                             {ctaLabel}
-                          </a>
+                          </button>
                         </div>
                       </div>
                     </div>

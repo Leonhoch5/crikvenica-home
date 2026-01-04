@@ -88,8 +88,6 @@ Su richiesta saremo lieti di prenotare un posto barca nel porto di Crikvenica.
     bedrooms: 1,
     bathrooms: 2,
     maxGuests: "2",
-    bookingUrl:
-      "https://www.booking.com/hotel/hr/holiday-home-ivanka-crikvenica.de.html",
   },
   {
     name: "Villa Milka",
@@ -184,7 +182,6 @@ Su richiesta saremo lieti di prenotare un posto barca nel porto di Crikvenica.
     bedrooms: 2,
     bathrooms: 1,
     maxGuests: "4 + 2",
-    bookingUrl: "https://www.booking.com/hotel/hr/villa-milka-crikvenica.de.html",
   },
   {
     name: "Villa Vesna",
@@ -283,7 +280,6 @@ Su richiesta saremo lieti di prenotare un posto barca nel porto di Crikvenica.
     bedrooms: 4,
     bathrooms: 2,
     maxGuests: "6 + 2",
-    bookingUrl: "https://www.booking.com/hotel/hr/villa-vesna-crikvenica.de.html",
   },
 ] as const;
 

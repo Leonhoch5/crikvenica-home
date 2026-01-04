@@ -1,14 +1,19 @@
 {
   "hero": {
     "headline": "Tre ville eccezionali a Crikvenica",
-    "subheadline": "Soggiorni privati • Fascino mediterraneo • Prenota in sicurezza su Booking.com",
+    "subheadline": "Soggiorni privati • Fascino mediterraneo • Contatta direttamente il proprietario",
     "cta": "Esplora le ville",
-    "note": "Solo informazioni — le prenotazioni si completano su Booking.com"
+    "note": "Richieste dirette — usa il modulo di contatto qui sotto"
   },
   "sections": {
     "villas": {
       "title": "Ville",
-      "subtitle": "Tre soggiorni diversi — carattere, comfort e checkout semplice su Booking.com."
+      "subtitle": "Tre soggiorni diversi — carattere, comfort e contatto diretto con il proprietario."
+    },
+    "contact": {
+      "kicker": "CONTATTO",
+      "title": "Contatta il proprietario",
+      "text": "Invia una richiesta su disponibilità e dettagli — ti risponderemo via e‑mail."
     },
     "location": {
       "kicker": "POSIZIONE",
@@ -18,7 +23,20 @@
     }
   },
   "villa": {
-    "ctaBooking": "Prenota su Booking.com"
+    "ctaContact": "Contatta il proprietario"
+  },
+  "contact": {
+    "emailLabel": "Email:",
+    "villaLabel": "Villa",
+    "nameLabel": "Nome",
+    "yourEmailLabel": "La tua email",
+    "messageLabel": "Messaggio",
+    "submit": "Invia messaggio",
+    "sending": "Invio…",
+    "successTitle": "Messaggio inviato",
+    "successText": "Grazie — risponderemo presto via email.",
+    "errorTitle": "Qualcosa è andato storto",
+    "errorText": "Riprova tra poco."
   },
   "amenities": {
     "pool": "Piscina",
@@ -33,7 +51,7 @@
   },
   "footer": {
     "copyright": "© 2026 Crikvenica Villas",
-    "disclaimer": "Tutte le prenotazioni vengono completate in sicurezza su Booking.com"
+    "disclaimer": "Contatto diretto con il proprietario"
   },
   "language": {
     "label": "Lingua"

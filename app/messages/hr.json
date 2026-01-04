@@ -1,14 +1,19 @@
 {
   "hero": {
     "headline": "Tri iznimne vile u Crikvenici",
-    "subheadline": "Privatni boravci • Mediteranski šarm • Sigurna rezervacija putem Booking.com-a",
+    "subheadline": "Privatni boravci • Mediteranski šarm • Izravan kontakt s vlasnikom",
     "cta": "Istraži vile",
-    "note": "Informativno — rezervacije se dovršavaju na Booking.com-u"
+    "note": "Izravni upiti — koristite kontakt obrazac ispod"
   },
   "sections": {
     "villas": {
       "title": "Vile",
-      "subtitle": "Tri različita smještaja — karakter, udobnost i jednostavna rezervacija preko Booking.com-a."
+      "subtitle": "Tri različita smještaja — karakter, udobnost i izravan kontakt s vlasnikom."
+    },
+    "contact": {
+      "kicker": "KONTAKT",
+      "title": "Kontaktirajte vlasnika",
+      "text": "Pošaljite upit o dostupnosti i detaljima — odgovorit ćemo vam e‑mailom."
     },
     "location": {
       "kicker": "LOKACIJA",
@@ -18,7 +23,20 @@
     }
   },
   "villa": {
-    "ctaBooking": "Rezerviraj na Booking.com-u"
+    "ctaContact": "Kontaktiraj vlasnika"
+  },
+  "contact": {
+    "emailLabel": "E‑mail:",
+    "villaLabel": "Vila",
+    "nameLabel": "Ime",
+    "yourEmailLabel": "Vaš e‑mail",
+    "messageLabel": "Poruka",
+    "submit": "Pošalji poruku",
+    "sending": "Slanje…",
+    "successTitle": "Poruka je poslana",
+    "successText": "Hvala — uskoro ćemo odgovoriti na vaš e‑mail.",
+    "errorTitle": "Došlo je do greške",
+    "errorText": "Molimo pokušajte ponovno za trenutak."
   },
   "amenities": {
     "pool": "Bazen",
@@ -33,7 +51,7 @@
   },
   "footer": {
     "copyright": "© 2026 Crikvenica Villas",
-    "disclaimer": "Sve se rezervacije sigurno dovršavaju na Booking.com-u"
+    "disclaimer": "Izravan kontakt s vlasnikom"
   },
   "language": {
     "label": "Jezik"

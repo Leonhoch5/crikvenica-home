@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Crikvenica Villas",
   description:
-    "Three exceptional villas in Crikvenica, Croatia. Informational site — reservations completed securely via Booking.com.",
+    "Three exceptional villas in Crikvenica, Croatia. Contact the owner directly via the inquiry form.",
 };
 
 export default async function RootLayout({

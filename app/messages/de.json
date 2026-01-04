@@ -1,14 +1,19 @@
 {
   "hero": {
     "headline": "Drei außergewöhnliche Villen in Crikvenica",
-    "subheadline": "Private Aufenthalte • Mediterraner Charme • Sicher über Booking.com buchen",
+    "subheadline": "Private Aufenthalte • Mediterraner Charme • Direkt den Eigentümer kontaktieren",
     "cta": "Villen entdecken",
-    "note": "Nur Informationen — Buchungen erfolgen auf Booking.com"
+    "note": "Direkte Anfrage — nutzen Sie das Kontaktformular unten"
   },
   "sections": {
     "villas": {
       "title": "Villen",
-      "subtitle": "Drei besondere Unterkünfte — mit Charakter, Komfort und einfacher Buchung über Booking.com."
+      "subtitle": "Drei besondere Unterkünfte — mit Charakter, Komfort und direktem Kontakt zum Eigentümer."
+    },
+    "contact": {
+      "kicker": "KONTAKT",
+      "title": "Kontakt zum Eigentümer",
+      "text": "Senden Sie eine Anfrage zu Verfügbarkeit und Details — wir melden uns per E‑Mail."
     },
     "location": {
       "kicker": "LAGE",
@@ -18,7 +23,20 @@
     }
   },
   "villa": {
-    "ctaBooking": "Auf Booking.com buchen"
+    "ctaContact": "Eigentümer kontaktieren"
+  },
+  "contact": {
+    "emailLabel": "E‑Mail:",
+    "villaLabel": "Villa",
+    "nameLabel": "Name",
+    "yourEmailLabel": "Ihre E‑Mail",
+    "messageLabel": "Nachricht",
+    "submit": "Nachricht senden",
+    "sending": "Wird gesendet…",
+    "successTitle": "Nachricht gesendet",
+    "successText": "Danke — wir antworten in Kürze per E‑Mail.",
+    "errorTitle": "Etwas ist schiefgelaufen",
+    "errorText": "Bitte versuchen Sie es gleich noch einmal."
   },
   "amenities": {
     "pool": "Pool",
@@ -33,7 +51,7 @@
   },
   "footer": {
     "copyright": "© 2026 Crikvenica Villas",
-    "disclaimer": "Alle Reservierungen werden sicher auf Booking.com abgeschlossen"
+    "disclaimer": "Direkter Kontakt zum Eigentümer"
   },
   "language": {
     "label": "Sprache"
