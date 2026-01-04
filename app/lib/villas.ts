@@ -1,6 +1,6 @@
 export const villas = [
   {
-    name: "Holiday Home Ivanka",
+    name: "Villa Ivanka",
     descriptions: {
       en: "Private holiday home with garden and terrace, ideal for couples and small families. Quiet Mediterranean setting.",
       de: "Klimatisiertes Ferienhaus mit Terrasse und Meerblick. Ruhige Lage mit Pool und Garten.",
@@ -60,7 +60,7 @@ export const villaVesnaImages = [
 ] as const;
 
 export const villaImagesByName: Record<(typeof villas)[number]["name"], readonly string[]> = {
-  "Holiday Home Ivanka": villaIvankaImages,
+  "Villa Ivanka": villaIvankaImages,
   "Villa Milka": villaMilkaImages,
   "Villa Vesna": villaVesnaImages,
 };
