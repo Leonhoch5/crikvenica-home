@@ -1,0 +1,41 @@
+{
+  "hero": {
+    "headline": "Tre ville eccezionali a Crikvenica",
+    "subheadline": "Soggiorni privati • Fascino mediterraneo • Prenota in sicurezza su Booking.com",
+    "cta": "Esplora le ville",
+    "note": "Solo informazioni — le prenotazioni si completano su Booking.com"
+  },
+  "sections": {
+    "villas": {
+      "title": "Ville",
+      "subtitle": "Tre soggiorni diversi — carattere, comfort e checkout semplice su Booking.com."
+    },
+    "location": {
+      "kicker": "POSIZIONE",
+      "title": "Crikvenica, Croazia",
+      "text": "Sulla costa adriatica della Croazia — a soli 30 minuti dall’aeroporto di Rijeka.",
+      "mapTitle": "Mappa di Crikvenica, Croazia"
+    }
+  },
+  "villa": {
+    "ctaBooking": "Prenota su Booking.com"
+  },
+  "amenities": {
+    "pool": "Piscina",
+    "wifi": "Wi‑Fi",
+    "parking": "Parcheggio",
+    "ac": "Aria condizionata"
+  },
+  "facts": {
+    "bedrooms": "Camere",
+    "bathrooms": "Bagni",
+    "sleeps": "Ospiti"
+  },
+  "footer": {
+    "copyright": "© 2026 Crikvenica Villas",
+    "disclaimer": "Tutte le prenotazioni vengono completate in sicurezza su Booking.com"
+  },
+  "language": {
+    "label": "Lingua"
+  }
+}

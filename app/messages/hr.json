@@ -1,0 +1,41 @@
+{
+  "hero": {
+    "headline": "Tri iznimne vile u Crikvenici",
+    "subheadline": "Privatni boravci • Mediteranski šarm • Sigurna rezervacija putem Booking.com-a",
+    "cta": "Istraži vile",
+    "note": "Informativno — rezervacije se dovršavaju na Booking.com-u"
+  },
+  "sections": {
+    "villas": {
+      "title": "Vile",
+      "subtitle": "Tri različita smještaja — karakter, udobnost i jednostavna rezervacija preko Booking.com-a."
+    },
+    "location": {
+      "kicker": "LOKACIJA",
+      "title": "Crikvenica, Hrvatska",
+      "text": "Na hrvatskoj obali Jadrana — samo 30 minuta od Zračne luke Rijeka.",
+      "mapTitle": "Karta Crikvenice, Hrvatska"
+    }
+  },
+  "villa": {
+    "ctaBooking": "Rezerviraj na Booking.com-u"
+  },
+  "amenities": {
+    "pool": "Bazen",
+    "wifi": "Wi‑Fi",
+    "parking": "Parking",
+    "ac": "Klimatizacija"
+  },
+  "facts": {
+    "bedrooms": "Spavaće sobe",
+    "bathrooms": "Kupaonice",
+    "sleeps": "Osoba"
+  },
+  "footer": {
+    "copyright": "© 2026 Crikvenica Villas",
+    "disclaimer": "Sve se rezervacije sigurno dovršavaju na Booking.com-u"
+  },
+  "language": {
+    "label": "Jezik"
+  }
+}

@@ -1,65 +1,110 @@
-import Image from "next/image";
+import { Footer } from "./components/Footer";
+import { Hero } from "./components/Hero";
+import { Reveal } from "./components/Reveal";
+import { VillaCard } from "./components/VillaCard";
+import { villaImagesByName, villas } from "./lib/villas";
+import { cookies } from "next/headers";
+import { getTranslations } from "next-intl/server";
+import { defaultLocale, supportedLocales } from "./i18n/getMessages";
 
-export default function Home() {
+export default async function Home() {
+  const t = await getTranslations();
+  const cookieStore = await cookies();
+  const locale = cookieStore.get("locale")?.value ?? defaultLocale;
+  const safeLocale = (supportedLocales as readonly string[]).includes(locale)
+    ? (locale as (typeof supportedLocales)[number])
+    : defaultLocale;
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+    <div className="min-h-screen">
+      <Hero
+        locale={safeLocale}
+        headline={t("hero.headline")}
+        subheadline={t("hero.subheadline")}
+        ctaExplore={t("hero.cta")}
+        note={t("hero.note")}
+        languageLabel={t("language.label")}
+      />
+
+      <main className="mx-auto max-w-6xl px-6">
+        <section id="villas" className="scroll-mt-16 pb-16 pt-4 sm:pb-24">
+          <Reveal>
+            <div className="flex flex-col gap-3">
+              <h2 className="text-2xl font-semibold tracking-[-0.02em] sm:text-3xl">
+                {t("sections.villas.title")}
+              </h2>
+              <p className="max-w-2xl text-sm leading-6 text-foreground/70 sm:text-base">
+                {t("sections.villas.subtitle")}
+              </p>
+            </div>
+          </Reveal>
+
+          <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {villas.map((villa, index) => (
+              <VillaCard
+                key={villa.name}
+                name={villa.name}
+                description={villa.descriptions[safeLocale]}
+                bedrooms={villa.bedrooms}
+                bathrooms={villa.bathrooms}
+                maxGuests={villa.maxGuests}
+                bookingUrl={villa.bookingUrl}
+                images={villaImagesByName[villa.name]}
+                index={index}
+                ctaLabel={t("villa.ctaBooking")}
+                amenityLabels={{
+                  pool: t("amenities.pool"),
+                  wifi: t("amenities.wifi"),
+                  parking: t("amenities.parking"),
+                  ac: t("amenities.ac"),
+                }}
+                factLabels={{
+                  bedrooms: t("facts.bedrooms"),
+                  bathrooms: t("facts.bathrooms"),
+                  sleeps: t("facts.sleeps"),
+                }}
+              />
+            ))}
+          </div>
+        </section>
+
+        <section className="pb-20 sm:pb-28">
+          <Reveal>
+            <div className="rounded-3xl border border-foreground/10 bg-background/60 p-6 backdrop-blur-sm sm:p-10">
+              <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
+                <div>
+                  <p className="text-xs font-medium tracking-[0.22em] text-foreground/60">
+                    {t("sections.location.kicker")}
+                  </p>
+                  <h2 className="mt-4 text-2xl font-semibold tracking-[-0.02em] sm:text-3xl">
+                    {t("sections.location.title")}
+                  </h2>
+                  <p className="mt-4 text-sm leading-6 text-foreground/70 sm:text-base">
+                    {t("sections.location.text")}
+                  </p>
+                </div>
+
+                <div className="overflow-hidden rounded-2xl border border-foreground/10 bg-background">
+                  <div className="relative aspect-[16/10] w-full">
+                    <iframe
+                      title={t("sections.location.mapTitle")}
+                      src="https://www.google.com/maps?q=Crikvenica%2C%20Croatia&output=embed"
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                      className="absolute inset-0 h-full w-full"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Reveal>
+        </section>
       </main>
+
+      <Footer
+        copyright={t("footer.copyright")}
+        disclaimer={t("footer.disclaimer")}
+      />
     </div>
   );
 }
