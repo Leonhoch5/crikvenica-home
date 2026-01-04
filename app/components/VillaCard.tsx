@@ -122,64 +122,66 @@ export function VillaCard({
             onClick={() => setIsOpen(false)}
           />
 
-          <div className="relative mx-auto flex min-h-screen max-w-6xl items-center px-6 py-10">
+          <div className="absolute inset-0 flex items-center justify-center p-4 sm:p-8">
             <div
               role="dialog"
               aria-modal="true"
               aria-label={`${name} preview`}
-              className="w-full overflow-hidden rounded-3xl border border-foreground/10 bg-background"
+              className="h-[90vh] w-[92vw] max-w-6xl overflow-hidden rounded-3xl border border-foreground/10 bg-background"
             >
-              <div className="flex items-center justify-between gap-4 border-b border-foreground/10 px-6 py-4">
-                <div>
-                  <h3 className="text-lg font-semibold tracking-[-0.02em]">{name}</h3>
-                  <p className="mt-1 text-sm text-foreground/70">{description}</p>
+              <div className="flex h-full flex-col">
+                <div className="flex items-start justify-between gap-4 border-b border-foreground/10 px-6 py-5">
+                  <div className="min-w-0">
+                    <h3 className="text-xl font-semibold tracking-[-0.02em]">{name}</h3>
+                    <p className="mt-2 text-sm text-foreground/70">{description}</p>
+                  </div>
+
+                  <button
+                    type="button"
+                    onClick={() => setIsOpen(false)}
+                    className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-foreground/10 bg-background text-foreground/70 transition-colors hover:bg-foreground/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-foreground/35"
+                    aria-label="Close"
+                  >
+                    <XIcon className="h-5 w-5" />
+                  </button>
                 </div>
 
-                <button
-                  type="button"
-                  onClick={() => setIsOpen(false)}
-                  className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-foreground/10 bg-background text-foreground/70 transition-colors hover:bg-foreground/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-foreground/35"
-                  aria-label="Close"
-                >
-                  <XIcon className="h-5 w-5" />
-                </button>
-              </div>
+                <div className="grid flex-1 gap-10 overflow-y-auto p-6 lg:grid-cols-2 lg:items-start">
+                  <VillaGallery images={images} alt={name} />
 
-              <div className="grid gap-8 p-6 lg:grid-cols-2 lg:items-start">
-                <VillaGallery images={images} alt={name} />
+                  <div className="flex flex-col">
+                    <div className="flex flex-wrap gap-2 text-xs text-foreground/70">
+                      <Fact label={factLabels.bedrooms} value={bedrooms} />
+                      <Fact label={factLabels.bathrooms} value={bathrooms} />
+                      {typeof maxGuests === "string" ? (
+                        <Fact label={factLabels.sleeps} value={maxGuests} />
+                      ) : null}
+                    </div>
 
-                <div className="flex flex-col">
-                  <div className="flex flex-wrap gap-2 text-xs text-foreground/70">
-                    <Fact label={factLabels.bedrooms} value={bedrooms} />
-                    <Fact label={factLabels.bathrooms} value={bathrooms} />
-                    {typeof maxGuests === "string" ? (
-                      <Fact label={factLabels.sleeps} value={maxGuests} />
-                    ) : null}
-                  </div>
+                    <p className="mt-6 text-sm leading-6 text-foreground/70">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Integer nec odio. Praesent libero. Sed cursus ante dapibus
+                      diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.
+                      Duis sagittis ipsum.
+                    </p>
 
-                  <p className="mt-6 text-sm leading-6 text-foreground/70">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Integer nec odio. Praesent libero. Sed cursus ante dapibus
-                    diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.
-                    Duis sagittis ipsum.
-                  </p>
+                    <div className="mt-6 flex flex-wrap items-center gap-2 text-xs text-foreground/70">
+                      <Amenity icon={<PoolIcon className="h-4 w-4" />} label={amenityLabels.pool} />
+                      <Amenity icon={<WifiIcon className="h-4 w-4" />} label={amenityLabels.wifi} />
+                      <Amenity icon={<ParkingIcon className="h-4 w-4" />} label={amenityLabels.parking} />
+                      <Amenity icon={<SnowflakeIcon className="h-4 w-4" />} label={amenityLabels.ac} />
+                    </div>
 
-                  <div className="mt-6 flex flex-wrap items-center gap-2 text-xs text-foreground/70">
-                    <Amenity icon={<PoolIcon className="h-4 w-4" />} label={amenityLabels.pool} />
-                    <Amenity icon={<WifiIcon className="h-4 w-4" />} label={amenityLabels.wifi} />
-                    <Amenity icon={<ParkingIcon className="h-4 w-4" />} label={amenityLabels.parking} />
-                    <Amenity icon={<SnowflakeIcon className="h-4 w-4" />} label={amenityLabels.ac} />
-                  </div>
-
-                  <div className="mt-8">
-                    <a
-                      href={bookingUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex h-11 w-full items-center justify-center rounded-full bg-foreground px-6 text-sm font-medium text-background transition-transform duration-200 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-foreground/40"
-                    >
-                      {ctaLabel}
-                    </a>
+                    <div className="mt-8">
+                      <a
+                        href={bookingUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex h-11 w-full items-center justify-center rounded-full bg-foreground px-6 text-sm font-medium text-background transition-transform duration-200 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-foreground/40"
+                      >
+                        {ctaLabel}
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
