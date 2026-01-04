@@ -8,6 +8,7 @@ import { VillaGallery } from "./VillaGallery";
 type VillaCardProps = {
   name: string;
   description: string;
+  longDescription: string;
   bedrooms: number;
   bathrooms: number;
   maxGuests: string | null;
@@ -31,6 +32,7 @@ type VillaCardProps = {
 export function VillaCard({
   name,
   description,
+  longDescription,
   bedrooms,
   bathrooms,
   maxGuests,
@@ -165,12 +167,9 @@ export function VillaCard({
                           ) : null}
                         </div>
 
-                        <p className="mt-6 text-sm leading-6 text-foreground/70">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                          Integer nec odio. Praesent libero. Sed cursus ante dapibus
-                          diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.
-                          Duis sagittis ipsum.
-                        </p>
+                        <div className="mt-6 whitespace-pre-line text-sm leading-6 text-foreground/70">
+                          {longDescription}
+                        </div>
 
                         <div className="mt-6 flex flex-wrap items-center gap-2 text-xs text-foreground/70">
                           <Amenity icon={<PoolIcon className="h-4 w-4" />} label={amenityLabels.pool} />

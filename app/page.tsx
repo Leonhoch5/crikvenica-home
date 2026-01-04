@@ -45,6 +45,7 @@ export default async function Home() {
                 key={villa.name}
                 name={villa.name}
                 description={villa.descriptions[safeLocale]}
+                longDescription={villa.longDescriptions[safeLocale]}
                 bedrooms={villa.bedrooms}
                 bathrooms={villa.bathrooms}
                 maxGuests={villa.maxGuests}
