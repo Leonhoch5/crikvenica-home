@@ -1,29 +1,29 @@
 {
   "hero": {
-    "headline": "Tri iznimne vile u Crikvenici",
-    "subheadline": "Privatni boravci • Mediteranski šarm • Izravan kontakt s vlasnikom",
+    "headline": "Dobrodošli u Three Stone Villas",
+    "subheadline": "Smještene iznad Jadranskog mora, Three Stone Villas je zbirka obnovljenih kamenih vila u Crikvenici na kvarnerskoj obali Hrvatske.",
     "cta": "Istraži vile",
-    "note": "Izravni upiti — koristite kontakt obrazac ispod"
+    "note": "Okružene vinogradima, maslinicima i mediteranskim biljem"
   },
   "sections": {
     "villas": {
       "title": "Vile",
-      "subtitle": "Tri različita smještaja — karakter, udobnost i izravan kontakt s vlasnikom."
+      "subtitle": "Povijesne kamene kuće s modernom udobnošću, privatnošću i snažnim obiteljskim karakterom."
     },
     "contact": {
       "kicker": "KONTAKT",
-      "title": "Kontaktirajte vlasnika",
-      "text": "Pošaljite upit o dostupnosti i detaljima — odgovorit ćemo vam e‑mailom."
+      "title": "Javite nam se",
+      "text": "Pošaljite nam upit, a mi ćemo vam odgovoriti e-mailom."
     },
     "location": {
       "kicker": "LOKACIJA",
       "title": "Crikvenica, Hrvatska",
-      "text": "Na hrvatskoj obali Jadrana — samo 30 minuta od Zračne luke Rijeka.",
+      "text": "Na kvarnerskoj obali Hrvatske, okružene morem, brežuljcima i mediteranskim zelenilom.",
       "mapTitle": "Karta Crikvenice, Hrvatska"
     }
   },
   "villa": {
-    "ctaContact": "Kontaktiraj vlasnika"
+    "ctaContact": "Javite nam se"
   },
   "contact": {
     "emailLabel": "E‑mail:",
@@ -31,7 +31,7 @@
     "nameLabel": "Ime",
     "yourEmailLabel": "Vaš e‑mail",
     "messageLabel": "Poruka",
-    "submit": "Pošalji poruku",
+    "submit": "Pošalji upit",
     "sending": "Slanje…",
     "successTitle": "Poruka je poslana",
     "successText": "Hvala — uskoro ćemo odgovoriti na vaš e‑mail.",
@@ -50,8 +50,8 @@
     "sleeps": "Osoba"
   },
   "footer": {
-    "copyright": "© 2026 Crikvenica Villas",
-    "disclaimer": "Izravan kontakt s vlasnikom"
+    "copyright": "© 2026 Three Stone Villas",
+    "disclaimer": "Obiteljsko imanje"
   },
   "language": {
     "label": "Jezik"

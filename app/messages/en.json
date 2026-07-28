@@ -1,29 +1,29 @@
 {
   "hero": {
-    "headline": "Three Exceptional Villas in Crikvenica",
-    "subheadline": "Private stays • Mediterranean charm • Contact the owner directly",
-    "cta": "Explore Villas",
-    "note": "Direct inquiries — use the contact form below"
+    "headline": "Welcome to Three Stone Villas",
+    "subheadline": "Perched above the Adriatic Sea, Three Stone Villas is a collection of restored stone villas in Crikvenica on Croatia's Kvarner coast.",
+    "cta": "Explore the villas",
+    "note": "Surrounded by vineyards, olive groves, and Mediterranean herbs"
   },
   "sections": {
     "villas": {
       "title": "Villas",
-      "subtitle": "Three distinct stays — each with character, comfort, and direct contact with the owner."
+      "subtitle": "Historic stone homes with modern comfort, privacy, and a strong family character."
     },
     "contact": {
       "kicker": "CONTACT",
-      "title": "Contact the owner",
-      "text": "Send an inquiry about availability and details — we’ll get back to you by email."
+      "title": "Get in touch",
+      "text": "Share your inquiry and we’ll reply by email."
     },
     "location": {
       "kicker": "LOCATION",
       "title": "Crikvenica, Croatia",
-      "text": "Located on Croatia’s Adriatic coast, just 30 minutes from Rijeka Airport.",
+      "text": "Set on Croatia's Kvarner coast, surrounded by sea, hills, and Mediterranean greenery.",
       "mapTitle": "Map of Crikvenica, Croatia"
     }
   },
   "villa": {
-    "ctaContact": "Contact owner"
+    "ctaContact": "Contact us"
   },
   "contact": {
     "emailLabel": "Email:",
@@ -31,7 +31,7 @@
     "nameLabel": "Name",
     "yourEmailLabel": "Your email",
     "messageLabel": "Message",
-    "submit": "Send message",
+    "submit": "Send inquiry",
     "sending": "Sending…",
     "successTitle": "Message sent",
     "successText": "Thanks — we’ll reply to your email shortly.",
@@ -50,8 +50,8 @@
     "sleeps": "Sleeps"
   },
   "footer": {
-    "copyright": "© 2026 Crikvenica Villas",
-    "disclaimer": "Direct contact with the owner"
+    "copyright": "© 2026 Three Stone Villas",
+    "disclaimer": "Family-run property"
   },
   "language": {
     "label": "Language"

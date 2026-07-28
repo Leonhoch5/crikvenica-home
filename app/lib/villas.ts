@@ -2,88 +2,48 @@ export const villas = [
   {
     name: "Villa Ivanka",
     descriptions: {
-      en: "Private holiday home with garden and terrace, ideal for couples and small families. Quiet Mediterranean setting.",
-      de: "Klimatisiertes Ferienhaus mit Terrasse und Meerblick. Ruhige Lage mit Pool und Garten.",
-      hr: "Privatna kuća za odmor s terasom i vrtom u mirnom mediteranskom okruženju.",
-      it: "Casa vacanze privata con terrazza e giardino, in un contesto tranquillo e mediterraneo.",
+      en: "Romantic hillside stone villa with private pool, terrace, and panoramic Adriatic views.",
+      de: "Romantische Steinvilla am Hang mit privatem Pool, Terrasse und Panoramablick auf die Adria.",
+      hr: "Romantična kamena vila na padini s privatnim bazenom, terasom i panoramskim pogledom na Jadran.",
+      it: "Romantica villa in pietra sulla collina con piscina privata, terrazza e vista panoramica sull’Adriatico.",
     },
     longDescriptions: {
-  de: `Villa Ivanka befindet sich auf einem Hügel oberhalb des Kurortes Crikvenica und hat einen wunderschönen Blick auf die Kvarner Bucht und die Insel Krk. Weit weg vom Lärm und alltäglichem Rummel, ist dieses märchenhafte Steinhaus eine Oase der Ruhe und ein perfekter Ort für ein Paar, das neben einem romantischen Urlaub auch das Abenteuer sucht.
+      de: `Villa Ivanka liegt ruhig auf einem Hügel oberhalb von Crikvenica und bietet einen weiten Blick über die Kvarner Bucht und die Insel Krk. Etwas abseits vom Trubel und doch nahe an der Küste ist sie ein privater Rückzugsort für Paare, die Romantik und Privatsphäre suchen.
 
-Sie verbringen Ihren Urlaub auf einem Familienanwesen von über 5.000 m² mit drei Steinhäusern, die von Weinreben und Olivenbäumen umgeben sind. Mediterrane Bäume, wie z.B. drei unterschiedlichen Sorten Feigen, und verschieden Blumensorten schmücken die Umgebung.
+Die Villa ist Teil von Three Stone Villas, einem Familienanwesen von fast 2.000 m² mit Weinreben, Olivenbäumen, Feigen, Lavendel und mediterranen Kräutern. Das ursprüngliche Steinhaus aus dem Jahr 1895 wurde 2008 sorgfältig restauriert und bewahrt den Charakter einer traditionellen stara primorska kuća.
 
-Im Jahr 1895 erbaut, wurden die Häuser 2008 mit viel Liebe fürs Detail restauriert und renoviert. Dabei war uns sehr wichtig den autochthonen Charakter der Gebäude zu erhalten und das Traditionelle mit der Moderne und dem heutigen Komfort zu verbinden. Die Häuser sind mit den antiken Möbeln ausgestattet, die die traditionelle Akzente setzen. Sie müssen jedoch nicht auf dem technischen Komfort verzichten. Wir möchten Sie höflichst bitten, mit diesen Familienstücken, die uns sehr am Herzen liegen, aufmerksam umzugehen.
+Draußen erwarten Sie ein privater mediterraner Garten mit rundem Pool, Sonnenliegen, überdachter Terrasse und Grill. Ein kleiner Kräutergarten mit Rosmarin, Lavendel, Basilikum und Petersilie steht den Gästen zur Verfügung.
 
-Es war uns auch wichtig, dass die Häuser mit der typischen mediterranen Umgebung verschmelzen. Nachdem wir mit der Renovierung der Häuser fertig waren, haben wir uns dem Garten gewidmet. Des Weiteren haben wir Lavendel gepflanzt und den mediterranen Garten gestaltet. Neben Ihrem Haus befindet sich ein kleiner Kräutergarten, dessen Kräuter – Rosmarin, Lavendel, Basilikum und Petersilie – Sie gerne in Ihrer Küche verwenden können.
+Im Inneren befinden sich im Erdgeschoss ein Wohnzimmer, eine offene Küche mit Essbereich und ein Bad mit begehbarer Dusche. Im Obergeschoss öffnet sich das klimatisierte Schlafzimmer zum oberen Garten und bietet einen Panoramablick über Selce, Krk und die Adria.
 
-In einem mediterranen Garten gelegen, laden der private runde Swimmingpool mit Sonnenschirm und Liegestühle zum Entspannen ein. Die überdachte Terrasse mit Grill verspricht angenehme und erholsame Abendstunden.
+Ob Frühstück auf der Terrasse, ein Sprung in den Pool oder der Sonnenuntergang über dem Meer — Villa Ivanka ist ein stiller Rückzugsort, in dem Erbe und Komfort zusammenfinden.`,
+      en: `Villa Ivanka sits on a peaceful hillside above Crikvenica with wide views across Kvarner Bay and the island of Krk. Removed from the crowds yet close to the coast, it is a private retreat for couples who want romance and privacy.
 
-Direkt von der Terrasse aus gelangt man in das Erdgeschoss, das durch eine Holztreppe in Wohnküche und Wohnzimmer unterteilt ist. Die Küche ist komplett mit Herd und Backofen, großem Kühlschrank mit Gefrierfach, Mikrowelle, Spülmaschine, Waschmaschine, Kaffeemaschine, Toaster und Wasserkocher ausgestattet. Im Wohnzimmer befindet sich ein Schlafsofa mit Satellitenfernsehen, DVD und Internetanschluss. Ebenfalls im Erdgeschoss gibt es ein Badezimmer mit Dusche und WC.
+The villa belongs to Three Stone Villas, a family property of nearly 2,000 m², planted with vines, olive trees, fig trees, lavender, and fragrant Mediterranean herbs. Built in 1895 and restored in 2008, it keeps the character of a traditional stara primorska kuća.
 
-Die Treppen führen auf die zweite Etage mit dem Schlafzimmer und einem weiteren Badezimmer. Im lichtdurchfluteten Schlafzimmer sorgt neben den Steinwänden auch eine Klimaanlage für angenehme Nächte. Aus dem Doppelbett bietet sich ein traumhafter Blick auf Selce und die Adria. Aus dem Schlafzimmer gelangt man in den oberen mediterranen Garten.
+Outside, your private Mediterranean garden features a circular pool, sun loungers, a covered terrace, and a barbecue. A small herb garden with rosemary, lavender, basil, and parsley is available for guests to enjoy.
 
-Bis zum Zentrum von Crikvenica sind es ca. 3km, dort können Sie Ihren täglichen Einkauf erledigen, hier finden Sie zahlreiche Restaurants, Cafés, Bars und Eisdielen und viele Sportmöglichkeiten sowohl zu Wasser als auch an Land.
+Inside, the ground floor offers a living room, open-plan kitchen and dining area, plus a bathroom with a walk-in shower. Upstairs, the air-conditioned bedroom opens toward the upper garden and enjoys panoramic views over Selce, Krk, and the Adriatic Sea.
 
-Auf Wunsch reservieren wir Ihnen gerne einen Bootsliegeplatz im Hafen von Crikvenica.
+Whether it is breakfast on the terrace, a swim in the pool, or sunset over the water, Villa Ivanka offers a quiet escape where heritage and comfort meet.`,
+      hr: `Villa Ivanka smještena je na mirnoj padini iznad Crikvenice i pruža širok pogled na Kvarnerski zaljev i otok Krk. Daleko od gužve, a opet blizu obale, predstavlja privatno utočište za parove koji traže romantiku i privatnost.
 
-Fahrräder können angemietet werden.`,
-  en: `Villa Ivanka is located on a hill above the seaside resort of Crikvenica and offers beautiful views over the Kvarner Bay and the island of Krk. Far away from everyday noise and bustle, this fairytale stone house is an oasis of peace and a perfect place for a couple looking for romance as well as a touch of adventure.
+Vila je dio Three Stone Villas, obiteljskog imanja površine gotovo 2.000 m², zasađenog vinovom lozom, maslinama, smokvama, lavandom i mirisnim mediteranskim biljem. Izvorna kamena kuća iz 1895. pažljivo je obnovljena 2008. godine te zadržava karakter tradicionalne stara primorska kuća.
 
-You will spend your holiday on a family estate of over 5,000 m² with three stone houses, surrounded by vines and olive trees. Mediterranean trees – for example three different varieties of fig – and many flower species decorate the surroundings.
+Vanjski prostor čini privatni mediteranski vrt s kružnim bazenom, ležaljkama, natkrivenom terasom i roštiljem. Na raspolaganju je i mali vrt začinskog bilja s ružmarinom, lavandom, bosiljkom i peršinom.
 
-Built in 1895, the houses were restored and renovated in 2008 with great attention to detail. It was important to preserve the authentic character of the buildings and combine tradition with modern comfort. The houses are furnished with antique furniture that adds traditional accents, while still offering today’s technical convenience. We kindly ask you to handle these cherished family pieces with care.
+U prizemlju se nalaze dnevni boravak, otvorena kuhinja s blagovaonicom i kupaonica s walk-in tušem. Na katu se klima-uređajem opremljena spavaća soba otvara prema gornjem vrtu i pruža panoramski pogled na Selce, Krk i Jadransko more.
 
-It was also important to us that the houses blend into the typical Mediterranean setting. After completing the renovations, we focused on the garden, planted lavender and created a Mediterranean landscape. Next to your house there is a small herb garden – rosemary, lavender, basil and parsley – that you are welcome to use in your cooking.
+Bilo da doručkujete na terasi, plivate u bazenu ili gledate zalazak sunca nad morem, Villa Ivanka nudi miran bijeg u kojem se susreću baština i udobnost.`,
+      it: `Villa Ivanka si trova su una tranquilla collina sopra Crikvenica e offre un’ampia vista sul Golfo del Quarnero e sull’isola di Krk. Lontana dalla folla ma vicina alla costa, è un rifugio privato per le coppie che desiderano romanticismo e privacy.
 
-Set in a Mediterranean garden, the private round swimming pool with parasol and sun loungers invites you to relax. The covered terrace with BBQ promises pleasant and restful evenings.
+La villa fa parte di Three Stone Villas, una proprietà di famiglia di quasi 2.000 m², piantata con vigneti, ulivi, fichi, lavanda ed erbe mediterranee profumate. Costruita nel 1895 e restaurata nel 2008, conserva il carattere di una tradizionale stara primorska kuća.
 
-From the terrace you enter the ground floor, which is divided by a wooden staircase into an eat-in kitchen and a living room. The kitchen is fully equipped with a hob and oven, large fridge with freezer compartment, microwave, dishwasher, washing machine, coffee machine, toaster and kettle. In the living room there is a sofa bed with satellite TV, DVD and an internet connection. A bathroom with shower and WC is also located on the ground floor.
+All’esterno, il vostro giardino mediterraneo privato dispone di una piscina circolare, lettini, terrazza coperta e barbecue. A disposizione degli ospiti c’è anche un piccolo orto di erbe aromatiche con rosmarino, lavanda, basilico e prezzemolo.
 
-Stairs lead up to the upper floor with the bedroom and another bathroom. In the bright bedroom, air-conditioning and the stone walls ensure comfortable nights. From the double bed you have a breathtaking view of Selce and the Adriatic. From the bedroom you can access the upper Mediterranean garden.
+All’interno, il piano terra offre un soggiorno, una cucina open space con zona pranzo e un bagno con doccia walk-in. Al piano superiore, la camera da letto climatizzata si apre verso il giardino superiore e gode di una vista panoramica su Selce, Krk e il Mare Adriatico.
 
-The centre of Crikvenica is about 3 km away. There you can do your daily shopping and find numerous restaurants, cafés, bars and ice-cream parlours as well as many sports activities on water and on land.
-
-On request, we are happy to reserve a boat berth for you in the harbour of Crikvenica.
-
-Bicycles can be rented.`,
-  hr: `Villa Ivanka nalazi se na brežuljku iznad ljetovališta Crikvenica i pruža prekrasan pogled na Kvarnerski zaljev i otok Krk. Daleko od buke i svakodnevne gužve, ova bajkovita kamena kuća prava je oaza mira i savršeno mjesto za par koji uz romantičan odmor traži i dozu avanture.
-
-Odmor provodite na obiteljskom imanju većem od 5.000 m² s tri kamene kuće, okruženom vinovom lozom i maslinama. Mediteranska stabla, primjerice tri različite sorte smokve, te razne vrste cvijeća krase okoliš.
-
-Kuće su izgrađene 1895., a 2008. godine restaurirane i obnovljene s puno pažnje prema detaljima. Važno nam je bilo zadržati izvorni karakter zgrada te spojiti tradiciju s modernim komforom. Kuće su opremljene antiknim namještajem koji daje tradicionalne naglaske, ali ne morate odustati od današnje tehničke udobnosti. Ljubazno molimo da s obiteljskim komadima, koji su nam posebno dragi, postupate pažljivo.
-
-Također nam je bilo važno da se kuće uklapaju u tipično mediteransko okruženje. Nakon obnove posvetili smo se vrtu, posadili lavandu i uredili mediteranski vrt. Uz kuću se nalazi mali začinski vrt – ružmarin, lavanda, bosiljak i peršin – koje slobodno možete koristiti u kuhinji.
-
-Smještena u mediteranskom vrtu, privatni okrugli bazen sa suncobranom i ležaljkama poziva na opuštanje. Natkrivena terasa s roštiljem pruža ugodne i mirne večeri.
-
-S terase se ulazi u prizemlje, koje je drvenim stubištem podijeljeno na kuhinju s blagovaonicom i dnevni boravak. Kuhinja je potpuno opremljena pločom za kuhanje i pećnicom, velikim hladnjakom sa zamrzivačem, mikrovalnom pećnicom, perilicom posuđa, perilicom rublja, aparatom za kavu, tosterom i kuhalom za vodu. U dnevnom boravku nalazi se kauč na razvlačenje sa satelitskom TV, DVD-om i internet priključkom. U prizemlju se nalazi i kupaonica s tušem i WC-om.
-
-Stubište vodi na gornju etažu sa spavaćom sobom i još jednom kupaonicom. U svijetloj spavaćoj sobi klima-uređaj i kameni zidovi osiguravaju ugodne noći. Iz bračnog kreveta pruža se prekrasan pogled na Selce i Jadran. Iz spavaće sobe izlazi se u gornji mediteranski vrt.
-
-Do centra Crikvenice ima oko 3 km. Tamo možete obaviti svakodnevnu kupnju te pronaći brojne restorane, kafiće, barove i slastičarnice, kao i mnoge sportske aktivnosti na vodi i kopnu.
-
-Na zahtjev rado rezerviramo vez za brod u luci Crikvenica.
-
-Moguće je unajmiti bicikle.`,
-  it: `Villa Ivanka si trova su una collina sopra la località balneare di Crikvenica e offre una splendida vista sul Golfo del Quarnero e sull’isola di Krk. Lontano dal rumore e dalla frenesia quotidiana, questa casa in pietra da fiaba è un’oasi di tranquillità e il luogo ideale per una coppia che cerca una vacanza romantica con un pizzico di avventura.
-
-Trascorrerete le vostre vacanze in una proprietà di famiglia di oltre 5.000 m² con tre case in pietra, circondate da vigneti e ulivi. Alberi mediterranei – ad esempio tre diverse varietà di fico – e numerose specie di fiori decorano l’ambiente.
-
-Costruite nel 1895, le case sono state restaurate e rinnovate nel 2008 con grande cura per i dettagli. Per noi era importante conservare il carattere autentico degli edifici e unire tradizione e comfort moderno. Le case sono arredate con mobili antichi che aggiungono accenti tradizionali, senza rinunciare alle comodità tecniche di oggi. Vi chiediamo gentilmente di trattare con attenzione questi preziosi oggetti di famiglia.
-
-Ci tenevamo anche che le case si fondessero con la tipica atmosfera mediterranea. Dopo la ristrutturazione ci siamo dedicati al giardino: abbiamo piantato lavanda e creato un giardino mediterraneo. Accanto alla casa c’è un piccolo orto di erbe aromatiche – rosmarino, lavanda, basilico e prezzemolo – che siete invitati a utilizzare in cucina.
-
-Immersa in un giardino mediterraneo, la piscina privata rotonda con ombrellone e lettini invita al relax. La terrazza coperta con barbecue promette serate piacevoli e riposanti.
-
-Dalla terrazza si accede al piano terra, diviso da una scala in legno in cucina abitabile e soggiorno. La cucina è completamente attrezzata con piano cottura e forno, grande frigorifero con congelatore, microonde, lavastoviglie, lavatrice, macchina da caffè, tostapane e bollitore. Nel soggiorno c’è un divano letto con TV satellitare, DVD e connessione internet. Al piano terra si trova anche un bagno con doccia e WC.
-
-Le scale conducono al piano superiore con la camera da letto e un secondo bagno. Nella luminosa camera da letto, l’aria condizionata e le pareti in pietra garantiscono notti confortevoli. Dal letto matrimoniale si gode una vista meravigliosa su Selce e sul Mare Adriatico. Dalla camera si accede al giardino mediterraneo superiore.
-
-Il centro di Crikvenica dista circa 3 km: qui potete fare la spesa quotidiana e trovare numerosi ristoranti, caffè, bar e gelaterie, oltre a molte attività sportive in acqua e a terra.
-
-Su richiesta saremo lieti di prenotare un posto barca nel porto di Crikvenica.
-
-È possibile noleggiare biciclette.`,
+Che si tratti di colazione sulla terrazza, di un tuffo in piscina o del tramonto sul mare, Villa Ivanka offre una fuga silenziosa in cui si incontrano patrimonio e comfort.`,
     },
     bedrooms: 1,
     bathrooms: 2,
@@ -92,193 +52,117 @@ Su richiesta saremo lieti di prenotare un posto barca nel porto di Crikvenica.
   {
     name: "Villa Milka",
     descriptions: {
-      en: "Authentic stone villa surrounded by olive trees. Shared pool and peaceful rural atmosphere near the sea.",
-      de: "Steinvilla mit Garten und Terrasse. Ruhige Atmosphäre nahe am Meer, mit Pool.",
-      hr: "Autentična kamena vila okružena maslinama, s mirnom atmosferom i bazenom.",
-      it: "Villa in pietra autentica tra gli ulivi, atmosfera tranquilla vicino al mare e piscina.",
+      en: "Family-friendly stone villa with enclosed garden, pool, and sea views near Crikvenica.",
+      de: "Familienfreundliche Steinvilla mit umzäuntem Garten, Pool und Meerblick nahe Crikvenica.",
+      hr: "Obiteljska kamena vila s ograđenim vrtom, bazenom i pogledom na more nedaleko od Crikvenice.",
+      it: "Villa in pietra adatta alle famiglie con giardino recintato, piscina e vista mare vicino a Crikvenica.",
     },
     longDescriptions: {
-  de: `Villa Milka ist sehr ruhig gelegen und bietet einen wunderschönen Blick auf die Kvarner Bucht und die Insel Krk. Das Highlight dieses Hauses ist der gepflegte und große Garten mit einem 6m x 4m großen Swimmingpool. Eine Dusche, Sonnenschirm und Liegestühle stehen Ihnen gleich neben dem Pool zur Verfügung. Die gemütliche und schöne überdachte Terrasse mit Grillkamin verspricht angenehme und erholsame Urlaubstage.
+      de: `Villa Milka liegt sehr ruhig und bietet einen weiten Blick über die Kvarner Bucht und die Insel Krk. Das Highlight ist der große, gepflegte Garten mit einem 6 x 4 Meter großen Pool. Direkt am Pool stehen Dusche, Sonnenschirm und Liegestühle bereit, und die überdachte Terrasse mit Grillkamin lädt zu entspannten Urlaubstagen ein.
 
-Die Einrichtung des Hauses vereint traditionelle und moderne Elemente. Das Haus verfügt über eine Zentralheizung. Alle Schlafzimmer sind klimatisiert.
+Das Haus verbindet traditionelle und moderne Elemente. Eine Zentralheizung sorgt für Komfort in der kühleren Jahreszeit, und alle Schlafzimmer sind klimatisiert.
 
-Das Haus bietet Platz für 4 bis 6 Personen:
-Vom Eingang gelangen Sie direkt in das Erdgeschoss des Hauses. Gleich neben dem Eingang rechts befindet sich das Wohnzimmer mit SAT-TV und DVD-Player. Eine gemütliche Essküche ist mit Herd und Backofen (Gas), großem Kühlschrank mit Gefrierfach, Spülmaschine, Mikrowelle, Kaffeemaschine und Toaster ausgestattet. Im Erdgeschoss befindet sich ein WC.
+Villa Milka bietet Platz für vier bis sechs Gäste auf zwei Etagen und einem ausgebauten Dachgeschoss. Im Erdgeschoss befinden sich das Wohnzimmer mit SAT-TV und DVD sowie eine gemütliche Wohnküche mit Gasherd, Backofen, großem Kühlschrank mit Gefrierfach, Spülmaschine, Mikrowelle, Kaffeemaschine und Toaster. Ein WC liegt ebenfalls im Erdgeschoss.
 
-Vom Erdgeschoss führen Innentreppen in den ersten Stock. Dort befinden sich zwei Doppelschlafzimmer, eines davon mit direktem Zugang in das Badezimmer mit Dusche und WC. Im zweiten Doppelschlafzimmer ist eine Badewanne und Waschbecken integriert, die Toilette befindet sich im Flur. Von beiden Zimmern haben Sie einen wunderschönen Blick auf das Meer.
+Im ersten Stock gibt es zwei Doppelzimmer, eines mit direktem Zugang zum Bad mit Dusche und WC. Im zweiten Doppelzimmer sind Badewanne und Waschbecken integriert; das WC liegt im Flur. Beide Zimmer bieten einen schönen Blick auf das Meer.
 
-Im Dachgeschoss des Hauses befindet sich ein weiteres Doppelbettzimmer (getrennte Betten) mit integrierter Dusche und Toilette, erreichbar aus dem ersten Stock mit separatem Eingang. Ebenso steht Ihnen eine Waschmaschine zur Verfügung.
+Im Dachgeschoss befindet sich ein weiteres Doppel- oder Zweibettzimmer mit integrierter Dusche und Toilette, das über eine separate Treppe erreichbar ist. Eine Waschmaschine steht ebenfalls zur Verfügung.
 
-Das Haus hat einen schönen Innenhof im vorderen Teil des Gartens bzw. Hauses. Dort befindet sich noch ein separates Zimmer, das als Spielzimmer genutzt werden kann. Vom Innenhof aus gelangen Sie direkt zum Swimmingpool. Eine große überdachte Sitzecke mit einem Grillkamin befindet sich direkt neben dem Swimmingpool. Sonnenschirm und Liegestühle sowie eine Gartendusche stehen Ihnen dort zur Verfügung.
+Vor dem Haus liegt ein hübscher Innenhof mit einem zusätzlichen Raum, der als Spielzimmer genutzt werden kann. Von dort gelangen Sie direkt zum Pool, neben dem sich eine große überdachte Sitzecke mit Grillkamin befindet. Ein Parkplatz liegt direkt neben dem Haus, und ein mediterraner Garten mit regionalen Pflanzen rundet die ruhige Atmosphäre ab.`,
+      en: `Villa Milka is set in a very quiet location and offers beautiful views over the Kvarner Bay and the island of Krk. The highlight is the large, well-kept garden with a 6 x 4 metre swimming pool. A shower, parasol, and sun loungers are available right next to the pool, while the covered terrace with a barbecue fireplace invites long, relaxing holiday days.
 
-Ein Stellplatz für Ihr Auto befindet sich direkt neben dem Haus. Rund um das Haus ist eine mediterrane Gartenanlage mit vielen Pflanzarten aus dieser Gegend entstanden.
+The house combines traditional and modern elements. Central heating adds comfort in the cooler months, and all bedrooms are air-conditioned.
 
-Bis zum Zentrum von Crikvenica sind es ca. 3km, dort können Sie Ihren täglichen Einkauf erledigen, hier finden Sie zahlreiche Restaurants, Cafés, Bars und Eisdielen und viele Sportmöglichkeiten sowohl zu Wasser als auch an Land.
+Villa Milka accommodates four to six guests across two floors and a converted attic. The ground floor includes a living room with satellite TV and DVD, plus a comfortable eat-in kitchen with a gas hob and oven, large fridge with freezer compartment, dishwasher, microwave, coffee machine, and toaster. A WC is also located on the ground floor.
 
-Auf Wunsch reservieren wir Ihnen gerne einen Bootsliegeplatz im Hafen von Crikvenica.
+The first floor offers two double bedrooms, one with direct access to a bathroom with shower and WC. The second double bedroom has an integrated bathtub and washbasin, with the toilet in the hallway. Both rooms enjoy lovely sea views.
 
-Fahrräder können angemietet werden.`,
-  en: `Villa Milka is set in a very quiet location and offers beautiful views over the Kvarner Bay and the island of Krk. The highlight of this house is the large, well-kept garden with a 6 m x 4 m swimming pool. A shower, parasol and sun loungers are available right next to the pool. The cosy covered terrace with BBQ fireplace promises pleasant and relaxing holiday days.
+The attic provides an additional double or twin bedroom with an integrated shower and toilet, reached by a separate staircase. A washing machine is also available.
 
-The interior combines traditional and modern elements. The house has central heating. All bedrooms are air-conditioned.
+In front of the house there is a pleasant courtyard with an extra room that can be used as a games room. From there you can reach the pool directly, and beside it sits a large covered seating area with a barbecue fireplace. Parking is available next to the house, and a Mediterranean garden with local plant species completes the setting.`,
+      hr: `Villa Milka smještena je na vrlo mirnoj lokaciji i pruža prekrasan pogled na Kvarnerski zaljev i otok Krk. Posebnost kuće je veliki, njegovani vrt s bazenom veličine 6 x 4 metra. Uz bazen su vam na raspolaganju tuš, suncobran i ležaljke, a ugodna natkrivena terasa s vanjskim roštiljem/kaminom poziva na opuštene dane odmora.
 
-The house accommodates 4 to 6 guests:
-From the entrance you walk straight into the ground floor. Immediately to the right is the living room with satellite TV and DVD player. A comfortable eat-in kitchen is equipped with a hob and oven (gas), large fridge with freezer compartment, dishwasher, microwave, coffee machine and toaster. There is also a WC on the ground floor.
+Kuća spaja tradicionalne i moderne elemente. Centralno grijanje osigurava udobnost u hladnijem dijelu godine, a sve spavaće sobe su klimatizirane.
 
-Internal stairs lead to the first floor. Here you will find two double bedrooms, one of which has direct access to a bathroom with shower and WC. In the second double bedroom, a bathtub and washbasin are integrated; the toilet is located in the hallway. Both rooms offer a wonderful sea view.
+Villa Milka prima četiri do šest gostiju na dvije etaže i u uređenom potkrovlju. U prizemlju se nalaze dnevni boravak sa satelitskom TV i DVD uređajem te udobna kuhinja s blagovaonicom, opremljena plinskom pločom za kuhanje i pećnicom, velikim hladnjakom sa zamrzivačem, perilicom posuđa, mikrovalnom pećnicom, aparatom za kavu i tosterom. U prizemlju se nalazi i WC.
 
-In the attic there is an additional twin/double bedroom (separate beds) with an integrated shower and toilet, accessible from the first floor via a separate entrance. A washing machine is also available.
+Na prvom katu nalaze se dvije dvokrevetne spavaće sobe, od kojih jedna ima izravan pristup kupaonici s tušem i WC-om. U drugoj su integrirani kada i umivaonik, dok se WC nalazi u hodniku. Iz obje sobe pruža se lijep pogled na more.
 
-At the front part of the garden/house there is a lovely courtyard. Here you will also find a separate room that can be used as a games room. From the courtyard you can reach the swimming pool directly. A large covered seating area with a BBQ fireplace is located right next to the pool. A parasol, sun loungers and a garden shower are available there.
+Potkrovlje nudi dodatnu dvokrevetnu ili twin sobu s integriranim tušem i WC-om, do koje se dolazi zasebnim stubištem. Na raspolaganju je i perilica rublja.
 
-Parking is available directly next to the house. Surrounding the house is a Mediterranean garden with many local plant species.
+Ispred kuće nalazi se ugodno dvorište s dodatnom prostorijom koja može služiti kao igraonica. Odande se izravno dolazi do bazena, uz koji se nalazi velika natkrivena sjedeća zona s roštiljem/kaminom. Parkiralište je odmah uz kuću, a mediteranski vrt s lokalnim biljkama upotpunjuje mirnu atmosferu.`,
+      it: `Villa Milka si trova in una posizione molto tranquilla e offre una splendida vista sul Golfo del Quarnero e sull’isola di Krk. Il punto forte della casa è l’ampio giardino curato con piscina di 6 x 4 metri. Accanto alla piscina sono disponibili doccia, ombrellone e lettini, mentre la graziosa terrazza coperta con camino/barbecue invita a trascorrere giornate di vacanza rilassanti.
 
-The centre of Crikvenica is about 3 km away. There you can do your daily shopping and find numerous restaurants, cafés, bars and ice-cream parlours, as well as many sports activities on water and on land.
+La casa unisce elementi tradizionali e moderni. Il riscaldamento centralizzato garantisce comfort nei mesi più freschi e tutte le camere da letto sono climatizzate.
 
-On request, we are happy to reserve a boat berth for you in the harbour of Crikvenica.
+Villa Milka ospita da quattro a sei persone su due piani e nel sottotetto ristrutturato. Al piano terra si trovano il soggiorno con TV satellitare e lettore DVD, oltre a una cucina abitabile confortevole con piano cottura e forno a gas, grande frigorifero con congelatore, lavastoviglie, microonde, macchina da caffè e tostapane. Al piano terra è presente anche un WC.
 
-Bicycles can be rented.`,
-  hr: `Villa Milka smještena je na vrlo mirnoj lokaciji te pruža prekrasan pogled na Kvarnerski zaljev i otok Krk. Posebnost kuće je veliki, njegovani vrt s bazenom veličine 6 m x 4 m. Uz bazen su vam na raspolaganju tuš, suncobran i ležaljke. Ugodna natkrivena terasa s vanjskim roštiljem/kaminom obećava opuštajuće dane odmora.
+Al primo piano si trovano due camere matrimoniali, una con accesso diretto al bagno con doccia e WC. Nella seconda camera matrimoniale sono integrati vasca e lavabo, mentre il WC si trova nel corridoio. Da entrambe le camere si gode una bella vista sul mare.
 
-Uređenje kuće spaja tradicionalne i moderne elemente. Kuća ima centralno grijanje. Sve spavaće sobe su klimatizirane.
+Il sottotetto offre un’ulteriore camera doppia o twin con doccia e WC integrati, raggiungibile tramite una scala separata. È disponibile anche una lavatrice.
 
-Kuća prima 4 do 6 osoba:
-Od ulaza ulazite izravno u prizemlje. Odmah desno nalazi se dnevni boravak sa satelitskom TV i DVD uređajem. Udobna kuhinja s blagovaonicom opremljena je pločom za kuhanje i pećnicom (plin), velikim hladnjakom sa zamrzivačem, perilicom posuđa, mikrovalnom pećnicom, aparatom za kavu i tosterom. U prizemlju se nalazi i WC.
-
-Unutarnje stepenice vode na prvi kat. Ondje se nalaze dvije dvokrevetne spavaće sobe, od kojih jedna ima izravan pristup kupaonici s tušem i WC-om. U drugoj dvokrevetnoj sobi integrirani su kada i umivaonik, dok se toaleta nalazi u hodniku. Iz obje sobe pruža se prekrasan pogled na more.
-
-U potkrovlju se nalazi dodatna soba s dva odvojena kreveta (dvokrevetna), s integriranim tušem i WC-om, dostupna s prvog kata preko zasebnog ulaza. Na raspolaganju je i perilica rublja.
-
-U prednjem dijelu kuće/vrta nalazi se lijepo dvorište. Tu je i zasebna prostorija koja se može koristiti kao igraonica. Iz dvorišta se izravno dolazi do bazena. Velika natkrivena sjedeća zona s roštiljem/kaminom nalazi se odmah uz bazen. Tamo su dostupni suncobran, ležaljke i vrtni tuš.
-
-Parkirno mjesto nalazi se odmah uz kuću. Oko kuće je mediteranski vrt s mnogim biljnim vrstama karakterističnima za ovo područje.
-
-Do centra Crikvenice ima oko 3 km. Tamo možete obaviti svakodnevnu kupnju te pronaći brojne restorane, kafiće, barove i slastičarnice, kao i mnoge sportske aktivnosti na vodi i kopnu.
-
-Na zahtjev rado rezerviramo vez za brod u luci Crikvenica.
-
-Moguće je unajmiti bicikle.`,
-  it: `Villa Milka si trova in una posizione molto tranquilla e offre una splendida vista sul Golfo del Quarnero e sull’isola di Krk. Il punto forte della casa è l’ampio giardino curato con piscina di 6 m x 4 m. Accanto alla piscina sono disponibili doccia, ombrellone e lettini. La graziosa terrazza coperta con camino/barbecue promette giornate di vacanza piacevoli e rilassanti.
-
-Gli interni uniscono elementi tradizionali e moderni. La casa dispone di riscaldamento centralizzato. Tutte le camere da letto sono climatizzate.
-
-La casa ospita da 4 a 6 persone:
-Dall’ingresso si accede direttamente al piano terra. Subito a destra si trova il soggiorno con TV satellitare e lettore DVD. La cucina abitabile è attrezzata con piano cottura e forno (gas), grande frigorifero con congelatore, lavastoviglie, microonde, macchina da caffè e tostapane. Al piano terra è presente anche un WC.
-
-Una scala interna conduce al primo piano, dove si trovano due camere matrimoniali: una con accesso diretto al bagno con doccia e WC. Nella seconda camera matrimoniale sono integrati vasca e lavabo; il WC si trova nel corridoio. Da entrambe le camere si gode una meravigliosa vista sul mare.
-
-Nel sottotetto c’è un’ulteriore camera doppia (letti separati) con doccia e WC integrati, raggiungibile dal primo piano tramite un ingresso separato. È disponibile anche una lavatrice.
-
-La casa dispone di un bel cortile nella parte anteriore del giardino/della casa. Qui si trova anche una stanza separata che può essere utilizzata come sala giochi. Dal cortile si accede direttamente alla piscina. Accanto alla piscina c’è un’ampia zona coperta con posti a sedere e camino/barbecue. Sono disponibili ombrellone, lettini e doccia da giardino.
-
-Il posto auto si trova direttamente accanto alla casa. Intorno alla casa si estende un giardino mediterraneo con molte specie vegetali locali.
-
-Il centro di Crikvenica dista circa 3 km. Qui potete fare la spesa quotidiana e trovare numerosi ristoranti, caffè, bar e gelaterie, oltre a molte attività sportive in acqua e a terra.
-
-Su richiesta saremo lieti di prenotare un posto barca nel porto di Crikvenica.
-
-È possibile noleggiare biciclette.`,
+Davanti alla casa c’è un piacevole cortile con un’ulteriore stanza che può essere utilizzata come sala giochi. Da lì si accede direttamente alla piscina, accanto alla quale si trova un’ampia zona coperta con posti a sedere e camino/barbecue. Il parcheggio è accanto alla casa e un giardino mediterraneo con piante locali completa l’atmosfera tranquilla.`,
     },
-    bedrooms: 2,
-    bathrooms: 1,
+    bedrooms: "2 + 1",
+    bathrooms: "2 + 1",
     maxGuests: "4 + 2",
   },
   {
     name: "Villa Vesna",
     descriptions: {
-      en: "Spacious stone villa with pool, terrace, and BBQ area. Perfect for families or groups.",
-      de: "Große Villa mit Pool, Terrasse und Grillbereich — ideal für Familien oder Gruppen.",
-      hr: "Prostrana vila s bazenom, terasom i roštiljem — savršeno za obitelji ili grupe.",
-      it: "Villa spaziosa con piscina, terrazza e area barbecue — perfetta per famiglie o gruppi.",
+      en: "Spacious multi-level stone villa with pool, veranda, and garden for larger families or groups.",
+      de: "Geräumige Steinvilla auf mehreren Ebenen mit Pool, Veranda und Garten für größere Familien oder Gruppen.",
+      hr: "Prostrana kamena vila na više etaža s bazenom, verandom i vrtom za veće obitelji ili grupe.",
+      it: "Ampia villa in pietra su più livelli con piscina, veranda e giardino, ideale per famiglie o gruppi.",
     },
     longDescriptions: {
-  de: `Die Villa Vesna ist sehr ruhig gelegen und bietet einen wunderschönen Blick auf die Kvarner Bucht und die Insel Krk. Das Highlight dieses Hauses ist der gepflegte und große Garten mit einem 8m x 4,5m großen Swimmingpool. Eine Dusche, Sonnenschirm und Liegestühle stehen Ihnen gleich neben dem Pool zur Verfügung. Die gemütliche und schöne überdachte Terrasse mit Grillkamin verspricht angenehme und erholsame Urlaubstage.
+      de: `Villa Vesna liegt sehr ruhig und bietet einen weiten Blick über die Kvarner Bucht und die Insel Krk. Das Highlight ist der große Garten mit einem 8 x 4,5 Meter großen Pool. Direkt am Pool stehen Dusche, Sonnenschirm und Liegestühle bereit, und die überdachte Terrasse mit Grillkamin lädt zu entspannten Urlaubstagen ein.
 
-Die Einrichtung des Hauses vereint traditionelle und moderne Elemente. Alle Schlafzimmer sind klimatisiert.
+Das Haus verbindet traditionelle und moderne Elemente, und alle Schlafzimmer sind klimatisiert.
 
-Das Haus bietet Platz für 8 Personen. Das Haus hat mehrere Ebenen und so auch mehrere Eingänge von verschiedenen Seiten.
+Villa Vesna bietet Platz für acht Gäste auf mehreren Ebenen und mit Eingängen von verschiedenen Seiten. Vom Innenhof gelangt man direkt in das Wohnzimmer mit SAT-TV und DVD. Innentreppen führen in den Flur des Hochparterres, von dem aus zwei Doppelzimmer erreichbar sind, jeweils mit eigenem Bad.
 
-Vom Innenhof aus gelangen Sie direkt in das Wohnzimmer mit SAT-TV und DVD. Vom Wohnzimmer führen Innentreppen in den Flur des Hochparterres. Vom Flur aus links und rechts erreichen Sie zwei Doppelschlafzimmer – jeweils mit eigenem Badezimmer mit Dusche und WC.
+Eine Treppe führt weiter zur Zwischenetage mit rustikalem Esszimmer, offenem Kamin und SAT-TV sowie zur voll ausgestatteten Küche mit Gasherd, Backofen, großem Kühlschrank mit Gefrierfach, Spülmaschine, Mikrowelle, Kaffeemaschine und Toaster. Eine Waschmaschine ist ebenfalls vorhanden.
 
-Vom Flur aus führt eine Treppe in die Zwischenetage. Hier befindet sich ein wunderschönes rustikales Esszimmer mit offenem Kamin und SAT-TV. Vom Esszimmer aus gelangen Sie direkt in die Küche, die mit Herd und Backofen (Gas), großem Kühlschrank mit Gefrierfach, Spülmaschine, Mikrowelle, Kaffeemaschine und Toaster ausgestattet ist. Ebenso steht Ihnen eine Waschmaschine zur Verfügung.
+Von der Küche gelangen Sie direkt auf die überdachte Veranda mit offenem Grillkamin. Im zweiten Stock befinden sich zwei weitere Doppelzimmer, jeweils mit eigenem Bad mit Dusche und WC.
 
-Von der Küche aus haben Sie einen direkten Ausgang zur überdachten Veranda mit offenem Grillkamin. Von der Zwischenetage führen weitere Treppen in die zweite Etage. Hier befinden sich zwei weitere Doppelschlafzimmer – jeweils mit eigenem Badezimmer mit Dusche und WC.
+Von der Veranda geht es direkt zum Pool, daneben stehen eine Solardusche, Sonnenliegen und ein weiterer Außenbereich im Innenhof zur Verfügung. Ein Parkplatz liegt direkt neben dem Haus, und der mediterrane Garten mit regionalen Pflanzen rundet die ruhige Atmosphäre ab.`,
+      en: `Villa Vesna is set in a very quiet location and offers beautiful views over the Kvarner Bay and the island of Krk. The highlight is the large garden with an 8 x 4.5 metre pool. A shower, parasol, and sun loungers are available next to the pool, while the covered terrace with a barbecue fireplace is made for slow, relaxing holiday days.
 
-Von der Veranda gelangen Sie direkt zum Swimmingpool. Eine Solardusche, Sonnenschirm und Liegestühle stehen Ihnen neben dem Pool zur Verfügung. Eine weitere Dusche und Toilette befindet sich im Innenhof.
+The house combines traditional and modern elements, and all bedrooms are air-conditioned.
 
-Ein Stellplatz für Ihr Auto befindet sich direkt neben dem Haus. Rund um das Haus ist eine mediterrane Gartenanlage mit vielen Pflanzarten aus dieser Gegend entstanden.
+Villa Vesna accommodates eight guests across several levels and entrances from different sides. From the courtyard you enter the living room with satellite TV and DVD. Internal stairs lead to the hallway on the raised ground floor, where two double bedrooms can be reached, each with its own bathroom.
 
-Bis zum Zentrum von Crikvenica sind es ca. 3km, dort können Sie Ihren täglichen Einkauf erledigen, hier finden Sie zahlreiche Restaurants, Cafés, Bars und Eisdielen und viele Sportmöglichkeiten sowohl zu Wasser als auch an Land.
+A staircase leads to the mezzanine level with a rustic dining room, open fireplace, and satellite TV, as well as a fully equipped kitchen with a gas hob and oven, large fridge with freezer compartment, dishwasher, microwave, coffee machine, and toaster. A washing machine is also available.
 
-Auf Wunsch reservieren wir Ihnen gerne einen Bootsliegeplatz im Hafen von Crikvenica.
+From the kitchen you step directly onto the covered veranda with an open barbecue fireplace. On the second floor there are two additional double bedrooms, each with its own bathroom with shower and WC.
 
-Fahrräder können angemietet werden.`,
-  en: `Villa Vesna is set in a very quiet location and offers beautiful views over the Kvarner Bay and the island of Krk. The highlight of this house is the large, well-kept garden with an 8 m x 4.5 m swimming pool. A shower, parasol and sun loungers are available right next to the pool. The cosy covered terrace with BBQ fireplace promises pleasant and relaxing holiday days.
+From the veranda you can go straight to the pool, with a solar shower, sun loungers, and an additional outdoor WC available in the courtyard. Parking sits right beside the house, and the Mediterranean garden with local plants completes the setting.`,
+      hr: `Villa Vesna smještena je na vrlo mirnoj lokaciji i pruža prekrasan pogled na Kvarnerski zaljev i otok Krk. Posebnost kuće je veliki vrt s bazenom veličine 8 x 4,5 metra. Uz bazen su vam na raspolaganju tuš, suncobran i ležaljke, a natkrivena terasa s vanjskim roštiljem/kaminom idealna je za opuštene dane odmora.
 
-The interior combines traditional and modern elements. All bedrooms are air-conditioned.
+Kuća spaja tradicionalne i moderne elemente, a sve spavaće sobe su klimatizirane.
 
-The house accommodates 8 guests. It has several levels and therefore several entrances from different sides.
+Villa Vesna prima osam gostiju na više etaža i s ulazima s različitih strana. Iz dvorišta se ulazi izravno u dnevni boravak sa satelitskom TV i DVD-om. Unutarnje stepenice vode u hodnik povišenog prizemlja, odakle se dolazi do dviju dvokrevetnih spavaćih soba, svake sa svojom kupaonicom.
 
-From the courtyard you enter directly into the living room with satellite TV and DVD. Internal stairs lead from the living room to the hallway on the raised ground floor. From the hallway, to the left and right, you reach two double bedrooms – each with its own bathroom with shower and WC.
+Stepenice vode na međukat s rustikalnom blagovaonicom, otvorenim kaminom i satelitskom TV te potpuno opremljenom kuhinjom s plinskom pločom za kuhanje i pećnicom, velikim hladnjakom sa zamrzivačem, perilicom posuđa, mikrovalnom pećnicom, aparatom za kavu i tosterom. Na raspolaganju je i perilica rublja.
 
-From the hallway a staircase leads to the mezzanine level. Here you will find a beautiful rustic dining room with an open fireplace and satellite TV. From the dining room you access the kitchen, equipped with a hob and oven (gas), large fridge with freezer compartment, dishwasher, microwave, coffee machine and toaster. A washing machine is also available.
+Iz kuhinje se izlazi izravno na natkrivenu verandu s otvorenim roštiljem/kaminom. Na drugom katu nalaze se još dvije dvokrevetne spavaće sobe, svaka sa svojom kupaonicom s tušem i WC-om.
 
-From the kitchen you have direct access to the covered veranda with an open BBQ fireplace. Further stairs lead from the mezzanine to the second floor, where there are two additional double bedrooms – each with its own bathroom with shower and WC.
+S verande se ide ravno do bazena, a uz njega su dostupni solarni tuš, ležaljke i dodatni vanjski WC u dvorištu. Parkiralište je odmah uz kuću, a mediteranski vrt s lokalnim biljem zaokružuje mirnu atmosferu.`,
+      it: `Villa Vesna si trova in una posizione molto tranquilla e offre una splendida vista sul Golfo del Quarnero e sull’isola di Krk. Il punto forte della casa è l’ampio giardino con piscina di 8 x 4,5 metri. Accanto alla piscina sono disponibili doccia, ombrellone e lettini, mentre la terrazza coperta con camino/barbecue è perfetta per giornate di vacanza lente e rilassanti.
 
-From the veranda you can go directly to the swimming pool. A solar shower, parasol and sun loungers are available next to the pool. Another shower and a toilet are located in the courtyard.
+La casa unisce elementi tradizionali e moderni e tutte le camere da letto sono climatizzate.
 
-Parking is available directly next to the house. Surrounding the house is a Mediterranean garden with many local plant species.
+Villa Vesna ospita otto persone su più livelli e con ingressi da lati diversi. Dal cortile si accede direttamente al soggiorno con TV satellitare e DVD. Le scale interne conducono al corridoio del piano rialzato, dove si trovano due camere matrimoniali, ciascuna con bagno privato.
 
-The centre of Crikvenica is about 3 km away. There you can do your daily shopping and find numerous restaurants, cafés, bars and ice-cream parlours, as well as many sports activities on water and on land.
+Una scala porta al piano ammezzato con una sala da pranzo rustica, camino aperto e TV satellitare, oltre a una cucina completamente attrezzata con piano cottura e forno a gas, grande frigorifero con congelatore, lavastoviglie, microonde, macchina da caffè e tostapane. È disponibile anche una lavatrice.
 
-On request, we are happy to reserve a boat berth for you in the harbour of Crikvenica.
+Dalla cucina si accede direttamente alla veranda coperta con camino/barbecue aperto. Al secondo piano si trovano altre due camere matrimoniali, ciascuna con il proprio bagno con doccia e WC.
 
-Bicycles can be rented.`,
-  hr: `Villa Vesna smještena je na vrlo mirnoj lokaciji te pruža prekrasan pogled na Kvarnerski zaljev i otok Krk. Posebnost kuće je veliki, njegovani vrt s bazenom veličine 8 m x 4,5 m. Uz bazen su vam na raspolaganju tuš, suncobran i ležaljke. Ugodna natkrivena terasa s vanjskim roštiljem/kaminom obećava opuštajuće dane odmora.
-
-Uređenje kuće spaja tradicionalne i moderne elemente. Sve spavaće sobe su klimatizirane.
-
-Kuća prima 8 osoba. Kuća ima više etaža te stoga i više ulaza s različitih strana.
-
-Iz dvorišta se ulazi izravno u dnevni boravak sa satelitskom TV i DVD-om. Unutarnje stepenice iz dnevnog boravka vode u hodnik povišenog prizemlja. Iz hodnika lijevo i desno nalaze se dvije dvokrevetne spavaće sobe – svaka sa svojom kupaonicom s tušem i WC-om.
-
-Iz hodnika stepenice vode na međukat. Ovdje se nalazi prekrasna rustikalna blagovaonica s otvorenim kaminom i satelitskom TV. Iz blagovaonice se ulazi u kuhinju, opremljenu pločom za kuhanje i pećnicom (plin), velikim hladnjakom sa zamrzivačem, perilicom posuđa, mikrovalnom pećnicom, aparatom za kavu i tosterom. Na raspolaganju je i perilica rublja.
-
-Iz kuhinje imate izravan izlaz na natkrivenu verandu s otvorenim roštiljem/kaminom. Daljnje stepenice vode s međukata na drugi kat, gdje se nalaze još dvije dvokrevetne spavaće sobe – svaka sa svojom kupaonicom s tušem i WC-om.
-
-S verande se izravno dolazi do bazena. Uz bazen su dostupni solarni tuš, suncobran i ležaljke. Dodatni tuš i toaleta nalaze se u dvorištu.
-
-Parkirno mjesto nalazi se odmah uz kuću. Oko kuće je mediteranski vrt s mnogim biljnim vrstama karakterističnima za ovo područje.
-
-Do centra Crikvenice ima oko 3 km. Tamo možete obaviti svakodnevnu kupnju te pronaći brojne restorane, kafiće, barove i slastičarnice, kao i mnoge sportske aktivnosti na vodi i kopnu.
-
-Na zahtjev rado rezerviramo vez za brod u luci Crikvenica.
-
-Moguće je unajmiti bicikle.`,
-  it: `Villa Vesna si trova in una posizione molto tranquilla e offre una splendida vista sul Golfo del Quarnero e sull’isola di Krk. Il punto forte della casa è l’ampio giardino curato con piscina di 8 m x 4,5 m. Accanto alla piscina sono disponibili doccia, ombrellone e lettini. La graziosa terrazza coperta con camino/barbecue promette giornate di vacanza piacevoli e rilassanti.
-
-Gli interni uniscono elementi tradizionali e moderni. Tutte le camere da letto sono climatizzate.
-
-La casa ospita 8 persone. La villa si sviluppa su più livelli e dispone quindi di più ingressi da lati diversi.
-
-Dal cortile si accede direttamente al soggiorno con TV satellitare e DVD. Dal soggiorno una scala interna conduce al corridoio del piano rialzato. Dal corridoio, a sinistra e a destra, si raggiungono due camere matrimoniali – ciascuna con bagno privato con doccia e WC.
-
-Dal corridoio una scala porta al piano ammezzato. Qui si trova una bellissima sala da pranzo rustica con camino aperto e TV satellitare. Dalla sala da pranzo si accede alla cucina, attrezzata con piano cottura e forno (gas), grande frigorifero con congelatore, lavastoviglie, microonde, macchina da caffè e tostapane. È disponibile anche una lavatrice.
-
-Dalla cucina si accede direttamente alla veranda coperta con camino/barbecue aperto. Ulteriori scale conducono dall’ammezzato al secondo piano, dove si trovano altre due camere matrimoniali – ciascuna con bagno privato con doccia e WC.
-
-Dalla veranda si raggiunge direttamente la piscina. Accanto alla piscina sono disponibili doccia solare, ombrellone e lettini. Nel cortile si trovano un’ulteriore doccia e un WC.
-
-Il posto auto si trova direttamente accanto alla casa. Intorno alla casa si estende un giardino mediterraneo con molte specie vegetali locali.
-
-Il centro di Crikvenica dista circa 3 km. Qui potete fare la spesa quotidiana e trovare numerosi ristoranti, caffè, bar e gelaterie, oltre a molte attività sportive in acqua e a terra.
-
-Su richiesta saremo lieti di prenotare un posto barca nel porto di Crikvenica.
-
-È possibile noleggiare biciclette.`,
+Dalla veranda si arriva direttamente alla piscina, con doccia solare, lettini e un ulteriore WC esterno nel cortile. Il parcheggio è accanto alla casa e il giardino mediterraneo con piante locali completa l’atmosfera tranquilla.`,
     },
     bedrooms: 4,
-    bathrooms: 2,
+    bathrooms: 4,
     maxGuests: "6 + 2",
   },
 ] as const;

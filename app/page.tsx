@@ -72,7 +72,7 @@ export default async function Home() {
         <section id="contact" className="scroll-mt-16 pb-20 sm:pb-28">
           <Reveal>
             <div className="rounded-3xl border border-foreground/10 bg-background/60 p-6 backdrop-blur-sm sm:p-10">
-              <div className="grid gap-10 lg:grid-cols-2 lg:items-start">
+              <div className="grid gap-10">
                 <div>
                   <p className="text-xs font-medium tracking-[0.22em] text-foreground/60">
                     {t("sections.contact.kicker")}
@@ -80,21 +80,6 @@ export default async function Home() {
                   <h2 className="mt-4 text-2xl font-semibold tracking-[-0.02em] sm:text-3xl">
                     {t("sections.contact.title")}
                   </h2>
-                  <p className="mt-4 text-sm leading-6 text-foreground/70 sm:text-base">
-                    {t("sections.contact.text")}
-                  </p>
-
-                  <div className="mt-6 rounded-2xl border border-foreground/10 bg-background p-5">
-                    <p className="text-sm text-foreground/70">
-                      <span className="font-medium text-foreground/85">{t("contact.emailLabel")}</span>{" "}
-                      <a
-                        href="mailto:info@crikvenica-villas.com"
-                        className="text-foreground underline underline-offset-4"
-                      >
-                        info@crikvenica-villas.com
-                      </a>
-                    </p>
-                  </div>
                 </div>
 
                 <ContactForm

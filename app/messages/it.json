@@ -1,29 +1,29 @@
 {
   "hero": {
-    "headline": "Tre ville eccezionali a Crikvenica",
-    "subheadline": "Soggiorni privati • Fascino mediterraneo • Contatta direttamente il proprietario",
+    "headline": "Benvenuti a Three Stone Villas",
+    "subheadline": "Arroccato sopra il Mare Adriatico, Three Stone Villas è una raccolta di ville in pietra restaurate a Crikvenica, sulla costa del Quarnero in Croazia.",
     "cta": "Esplora le ville",
-    "note": "Richieste dirette — usa il modulo di contatto qui sotto"
+    "note": "Circondate da vigneti, uliveti e erbe mediterranee"
   },
   "sections": {
     "villas": {
       "title": "Ville",
-      "subtitle": "Tre soggiorni diversi — carattere, comfort e contatto diretto con il proprietario."
+      "subtitle": "Dimore storiche in pietra con comfort moderno, privacy e un forte carattere familiare."
     },
     "contact": {
       "kicker": "CONTATTO",
-      "title": "Contatta il proprietario",
-      "text": "Invia una richiesta su disponibilità e dettagli — ti risponderemo via e‑mail."
+      "title": "Contattaci",
+      "text": "Invia una richiesta e ti risponderemo via e-mail."
     },
     "location": {
       "kicker": "POSIZIONE",
       "title": "Crikvenica, Croazia",
-      "text": "Sulla costa adriatica della Croazia — a soli 30 minuti dall’aeroporto di Rijeka.",
+      "text": "Sulla costa del Quarnero in Croazia, circondata da mare, colline e verde mediterraneo.",
       "mapTitle": "Mappa di Crikvenica, Croazia"
     }
   },
   "villa": {
-    "ctaContact": "Contatta il proprietario"
+    "ctaContact": "Contattaci"
   },
   "contact": {
     "emailLabel": "Email:",
@@ -31,7 +31,7 @@
     "nameLabel": "Nome",
     "yourEmailLabel": "La tua email",
     "messageLabel": "Messaggio",
-    "submit": "Invia messaggio",
+    "submit": "Invia richiesta",
     "sending": "Invio…",
     "successTitle": "Messaggio inviato",
     "successText": "Grazie — risponderemo presto via email.",
@@ -50,8 +50,8 @@
     "sleeps": "Ospiti"
   },
   "footer": {
-    "copyright": "© 2026 Crikvenica Villas",
-    "disclaimer": "Contatto diretto con il proprietario"
+    "copyright": "© 2026 Three Stone Villas",
+    "disclaimer": "Proprietà di famiglia"
   },
   "language": {
     "label": "Lingua"
