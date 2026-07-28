@@ -9,8 +9,8 @@ type VillaCardProps = {
   name: string;
   description: string;
   longDescription: string;
-  bedrooms: number;
-  bathrooms: number;
+  bedrooms: number | string;
+  bathrooms: number | string;
   maxGuests: string | null;
   images: readonly string[];
   index: number;
