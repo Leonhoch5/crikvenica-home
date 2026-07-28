@@ -1,14 +1,22 @@
 {
   "hero": {
     "headline": "Welcome to Three Stone Villas",
-    "subheadline": "Perched above the Adriatic Sea, Three Stone Villas is a collection of restored stone villas in Crikvenica on Croatia's Kvarner coast.",
+    "subheadline": "Perched on a peaceful hillside above the Adriatic Sea, Three Stone Villas is a unique collection of three beautifully restored stone villas in Crikvenica, on Croatia's stunning Kvarner coast.",
     "cta": "Explore the villas",
-    "note": "Surrounded by vineyards, olive groves, and Mediterranean herbs"
+    "note": "Surrounded by vineyards, olive groves, lavender, rosemary, and fragrant Mediterranean herbs"
   },
   "sections": {
+    "story": {
+      "paragraph1": "Perched on a peaceful hillside above the Adriatic Sea, Three Stone Villas is a unique collection of three beautifully restored stone villas in Crikvenica, on Croatia's stunning Kvarner coast.",
+      "paragraph2": "Surrounded by vineyards, olive groves, lavender, rosemary, and fragrant Mediterranean herbs, the property captures the authentic spirit of Croatia's Kvarner coast while offering every modern comfort.",
+      "paragraph3": "Set within nearly 2,000 m² of landscaped grounds, the property comprises three carefully restored 19th-century stone villas. Renovated in 2007, each villa preserves the character of a traditional stara primorska kuća—the authentic stone houses of the Primorje region—while providing the comfort, privacy, and amenities expected of a luxury holiday home.",
+      "paragraph4": "Our vineyard and olive grove were planted in 2008 and remain a cherished family project. Although we do not live on the property, you may occasionally see us caring for the vines, olive trees, and gardens to ensure they flourish throughout the seasons. We invite you to enjoy the fresh herbs growing around the villas, adding the flavours and aromas of the Mediterranean to your meals.",
+      "paragraph5": "Whether you are planning a romantic escape, a relaxing family holiday, or a memorable gathering with friends, Three Stone Villas offers an unforgettable retreat where heritage, nature, and contemporary comfort come together.",
+      "signoff": "The Stojčić Family"
+    },
     "villas": {
       "title": "Villas",
-      "subtitle": "Historic stone homes with modern comfort, privacy, and a strong family character."
+      "subtitle": "Set within nearly 2,000 m² of landscaped grounds, the property comprises three carefully restored 19th-century stone villas."
     },
     "contact": {
       "kicker": "CONTACT",

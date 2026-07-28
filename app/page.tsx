@@ -1,3 +1,4 @@
+// filepath: /home/leon/projects/crikvenica-home/app/page.tsx
 import { Footer } from "./components/Footer";
 import { Hero } from "./components/Hero";
 import { ContactForm } from "./components/ContactForm";
@@ -28,6 +29,31 @@ export default async function Home() {
       />
 
       <main className="mx-auto max-w-6xl px-6">
+        <section className="pb-16 pt-2 sm:pb-20">
+          <Reveal>
+            <div className="max-w-3xl">
+              <p className="text-sm leading-7 text-foreground/75 sm:text-base">
+                {t("sections.story.paragraph1")}
+              </p>
+              <p className="mt-5 text-sm leading-7 text-foreground/75 sm:text-base">
+                {t("sections.story.paragraph2")}
+              </p>
+              <p className="mt-5 text-sm leading-7 text-foreground/75 sm:text-base">
+                {t("sections.story.paragraph3")}
+              </p>
+              <p className="mt-5 text-sm leading-7 text-foreground/75 sm:text-base">
+                {t("sections.story.paragraph4")}
+              </p>
+              <p className="mt-5 text-sm leading-7 text-foreground/75 sm:text-base">
+                {t("sections.story.paragraph5")}
+              </p>
+              <p className="mt-5 text-sm font-medium leading-7 text-foreground/85 sm:text-base">
+                {t("sections.story.signoff")}
+              </p>
+            </div>
+          </Reveal>
+        </section>
+
         <section id="villas" className="scroll-mt-16 pb-16 pt-4 sm:pb-24">
           <Reveal>
             <div className="flex flex-col gap-3">
