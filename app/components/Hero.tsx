@@ -14,7 +14,7 @@ export function Hero({ locale, headline, subheadline, ctaExplore, note, language
   return (
     <section className="relative overflow-hidden">
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(1400px_700px_at_20%_0%,color-mix(in_srgb,var(--foreground)_10%,transparent),transparent_60%),radial-gradient(900px_600px_at_90%_10%,color-mix(in_srgb,var(--foreground)_8%,transparent),transparent_60%)]" />
-      <div className="mx-auto max-w-6xl px-6 pb-14 pt-20 sm:pb-20 sm:pt-28">
+      <div className="mx-auto max-w-6xl px-4 pb-14 pt-20 sm:px-5 sm:pb-20 sm:pt-28">
         <div className="flex items-center justify-between gap-6">
           <Reveal>
             <p className="text-xs font-medium tracking-[0.22em] text-foreground/60">

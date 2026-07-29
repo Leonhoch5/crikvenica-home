@@ -1,4 +1,3 @@
-// filepath: /home/leon/projects/crikvenica-home/app/page.tsx
 import { Footer } from "./components/Footer";
 import { Hero } from "./components/Hero";
 import { ContactForm } from "./components/ContactForm";
@@ -27,72 +26,64 @@ export default async function Home() {
         note={t("hero.note")}
         languageLabel={t("language.label")}
       />
-
-      <main className="mx-auto max-w-6xl px-6">
+      <main className="mx-auto max-w-6xl px-4 sm:px-5">
         <section className="pb-16 pt-2 sm:pb-20">
           <Reveal>
-            <div className="max-w-3xl">
-              <p className="text-sm leading-7 text-foreground/75 sm:text-base">
-                {t("sections.story.paragraph1")}
-              </p>
-              <p className="mt-5 text-sm leading-7 text-foreground/75 sm:text-base">
-                {t("sections.story.paragraph2")}
-              </p>
-              <p className="mt-5 text-sm leading-7 text-foreground/75 sm:text-base">
-                {t("sections.story.paragraph3")}
-              </p>
-              <p className="mt-5 text-sm leading-7 text-foreground/75 sm:text-base">
-                {t("sections.story.paragraph4")}
-              </p>
-              <p className="mt-5 text-sm leading-7 text-foreground/75 sm:text-base">
-                {t("sections.story.paragraph5")}
-              </p>
-              <p className="mt-5 text-sm font-medium leading-7 text-foreground/85 sm:text-base">
-                {t("sections.story.signoff")}
-              </p>
+            <div className="rounded-3xl border border-foreground/10 bg-background/60 p-6 backdrop-blur-sm sm:p-8">
+              <div className="grid gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:items-start">
+                <div className="max-w-3xl">
+                  <p className="text-sm leading-7 text-foreground/75 sm:text-base">
+                    {t("sections.story.paragraph1")}
+                  </p>
+                  <p className="mt-5 text-sm leading-7 text-foreground/75 sm:text-base">
+                    {t("sections.story.paragraph2")}
+                  </p>
+                  <p className="mt-5 text-sm leading-7 text-foreground/75 sm:text-base">
+                    {t("sections.story.paragraph3")}
+                  </p>
+                  <p className="mt-5 text-sm leading-7 text-foreground/75 sm:text-base">
+                    {t("sections.story.paragraph4")}
+                  </p>
+                  <p className="mt-5 text-sm leading-7 text-foreground/75 sm:text-base">
+                    {t("sections.story.paragraph5")}
+                  </p>
+                  <p className="mt-5 text-sm font-medium leading-7 text-foreground/85 sm:text-base">
+                    {t("sections.story.signoff")}
+                  </p>
+                </div>
+
+                <div className="flex flex-col gap-3 lg:max-w-[24rem] lg:justify-self-end">
+                  {villas.slice(0, 3).map((villa, index) => (
+                    <div key={villa.name} className="w-full">
+                      <VillaCard
+                        compact
+                        name={villa.name}
+                        description={villa.descriptions[safeLocale]}
+                        longDescription={villa.longDescriptions[safeLocale]}
+                        bedrooms={villa.bedrooms}
+                        bathrooms={villa.bathrooms}
+                        maxGuests={villa.maxGuests}
+                        images={villaImagesByName[villa.name]}
+                        index={index}
+                        ctaLabel={t("villa.ctaContact")}
+                        amenityLabels={{
+                          pool: t("amenities.pool"),
+                          wifi: t("amenities.wifi"),
+                          parking: t("amenities.parking"),
+                          ac: t("amenities.ac"),
+                        }}
+                        factLabels={{
+                          bedrooms: t("facts.bedrooms"),
+                          bathrooms: t("facts.bathrooms"),
+                          sleeps: t("facts.sleeps"),
+                        }}
+                      />
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           </Reveal>
-        </section>
-
-        <section id="villas" className="scroll-mt-16 pb-16 pt-4 sm:pb-24">
-          <Reveal>
-            <div className="flex flex-col gap-3">
-              <h2 className="text-2xl font-semibold tracking-[-0.02em] sm:text-3xl">
-                {t("sections.villas.title")}
-              </h2>
-              <p className="max-w-2xl text-sm leading-6 text-foreground/70 sm:text-base">
-                {t("sections.villas.subtitle")}
-              </p>
-            </div>
-          </Reveal>
-
-          <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {villas.map((villa, index) => (
-              <VillaCard
-                key={villa.name}
-                name={villa.name}
-                description={villa.descriptions[safeLocale]}
-                longDescription={villa.longDescriptions[safeLocale]}
-                bedrooms={villa.bedrooms}
-                bathrooms={villa.bathrooms}
-                maxGuests={villa.maxGuests}
-                images={villaImagesByName[villa.name]}
-                index={index}
-                ctaLabel={t("villa.ctaContact")}
-                amenityLabels={{
-                  pool: t("amenities.pool"),
-                  wifi: t("amenities.wifi"),
-                  parking: t("amenities.parking"),
-                  ac: t("amenities.ac"),
-                }}
-                factLabels={{
-                  bedrooms: t("facts.bedrooms"),
-                  bathrooms: t("facts.bathrooms"),
-                  sleeps: t("facts.sleeps"),
-                }}
-              />
-            ))}
-          </div>
         </section>
 
         <section id="contact" className="scroll-mt-16 pb-20 sm:pb-28">

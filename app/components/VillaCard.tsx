@@ -15,6 +15,7 @@ type VillaCardProps = {
   images: readonly string[];
   index: number;
   ctaLabel: string;
+  compact?: boolean;
   amenityLabels: {
     pool: string;
     wifi: string;
@@ -38,6 +39,7 @@ export function VillaCard({
   images,
   index,
   ctaLabel,
+  compact = false,
   amenityLabels,
   factLabels,
 }: VillaCardProps) {
@@ -87,7 +89,7 @@ export function VillaCard({
   return (
     <Reveal delayMs={Math.min(index * 80, 240)}>
       <article
-        className="group flex h-full cursor-pointer flex-col rounded-3xl border border-foreground/10 bg-background/60 p-3 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-foreground/20 hover:bg-background"
+        className={`group flex h-full cursor-pointer flex-col rounded-3xl border border-foreground/10 bg-background/60 ${compact ? "p-2 sm:p-3" : "p-3"} backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-foreground/20 hover:bg-background`}
         role="button"
         tabIndex={0}
         onClick={openIfNotInteractiveTarget}
@@ -103,11 +105,11 @@ export function VillaCard({
 
         {/* Card summary (title, short description, facts, amenities, CTA) */}
         <div className="flex flex-1 flex-col px-1 pb-2 pt-5">
-          <h3 className="text-xl font-semibold tracking-[-0.02em]">{name}</h3>
-          <p className="mt-2 text-sm leading-6 text-foreground/70">{description}</p>
+          <h3 className={`${compact ? "text-lg" : "text-xl"} font-semibold tracking-[-0.02em]`}>{name}</h3>
+          <p className={`mt-2 ${compact ? "text-xs leading-5" : "text-sm leading-6"} text-foreground/70`}>{description}</p>
 
           {/* Quick facts */}
-          <div className="mt-4 flex flex-wrap gap-2 text-xs text-foreground/70">
+          <div className={`mt-4 flex flex-wrap gap-2 ${compact ? "text-[11px]" : "text-xs"} text-foreground/70`}>
             <Fact label={factLabels.bedrooms} value={bedrooms} />
             <Fact label={factLabels.bathrooms} value={bathrooms} />
             {typeof maxGuests === "string" ? (
@@ -116,7 +118,7 @@ export function VillaCard({
           </div>
 
           {/* Amenity chips */}
-          <div className="mt-5 flex flex-wrap items-center gap-2 text-xs text-foreground/70">
+          <div className={`mt-5 flex flex-wrap items-center gap-2 ${compact ? "text-[11px]" : "text-xs"} text-foreground/70`}>
             <Amenity icon={<PoolIcon className="h-4 w-4" />} label={amenityLabels.pool} />
             <Amenity icon={<WifiIcon className="h-4 w-4" />} label={amenityLabels.wifi} />
             <Amenity icon={<ParkingIcon className="h-4 w-4" />} label={amenityLabels.parking} />
