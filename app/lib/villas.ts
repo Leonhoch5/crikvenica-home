@@ -10,7 +10,7 @@ export const villas = [
         longDescriptions: {
             en: `Villa Ivanka is located on a hill above the seaside resort of Crikvenica and offers beautiful views over the Kvarner Bay and the island of Krk. Far away from everyday noise and bustle, this fairytale stone house is an oasis of peace and a perfect place for a couple looking for romance as well as a touch of adventure.
 
-You will spend your holiday on a family estate of over 5,000 m² with three stone houses, surrounded by vines and olive trees. Mediterranean trees – for example three different varieties of fig – and many flower species decorate the surroundings.
+You will spend your holiday on a family estate of over 5,000 m² with Crikvenica houses, surrounded by vines and olive trees. Mediterranean trees – for example three different varieties of fig – and many flower species decorate the surroundings.
 
 Built in 1895, the houses were restored and renovated in 2008 with great attention to detail. It was important to preserve the authentic character of the buildings and combine tradition with modern comfort. The houses are furnished with antique furniture that adds traditional accents, while still offering today’s technical convenience. We kindly ask you to handle these cherished family pieces with care.
 
@@ -48,7 +48,7 @@ Auf Wunsch reservieren wir Ihnen gerne einen Bootsliegeplatz im Hafen von Crikve
 Fahrräder können angemietet werden.`,
             hr: `Villa Ivanka smještena je na mirnoj padini iznad Crikvenice i pruža širok pogled na Kvarnerski zaljev i otok Krk. Daleko od gužve, a opet blizu obale, predstavlja privatno utočište za parove koji traže romantiku i privatnost.
 
-Vila je dio Three Stone Villas, obiteljskog imanja površine gotovo 2.000 m², zasađenog vinovom lozom, maslinama, smokvama, lavandom i mirisnim mediteranskim biljem. Izvorna kamena kuća iz 1895. pažljivo je obnovljena 2008. godine te zadržava karakter tradicionalne stara primorska kuća.
+Vila je dio Crikvenica Villas, obiteljskog imanja površine gotovo 2.000 m², zasađenog vinovom lozom, maslinama, smokvama, lavandom i mirisnim mediteranskim biljem. Izvorna kamena kuća iz 1895. pažljivo je obnovljena 2008. godine te zadržava karakter tradicionalne stara primorska kuća.
 
 Vanjski prostor čini privatni mediteranski vrt s kružnim bazenom, ležaljkama, natkrivenom terasom i roštiljem. Na raspolaganju je i mali vrt začinskog bilja s ružmarinom, lavandom, bosiljkom i peršinom.
 
@@ -57,7 +57,7 @@ U prizemlju se nalaze dnevni boravak, otvorena kuhinja s blagovaonicom i kupaoni
 Bilo da doručkujete na terasi, plivate u bazenu ili gledate zalazak sunca nad morem, Villa Ivanka nudi miran bijeg u kojem se susreću baština i udobnost.`,
             it: `Villa Ivanka si trova su una tranquilla collina sopra Crikvenica e offre un’ampia vista sul Golfo del Quarnero e sull’isola di Krk. Lontana dalla folla ma vicina alla costa, è un rifugio privato per le coppie che desiderano romanticismo e privacy.
 
-La villa fa parte di Three Stone Villas, una proprietà di famiglia di quasi 2.000 m², piantata con vigneti, ulivi, fichi, lavanda ed erbe mediterranee profumate. Costruita nel 1895 e restaurata nel 2008, conserva il carattere di una tradizionale stara primorska kuća.
+La villa fa parte di Crikvenica Villas, una proprietà di famiglia di quasi 2.000 m², piantata con vigneti, ulivi, fichi, lavanda ed erbe mediterranee profumate. Costruita nel 1895 e restaurata nel 2008, conserva il carattere di una tradizionale stara primorska kuća.
 
 All’esterno, il vostro giardino mediterraneo privato dispone di una piscina circolare, lettini, terrazza coperta e barbecue. A disposizione degli ospiti c’è anche un piccolo orto di erbe aromatiche con rosmarino, lavanda, basilico e prezzemolo.
 

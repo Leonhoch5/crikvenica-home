@@ -37,7 +37,7 @@ export async function POST(request: Request) {
   const smtpPass = process.env.SMTP_PASS;
   const contactTo = process.env.CONTACT_TO;
 
-  const contactFrom = process.env.CONTACT_FROM ?? "noreply@crikvenica-villas.com";
+  const contactFrom = process.env.CONTACT_FROM;
 
   if (!smtpHost || !smtpPort || !smtpUser || !smtpPass || !contactTo) {
     return NextResponse.json(

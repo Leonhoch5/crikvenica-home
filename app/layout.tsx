@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Three Stone Villas",
+  title: "Crikvenica Villas",
   description:
     "Restored stone villas in Crikvenica on Croatia's Kvarner coast.",
 };

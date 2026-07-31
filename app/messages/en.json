@@ -1,27 +1,26 @@
 {
   "hero": {
-    "headline": "Welcome to Three Stone Villas",
-    "subheadline": "Perched on a peaceful hillside above the Adriatic Sea, Three Stone Villas is a unique collection of three beautifully restored stone villas in Crikvenica, on Croatia's stunning Kvarner coast.",
+    "headline": "Welcome to Crikvenica Villas",
+    "subheadline": "Perched on a peaceful hillside above the Adriatic Sea, Crikvenica Villas is a unique collection of three beautifully restored stone villas in Crikvenica, on Croatia's stunning Kvarner coast.",
     "cta": "Explore the villas",
     "note": "Surrounded by vineyards, olive groves, lavender, rosemary, and fragrant Mediterranean herbs"
   },
   "sections": {
     "story": {
-      "paragraph1": "Perched on a peaceful hillside above the Adriatic Sea, Three Stone Villas is a unique collection of three beautifully restored stone villas in Crikvenica, on Croatia's stunning Kvarner coast.",
+      "paragraph1": "Perched on a peaceful hillside above the Adriatic Sea, Crikvenica Villas is a unique collection of three beautifully restored stone villas in Crikvenica, on Croatia's stunning Kvarner coast.",
       "paragraph2": "Surrounded by vineyards, olive groves, lavender, rosemary, and fragrant Mediterranean herbs, the property captures the authentic spirit of Croatia's Kvarner coast while offering every modern comfort.",
-      "paragraph3": "Set within nearly 2,000 m² of landscaped grounds, the property comprises three carefully restored 19th-century stone villas. Renovated in 2007, each villa preserves the character of a traditional stara primorska kuća—the authentic stone houses of the Primorje region—while providing the comfort, privacy, and amenities expected of a luxury holiday home.",
+      "paragraph3": "Set within nearly 2,000 m² of landscaped grounds, the property comprises three carefully restored 19th-century stone villas. Renovated in 2007, each villa preserves the character of a traditional stara primorska kuća—the authentic stone houses of the Primorje region—while providing the comfort, privacy, and amenities expected of a rural holiday home.",
       "paragraph4": "Our vineyard and olive grove were planted in 2008 and remain a cherished family project. Although we do not live on the property, you may occasionally see us caring for the vines, olive trees, and gardens to ensure they flourish throughout the seasons. We invite you to enjoy the fresh herbs growing around the villas, adding the flavours and aromas of the Mediterranean to your meals.",
-      "paragraph5": "Whether you are planning a romantic escape, a relaxing family holiday, or a memorable gathering with friends, Three Stone Villas offers an unforgettable retreat where heritage, nature, and contemporary comfort come together.",
-      "signoff": "The Stojčić Family"
+      "paragraph5": "Whether you are planning a romantic escape, a relaxing family holiday, or a memorable gathering with friends, Crikvenica Villas offers an unforgettable retreat where heritage, nature, and contemporary comfort come together."
     },
     "villas": {
-      "title": "Villas",
-      "subtitle": "Set within nearly 2,000 m² of landscaped grounds, the property comprises three carefully restored 19th-century stone villas."
+      "title": "Choose Your Stay",
+      "subtitle": "Choose your villa, slow down, and enjoy the beauty of Croatia’s Kvarner coast from your own private stone house surrounded by Mediterranean gardens, vineyards, and olive trees."
     },
     "contact": {
       "kicker": "CONTACT",
       "title": "Get in touch",
-      "text": "Share your inquiry and we’ll reply by email."
+      "text": "Send us an inquiry about availability, your preferred villa, or any details you would like to know. We will be happy to answer your questions and get back to you by email."
     },
     "location": {
       "kicker": "LOCATION",
@@ -58,7 +57,7 @@
     "sleeps": "Sleeps"
   },
   "footer": {
-    "copyright": "© 2026 Three Stone Villas",
+    "copyright": "© 2026 Crikvenica Villas",
     "disclaimer": "Family-run property"
   },
   "language": {
