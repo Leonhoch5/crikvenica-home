@@ -1,59 +1,81 @@
 {
-  "hero": {
-    "headline": "Dobrodošli u Crikvenica Villas",
-    "subheadline": "Smještene iznad Jadranskog mora, Crikvenica Villas je zbirka obnovljenih kamenih vila u Crikvenici na kvarnerskoj obali Hrvatske.",
-    "cta": "Istraži vile",
-    "note": "Okružene vinogradima, maslinicima i mediteranskim biljem"
-  },
-  "sections": {
+    "hero": {
+        "headline": "Dobrodošli u Crikvenica Villas",
+        "subheadline": "Smještene iznad Jadranskog mora, Crikvenica Villas je zbirka obnovljenih kamenih vila u Crikvenici na kvarnerskoj obali Hrvatske.",
+        "cta": "Istraži vile",
+        "note": "Okružene vinogradima, maslinicima i mediteranskim biljem"
+    },
+    "sections": {
+        "story": {
+            "paragraph1": "Na mirnoj padini iznad Jadranskog mora, samo tri kilometra od plaža i živahne rive Crikvenice, Crikvenica Villas je jedinstvena zbirka triju prekrasno obnovljenih kamenih vila na zadivljujućoj kvarnerskoj obali Hrvatske.",
+            "paragraph2": "Na više od 5.000 m² privatnog mediteranskog posjeda imanje spaja autentični šarm tradicionalnih hrvatskih kamenih kuća s udobnošću i privatnošću koje se očekuju od vile u ruralnom dijelu Crikvenice. Okruženo vinogradima, maslinicima, smokvama, cvatućim oleandrom, lavandom, ružmarinom i mirisnim mediteranskim biljem, imanje čuva pravi duh kvarnerske obale i pritom nudi miran odmor s pogledom koji se proteže preko Kvarnerskog zaljeva prema otoku Krku.",
+            "paragraph3": "Tri vile - Villa Ivanka, Villa Milka i Villa Vesna - pažljivo su obnovljene iz tradicionalnih kamenih kuća iz 19. stoljeća, zadržavajući izvorni karakter i stvarajući ugodne prostore za današnje goste. Svaka vila ima vlastiti privatni vrt, bazen i privatno parkiralište, zbog čega je Crikvenica Villas idealan izbor za parove koji traže romantičnu vilu u Hrvatskoj, obitelji koje žele vilu s privatnim bazenom ili društva prijatelja koji žele nezaboravan odmor na Jadranu.",
+            "paragraph4": "Obnovljene 2007. godine, kuće zadržavaju karakter tradicionalne stara primorska kuća - autentične kamene kuće hrvatske Primorje - i istodobno nude modernu opremu, udobnost i potpunu privatnost. Izvorni kameni zidovi, vidljive drvene grede i pažljivo odabrani namještaj odražavaju nasljeđe regije, dok suvremeni sadržaji osiguravaju opuštajući boravak u svako doba godine.",
+            "paragraph5": "Iako vile nude potpuni mir i privatnost, primorski grad Crikvenica udaljen je tek kratku vožnju. Gosti će ondje pronaći sve što je potrebno za nezaboravan odmor: trgovine za svakodnevne potrebe, velik izbor restorana, kafića, barova, slastičarnica, prekrasne plaže te aktivnosti na moru i na kopnu. U blizini su i otok Krk, obalna mjesta, pješačke staze i vidikovci, zbog čega je ovo idealno polazište za otkrivanje ljepote kvarnerske regije.",
+            "paragraph6": "Bilo da planirate romantični bijeg, obiteljski odmor ili druženje s prijateljima, Crikvenica Villas nudi autentično hrvatsko iskustvo boravka u vili u kojem se spajaju baština, priroda, privatnost i suvremena udobnost."
+        },
+        "villas": {
+            "title": "Odaberite svoj boravak",
+            "subtitle": "Odaberite svoju vilu i usporite u vlastitoj kamenoj kući okruženoj mediteranskim vrtovima, vinogradima, maslinama i pogledom na Kvarnerski zaljev."
+        },
+        "contact": {
+            "kicker": "KONTAKT",
+            "title": "Javite nam se",
+            "text": "Pošaljite nam upit o dostupnosti, željenoj vili ili bilo kojoj drugoj pojedinosti. Rado ćemo odgovoriti na vaša pitanja i javiti vam se e-mailom."
+        },
+        "location": {
+            "kicker": "LOKACIJA",
+            "title": "Crikvenica, Hrvatska",
+            "text": "Na kvarnerskoj obali Hrvatske, okružene morem, brežuljcima i mediteranskim zelenilom.",
+            "mapTitle": "Karta Crikvenice, Hrvatska"
+        }
+    },
     "villas": {
-      "title": "Vile",
-      "subtitle": "Povijesne kamene kuće s modernom udobnošću, privatnošću i snažnim obiteljskim karakterom."
+        "ivanka": {
+            "short": "Romantična kamena vila na padini s privatnim bazenom, terasom i panoramskim pogledom na Jadran.",
+            "long": "Villa Ivanka smještena je na mirnoj padini iznad Crikvenice i pruža širok pogled na Kvarnerski zaljev i otok Krk. Daleko od gužve, a opet blizu obale, predstavlja privatno utočište za parove koji traže romantiku i privatnost.\n\nVila je dio Crikvenica Villas, obiteljskog imanja površine više od 5.000 m², zasađenog vinovom lozom, maslinama, smokvama, lavandom i mirisnim mediteranskim biljem. Izvorna kamena kuća iz 1895. pažljivo je obnovljena 2008. godine te zadržava karakter tradicionalne stara primorska kuća.\n\nVanjski prostor čini privatni mediteranski vrt s kružnim bazenom, ležaljkama, natkrivenom terasom i roštiljem. Na raspolaganju je i mali vrt začinskog bilja s ružmarinom, lavandom, bosiljkom i peršinom.\n\nU prizemlju se nalaze dnevni boravak, otvorena kuhinja s blagovaonicom i kupaonica s walk-in tušem. Na katu se klima-uređajem opremljena spavaća soba otvara prema gornjem vrtu i pruža panoramski pogled na Selce, Krk i Jadransko more.\n\nBilo da doručkujete na terasi, plivate u bazenu ili gledate zalazak sunca nad morem, Villa Ivanka nudi miran bijeg u kojem se susreću baština i udobnost."
+        },
+        "milka": {
+            "short": "Obiteljska kamena vila s ograđenim vrtom, bazenom i pogledom na more nedaleko od Crikvenice.",
+            "long": "Villa Milka smještena je na vrlo mirnoj lokaciji i pruža prekrasan pogled na Kvarnerski zaljev i otok Krk. Posebnost kuće je veliki, njegovani vrt s bazenom veličine 6 x 4 metra. Uz bazen su vam na raspolaganju tuš, suncobran i ležaljke, a ugodna natkrivena terasa s vanjskim roštiljem/kaminom poziva na opuštene dane odmora.\n\nKuća spaja tradicionalne i moderne elemente. Centralno grijanje osigurava udobnost u hladnijem dijelu godine, a sve spavaće sobe su klimatizirane.\n\nVilla Milka prima četiri do šest gostiju na dvije etaže i u uređenom potkrovlju. U prizemlju se nalaze dnevni boravak sa satelitskom TV i DVD uređajem te udobna kuhinja s blagovaonicom, opremljena plinskom pločom za kuhanje i pećnicom, velikim hladnjakom sa zamrzivačem, perilicom posuđa, mikrovalnom pećnicom, aparatom za kavu i tosterom. U prizemlju se nalazi i WC.\n\nNa prvom katu nalaze se dvije dvokrevetne spavaće sobe, od kojih jedna ima izravan pristup kupaonici s tušem i WC-om. U drugoj su integrirani kada i umivaonik, dok se WC nalazi u hodniku. Iz obje sobe pruža se lijep pogled na more.\n\nPotkrovlje nudi dodatnu dvokrevetnu ili twin sobu s integriranim tušem i WC-om, do koje se dolazi zasebnim stubištem. Na raspolaganju je i perilica rublja.\n\nIspred kuće nalazi se ugodno dvorište s dodatnom prostorijom koja može služiti kao igraonica. Odande se izravno dolazi do bazena, uz koji se nalazi velika natkrivena sjedeća zona s roštiljem/kaminom. Parkiralište je odmah uz kuću, a mediteranski vrt s lokalnim biljkama upotpunjuje mirnu atmosferu."
+        },
+        "vesna": {
+            "short": "Prostrana kamena vila na više etaža s bazenom, verandom i vrtom za veće obitelji ili grupe.",
+            "long": "Villa Vesna smještena je na vrlo mirnoj lokaciji i pruža prekrasan pogled na Kvarnerski zaljev i otok Krk. Posebnost kuće je veliki vrt s bazenom veličine 8 x 4,5 metra. Uz bazen su vam na raspolaganju tuš, suncobran i ležaljke, a natkrivena terasa s vanjskim roštiljem/kaminom idealna je za opuštene dane odmora.\n\nKuća spaja tradicionalne i moderne elemente, a sve spavaće sobe su klimatizirane.\n\nVilla Vesna prima osam gostiju na više etaža i s ulazima s različitih strana. Iz dvorišta se ulazi izravno u dnevni boravak sa satelitskom TV i DVD-om. Unutarnje stepenice vode u hodnik povišenog prizemlja, odakle se dolazi do dviju dvokrevetnih spavaćih soba, svake sa svojom kupaonicom.\n\nStepenice vode na međukat s rustikalnom blagovaonicom, otvorenim kaminom i satelitskom TV te potpuno opremljenom kuhinjom s plinskom pločom za kuhanje i pećnicom, velikim hladnjakom sa zamrzivačem, perilicom posuđa, mikrovalnom pećnicom, aparatom za kavu i tosterom. Na raspolaganju je i perilica rublja.\n\nIz kuhinje se izlazi izravno na natkrivenu verandu s otvorenim roštiljem/kaminom. Na drugom katu nalaze se još dvije dvokrevetne spavaće sobe, svaka sa svojom kupaonicom s tušem i WC-om.\n\nS verande se ide ravno do bazena, a uz njega su dostupni solarni tuš, ležaljke i dodatni vanjski WC u dvorištu. Parkiralište je odmah uz kuću, a mediteranski vrt s lokalnim biljem zaokružuje mirnu atmosferu."
+        }
+    },
+    "villa": {
+        "ctaContact": "Javite nam se"
     },
     "contact": {
-      "kicker": "KONTAKT",
-      "title": "Javite nam se",
-      "text": "Pošaljite nam upit, a mi ćemo vam odgovoriti e-mailom."
+        "emailLabel": "E‑mail:",
+        "villaLabel": "Vila",
+        "nameLabel": "Ime",
+        "yourEmailLabel": "Vaš e‑mail",
+        "messageLabel": "Poruka",
+        "submit": "Pošalji upit",
+        "sending": "Slanje…",
+        "successTitle": "Poruka je poslana",
+        "successText": "Hvala — uskoro ćemo odgovoriti na vaš e‑mail.",
+        "errorTitle": "Došlo je do greške",
+        "errorText": "Molimo pokušajte ponovno za trenutak."
     },
-    "location": {
-      "kicker": "LOKACIJA",
-      "title": "Crikvenica, Hrvatska",
-      "text": "Na kvarnerskoj obali Hrvatske, okružene morem, brežuljcima i mediteranskim zelenilom.",
-      "mapTitle": "Karta Crikvenice, Hrvatska"
+    "amenities": {
+        "pool": "Bazen",
+        "wifi": "Wi‑Fi",
+        "parking": "Parking",
+        "ac": "Klimatizacija"
+    },
+    "facts": {
+        "bedrooms": "Spavaće sobe",
+        "bathrooms": "Kupaonice",
+        "sleeps": "Osoba"
+    },
+    "footer": {
+        "copyright": "© 2026 Crikvenica Villas",
+        "disclaimer": "Obiteljsko imanje"
+    },
+    "language": {
+        "label": "Jezik"
     }
-  },
-  "villa": {
-    "ctaContact": "Javite nam se"
-  },
-  "contact": {
-    "emailLabel": "E‑mail:",
-    "villaLabel": "Vila",
-    "nameLabel": "Ime",
-    "yourEmailLabel": "Vaš e‑mail",
-    "messageLabel": "Poruka",
-    "submit": "Pošalji upit",
-    "sending": "Slanje…",
-    "successTitle": "Poruka je poslana",
-    "successText": "Hvala — uskoro ćemo odgovoriti na vaš e‑mail.",
-    "errorTitle": "Došlo je do greške",
-    "errorText": "Molimo pokušajte ponovno za trenutak."
-  },
-  "amenities": {
-    "pool": "Bazen",
-    "wifi": "Wi‑Fi",
-    "parking": "Parking",
-    "ac": "Klimatizacija"
-  },
-  "facts": {
-    "bedrooms": "Spavaće sobe",
-    "bathrooms": "Kupaonice",
-    "sleeps": "Osoba"
-  },
-  "footer": {
-    "copyright": "© 2026 Crikvenica Villas",
-    "disclaimer": "Obiteljsko imanje"
-  },
-  "language": {
-    "label": "Jezik"
-  }
 }

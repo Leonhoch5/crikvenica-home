@@ -17,13 +17,12 @@ export default async function Home() {
     : defaultLocale;
 
   const storyText = [
-    "Perched on a peaceful hillside above the Adriatic Sea, Crikvenica Villas is a unique collection of three beautifully restored stone villas in Crikvenica, on Croatia's stunning Kvarner coast.",
-    "Surrounded by vineyards, olive groves, lavender, rosemary, and fragrant Mediterranean herbs, the property captures the authentic spirit of Croatia's Kvarner coast while offering every modern comfort.",
-    "Set within nearly 2,000 m² of landscaped grounds, the property comprises three carefully restored 19th-century stone houses. Renovated in 2007, each villa preserves the character of a traditional stara primorska kuća - the authentic stone houses of the Primorje region - while providing the comfort, privacy, and amenities expected of a rural holiday home.",
-    "The three villas - Villa Ivanka, Villa Milka, and Villa Vesna - were lovingly restored from traditional 19th - century stone houses, preserving their original character while creating welcoming spaces for today’s travellers. Each villa has its own private garden and swimming pool, allowing couples, families, and groups of friends to enjoy a truly relaxing escape surrounded by nature. Although the villas offer complete peace and privacy, the seaside town of Crikvenica is only about 3 km away. There you will find everything you need for your holiday: local shops for daily essentials, a wide choice of restaurants, cafés, bars, and icecream parlours, as well as numerous activities both on the water and on land.",
-    "Our vineyard and olive grove were planted in 2008 and remain a cherished family project. Although we do not live on the property, you may occasionally see us caring for the vines, olive trees, and gardens to ensure they flourish throughout the seasons. We invite you to enjoy the fresh herbs growing around the villas, adding the flavours and aromas of the Mediterranean to your meals.",
-
-    "Whether you are planning a romantic escape, a relaxing family holiday, or a memorable gathering with friends, Crikvenica Villas offers an unforgettable retreat where heritage, nature, and contemporary comfort come together.",
+    t("sections.story.paragraph1"),
+    t("sections.story.paragraph2"),
+    t("sections.story.paragraph3"),
+    t("sections.story.paragraph4"),
+    t("sections.story.paragraph5"),
+    t("sections.story.paragraph6"),
   ];
 
   return (
@@ -82,8 +81,8 @@ export default async function Home() {
                       <VillaCard
                         compact
                         name={villa.name}
-                        description={villa.descriptions[safeLocale]}
-                        longDescription={villa.longDescriptions[safeLocale]}
+                        description={t(`villas.${villa.key}.short`)}
+                        longDescription={t(`villas.${villa.key}.long`)}
                         bedrooms={villa.bedrooms}
                         bathrooms={villa.bathrooms}
                         maxGuests={villa.maxGuests}

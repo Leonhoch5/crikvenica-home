@@ -1,59 +1,81 @@
 {
-  "hero": {
-    "headline": "Willkommen bei Crikvenica Villas",
-    "subheadline": "Hoch über der Adria ist Crikvenica Villas eine Sammlung restaurierter Steinvillen in Crikvenica an Kroatiens Kvarnerküste.",
-    "cta": "Villen entdecken",
-    "note": "Umgeben von Weinbergen, Olivenhainen und mediterranen Kräutern"
-  },
-  "sections": {
+    "hero": {
+        "headline": "Willkommen bei Crikvenica Villas",
+        "subheadline": "Hoch über der Adria ist Crikvenica Villas eine Sammlung restaurierter Steinvillen in Crikvenica an Kroatiens Kvarnerküste.",
+        "cta": "Villen entdecken",
+        "note": "Umgeben von Weinbergen, Olivenhainen und mediterranen Kräutern"
+    },
+    "sections": {
+        "story": {
+            "paragraph1": "Hoch oben auf einem ruhigen Hügel über der Adria und nur drei Kilometer von den Stränden und der lebendigen Promenade von Crikvenica entfernt, sind die Crikvenica Villas eine einzigartige Sammlung von drei liebevoll restaurierten Steinvillen an Kroatiens wunderschöner Kvarnerküste.",
+            "paragraph2": "Auf mehr als 5.000 m² privatem mediterranem Grund verbindet das Anwesen den authentischen Charme traditioneller kroatischer Steinhäuser mit dem Komfort und der Privatsphäre, die man von einer ländlichen Villa in Crikvenica erwartet. Umgeben von Weinbergen, Olivenhainen, Feigenbäumen, blühendem Oleander, Lavendel, Rosmarin und duftenden mediterranen Kräutern fängt das Anwesen den authentischen Geist der Kvarnerküste ein und bietet zugleich einen ruhigen Rückzugsort mit weitem Blick über die Kvarner Bucht bis zur Insel Krk.",
+            "paragraph3": "Die drei Villen - Villa Ivanka, Villa Milka und Villa Vesna - wurden mit viel Liebe aus traditionellen Steinhäusern des 19. Jahrhunderts restauriert. Dabei blieb ihr ursprünglicher Charakter erhalten, während zugleich einladende Räume für heutige Reisende entstanden. Jede Villa verfügt über einen privaten Garten, einen Swimmingpool und private Parkplätze. Damit sind die Crikvenica Villas die ideale Wahl für Paare auf der Suche nach einer romantischen Villa in Kroatien, Familien mit Wunsch nach einer Villa mit Privatpool oder Freundesgruppen, die einen unvergesslichen Urlaub an der Adriaküste verbringen möchten.",
+            "paragraph4": "Die Häuser wurden 2007 restauriert und bewahren den Charakter einer traditionellen stara primorska kuća - der authentischen Steinhäuser der Region Primorje - und bieten gleichzeitig moderne Ausstattung, Komfort und vollständige Privatsphäre. Originale Steinwände, sichtbare Holzbalken und sorgfältig ausgewählte Möbel spiegeln das Erbe der Region wider, während zeitgemäße Einrichtungen zu einem entspannten Aufenthalt in jeder Jahreszeit beitragen.",
+            "paragraph5": "Obwohl die Villen völlige Ruhe und Privatsphäre bieten, ist die Küstenstadt Crikvenica nur eine kurze Fahrt entfernt. Dort finden Gäste alles für einen gelungenen Urlaub: Geschäfte für den täglichen Bedarf, eine große Auswahl an Restaurants, Cafés, Bars, Eisdielen, schöne Strände und Aktivitäten auf dem Wasser und an Land. Auch die nahe Insel Krk, Küstendörfer, Spazierwege und Aussichtspunkte machen die Gegend zu einem idealen Ausgangspunkt, um die Schönheit der Kvarnerregion zu entdecken.",
+            "paragraph6": "Ob romantischer Kurzurlaub, Familienferien oder ein Aufenthalt mit Freunden - Crikvenica Villas bietet ein authentisches kroatisches Urlaubserlebnis, in dem sich Tradition, Natur, Privatsphäre und zeitgemäßer Komfort verbinden."
+        },
+        "villas": {
+            "title": "Villen wählen",
+            "subtitle": "Wählen Sie Ihre Villa und entschleunigen Sie in einem privaten Steinhaus mit mediterranen Gärten, Weinbergen, Olivenbäumen und Blick über die Kvarner Bucht."
+        },
+        "contact": {
+            "kicker": "KONTAKT",
+            "title": "Kontakt aufnehmen",
+            "text": "Senden Sie uns Ihre Anfrage, und wir antworten per E-Mail."
+        },
+        "location": {
+            "kicker": "LAGE",
+            "title": "Crikvenica, Kroatien",
+            "text": "An Kroatiens Kvarnerküste gelegen, umgeben von Meer, Hügeln und mediterranem Grün.",
+            "mapTitle": "Karte von Crikvenica, Kroatien"
+        }
+    },
     "villas": {
-      "title": "Villen",
-      "subtitle": "Historische Steinhäuser mit modernem Komfort, Privatsphäre und starkem Familiencharakter."
+        "ivanka": {
+            "short": "Romantische Steinvilla am Hang mit privatem Pool, Terrasse und Panoramablick auf die Adria.",
+            "long": "Villa Ivanka befindet sich auf einem Hügel oberhalb des Kurortes Crikvenica und hat einen wunderschönen Blick auf die Kvarner Bucht und die Insel Krk. Weit weg vom Lärm und alltäglichen Trubel ist dieses märchenhafte Steinhaus eine Oase der Ruhe und ein perfekter Ort für ein Paar, das neben einem romantischen Urlaub auch das Abenteuer sucht.\n\nSie verbringen Ihren Urlaub auf einem Familienanwesen von über 5.000 m² mit Crikvenica-Häusern, umgeben von Weinreben und Olivenbäumen. Mediterrane Bäume, zum Beispiel drei unterschiedliche Sorten Feigen, und zahlreiche Blumen schmücken die Umgebung.\n\nIm Jahr 1895 erbaut, wurden die Häuser 2008 mit viel Liebe zum Detail restauriert und renoviert. Dabei war uns sehr wichtig, den authentischen Charakter der Gebäude zu erhalten und Tradition mit modernem Komfort zu verbinden. Die Häuser sind mit antiken Möbeln ausgestattet, die traditionelle Akzente setzen, zugleich aber auch den heutigen technischen Komfort bieten.\n\nEbenso wichtig war uns, dass sich die Häuser in die typische mediterrane Umgebung einfügen. Nach Abschluss der Renovierung widmeten wir uns dem Garten, pflanzten Lavendel und schufen eine mediterrane Landschaft. Neben Ihrem Haus befindet sich ein kleiner Kräutergarten - Rosmarin, Lavendel, Basilikum und Petersilie - den Sie gern zum Kochen verwenden können.\n\nDer private runde Swimmingpool mit Sonnenschirm und Liegestühlen lädt zum Entspannen ein. Die überdachte Terrasse mit Grill verspricht angenehme und ruhige Abende.\n\nVon der Terrasse gelangt man ins Erdgeschoss, das durch eine Holztreppe in Wohnküche und Wohnzimmer unterteilt ist. Die Küche ist komplett mit Herd und Backofen, großem Kühlschrank mit Gefrierfach, Mikrowelle, Spülmaschine, Waschmaschine, Kaffeemaschine, Toaster und Wasserkocher ausgestattet. Im Wohnzimmer gibt es ein Schlafsofa mit Satellitenfernsehen, DVD und Internetanschluss. Ebenfalls im Erdgeschoss befindet sich ein Badezimmer mit Dusche und WC.\n\nDie Treppen führen in das obere Stockwerk mit Schlafzimmer und einem weiteren Badezimmer. Im hellen Schlafzimmer sorgen Klimaanlage und Steinwände für angenehme Nächte. Vom Doppelbett aus hat man einen atemberaubenden Blick auf Selce und die Adria. Vom Schlafzimmer gelangt man in den oberen mediterranen Garten.\n\nDas Zentrum von Crikvenica ist etwa 3 km entfernt. Dort finden Sie zahlreiche Restaurants, Cafés, Bars und Eisdielen sowie viele Aktivitäten auf dem Wasser und an Land.\n\nAuf Wunsch reservieren wir Ihnen gern einen Bootsliegeplatz im Hafen von Crikvenica. Fahrräder können gemietet werden."
+        },
+        "milka": {
+            "short": "Familienfreundliche Steinvilla mit umzäuntem Garten, Pool und Meerblick nahe Crikvenica.",
+            "long": "Villa Milka ist ein friedlicher Rückzugsort hinter Steinmauern und bietet weite Blicke über die Kvarner Bucht und die Insel Krk. Etwas oberhalb von Crikvenica gelegen, verbindet die Villa die Ruhe des Landlebens mit der Nähe zur Küste und ist ideal für Familien, die entspannen und gemeinsam Zeit verbringen möchten.\n\nDie 1895 erbaute und 2007 sorgfältig restaurierte Villa verbindet den authentischen Charakter einer traditionellen stara primorska kuća mit modernem Komfort. Originale Steinmauern, freiliegende Holzbalken und sorgfältig ausgewählte Antiquitäten schaffen eine warme, heimelige Atmosphäre, während Zentralheizung und Klimaanlage das ganze Jahr über für Komfort sorgen.\n\nDer große, geschlossene Garten ist speziell für Familien gedacht. Kinder haben viel Platz zum sicheren Spielen, während Erwachsene am privaten 6 × 4 Meter großen Pool entspannen können. Eine überdachte Terrasse mit traditionellem Grill, langem Holztisch, Sonnenliegen und Außendusche bietet den perfekten Rahmen für entspannte Nachmittage und lange Sommerabende mit Blick auf den Olivenhain.\n\nDie Villa bietet vier bis sechs Gästen komfortabel Platz auf zwei Etagen und einem ausgebauten Dachgeschoss. Im Erdgeschoss öffnet sich ein helles, zum Meer ausgerichtetes Wohnzimmer zu einer voll ausgestatteten Küche und einem Essbereich. Das bequeme Sofa kann bei Bedarf zwei weitere Gäste aufnehmen, und ein Gäste-WC ist platzsparend unter der Treppe untergebracht.\n\nEine Holztreppe führt in das Obergeschoss, wo zwei Doppelzimmer einen schönen Meerblick genießen. Ein Schlafzimmer verfügt über eine romantische freistehende Badewanne neben dem Fenster, das zweite über ein en-suite Badezimmer mit Dusche und WC.\n\nDas ausgebaute Dachgeschoss bietet ein drittes Schlafzimmer mit Einzel- oder Doppelbetten sowie eigener Dusche und Toilette und eignet sich ideal für ältere Kinder, Teenager oder ein weiteres Paar.\n\nEin gemütlicher Raum im originalen Keller bietet eine ruhige Ecke zum Lesen, Spielen oder einfach zum Zurückziehen mit einem guten Buch. Vor dem Haus verbindet ein intimer Steinhof die Villa mit der Poolterrasse und dem mediterranen Garten und schafft mehrere einladende Orte zum Entspannen.\n\nPrivater Parkplatz steht direkt neben der Villa zur Verfügung, und duftender Rosmarin, Lavendel, Olivenbäume und andere mediterrane Pflanzen umgeben das Anwesen und vollenden die authentische Atmosphäre der Kvarnerküste."
+        },
+        "vesna": {
+            "short": "Geräumige Steinvilla auf mehreren Ebenen mit Pool, Veranda und Garten für größere Familien oder Gruppen.",
+            "long": "Villa Vesna liegt sehr ruhig und bietet einen weiten Blick über die Kvarner Bucht und die Insel Krk. Das Highlight ist der große Garten mit einem 8 x 4,5 Meter großen Pool. Direkt am Pool stehen Dusche, Sonnenschirm und Liegestühle bereit, und die überdachte Terrasse mit Grillkamin lädt zu entspannten Urlaubstagen ein.\n\nDas Haus verbindet traditionelle und moderne Elemente, und alle Schlafzimmer sind klimatisiert.\n\nVilla Vesna bietet Platz für acht Gäste auf mehreren Ebenen und mit Eingängen von verschiedenen Seiten. Vom Innenhof gelangt man direkt in das Wohnzimmer mit SAT-TV und DVD. Innentreppen führen in den Flur des Hochparterres, von dem aus zwei Doppelzimmer erreichbar sind, jeweils mit eigenem Bad.\n\nEine Treppe führt weiter zur Zwischenetage mit rustikalem Esszimmer, offenem Kamin und SAT-TV sowie zur voll ausgestatteten Küche mit Gasherd, Backofen, großem Kühlschrank mit Gefrierfach, Spülmaschine, Mikrowelle, Kaffeemaschine und Toaster. Eine Waschmaschine ist ebenfalls vorhanden.\n\nVon der Küche gelangen Sie direkt auf die überdachte Veranda mit offenem Grillkamin. Im zweiten Stock befinden sich zwei weitere Doppelzimmer, jeweils mit eigenem Bad mit Dusche und WC.\n\nVon der Veranda geht es direkt zum Pool, daneben stehen eine Solardusche, Sonnenliegen und ein weiterer Außenbereich im Innenhof zur Verfügung. Ein Parkplatz liegt direkt neben dem Haus, und der mediterrane Garten mit regionalen Pflanzen rundet die ruhige Atmosphäre ab."
+        }
+    },
+    "villa": {
+        "ctaContact": "Kontakt aufnehmen"
     },
     "contact": {
-      "kicker": "KONTAKT",
-      "title": "Kontakt aufnehmen",
-      "text": "Senden Sie uns Ihre Anfrage, und wir antworten per E-Mail."
+        "emailLabel": "E‑Mail:",
+        "villaLabel": "Villa",
+        "nameLabel": "Name",
+        "yourEmailLabel": "Ihre E‑Mail",
+        "messageLabel": "Nachricht",
+        "submit": "Anfrage senden",
+        "sending": "Wird gesendet…",
+        "successTitle": "Nachricht gesendet",
+        "successText": "Danke — wir antworten in Kürze per E‑Mail.",
+        "errorTitle": "Etwas ist schiefgelaufen",
+        "errorText": "Bitte versuchen Sie es gleich noch einmal."
     },
-    "location": {
-      "kicker": "LAGE",
-      "title": "Crikvenica, Kroatien",
-      "text": "An Kroatiens Kvarnerküste gelegen, umgeben von Meer, Hügeln und mediterranem Grün.",
-      "mapTitle": "Karte von Crikvenica, Kroatien"
+    "amenities": {
+        "pool": "Pool",
+        "wifi": "WLAN",
+        "parking": "Parkplatz",
+        "ac": "Klimaanlage"
+    },
+    "facts": {
+        "bedrooms": "Schlafzimmer",
+        "bathrooms": "Badezimmer",
+        "sleeps": "Personen"
+    },
+    "footer": {
+        "copyright": "© 2026 Crikvenica Villas",
+        "disclaimer": "Familiengeführtes Anwesen"
+    },
+    "language": {
+        "label": "Sprache"
     }
-  },
-  "villa": {
-    "ctaContact": "Kontakt aufnehmen"
-  },
-  "contact": {
-    "emailLabel": "E‑Mail:",
-    "villaLabel": "Villa",
-    "nameLabel": "Name",
-    "yourEmailLabel": "Ihre E‑Mail",
-    "messageLabel": "Nachricht",
-    "submit": "Anfrage senden",
-    "sending": "Wird gesendet…",
-    "successTitle": "Nachricht gesendet",
-    "successText": "Danke — wir antworten in Kürze per E‑Mail.",
-    "errorTitle": "Etwas ist schiefgelaufen",
-    "errorText": "Bitte versuchen Sie es gleich noch einmal."
-  },
-  "amenities": {
-    "pool": "Pool",
-    "wifi": "WLAN",
-    "parking": "Parkplatz",
-    "ac": "Klimaanlage"
-  },
-  "facts": {
-    "bedrooms": "Schlafzimmer",
-    "bathrooms": "Badezimmer",
-    "sleeps": "Personen"
-  },
-  "footer": {
-    "copyright": "© 2026 Crikvenica Villas",
-    "disclaimer": "Familiengeführtes Anwesen"
-  },
-  "language": {
-    "label": "Sprache"
-  }
 }
