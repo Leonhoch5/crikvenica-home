@@ -11,7 +11,7 @@ type VillaCardProps = {
   longDescription: string;
   bedrooms: number | string;
   bathrooms: number | string;
-  maxGuests: string | null;
+  maxGuests: number | string | null;
   images: readonly string[];
   index: number;
   ctaLabel: string;
@@ -112,7 +112,7 @@ export function VillaCard({
           <div className={`mt-4 flex flex-wrap gap-2 ${compact ? "text-[11px]" : "text-xs"} text-foreground/70`}>
             <Fact label={factLabels.bedrooms} value={bedrooms} />
             <Fact label={factLabels.bathrooms} value={bathrooms} />
-            {typeof maxGuests === "string" ? (
+            {maxGuests != null ? (
               <Fact label={factLabels.sleeps} value={maxGuests} />
             ) : null}
           </div>
@@ -145,7 +145,7 @@ export function VillaCard({
                 role="dialog"
                 aria-modal="true"
                 aria-label={`${name} preview`}
-                className="h-[92vh] w-[96vw] max-w-[1400px] overflow-hidden rounded-3xl border border-foreground/10 bg-background"
+                className="h-[92vh] w-[96vw] max-w-350 overflow-hidden rounded-3xl border border-foreground/10 bg-background"
               >
                 <div className="flex h-full flex-col">
                   {/* Preview header */}
@@ -197,7 +197,7 @@ export function VillaCard({
                       <div className="flex flex-wrap gap-2 text-xs text-foreground/70">
                         <Fact label={factLabels.bedrooms} value={bedrooms} />
                         <Fact label={factLabels.bathrooms} value={bathrooms} />
-                        {typeof maxGuests === "string" ? (
+                        {maxGuests != null ? (
                           <Fact label={factLabels.sleeps} value={maxGuests} />
                         ) : null}
                       </div>

@@ -22,6 +22,8 @@ export const villas = [
     },
 ] as const;
 
+export type VillaKey = (typeof villas)[number]["key"];
+
 export const villaIvankaImages = [
     "/villas/ivanka/1.jpg",
     "/villas/ivanka/2.jpg",
@@ -93,6 +95,12 @@ export const villaVesnaImages = [
     "/villas/vesna/21.jpeg",
     "/villas/vesna/22.jpeg",
 ] as const;
+
+export const villaImagesByKey = {
+    ivanka: villaIvankaImages,
+    milka: villaMilkaImages,
+    vesna: villaVesnaImages,
+} as const;
 
 export const villaImagesByName = {
     "Villa Ivanka": villaIvankaImages,

@@ -20,6 +20,25 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Strapi
+
+This frontend can read villa content from a free, self-hosted Strapi instance. If `STRAPI_URL` is not set, the site falls back to the bundled villa data and local images, so the project still runs without a CMS.
+
+To connect Strapi, create a collection type named `villas` with these fields:
+
+- `key` as a short text field, unique, matching `ivanka`, `milka`, or `vesna`
+- `name` as a text field
+- `bedrooms` as a number field
+- `bathrooms` as a number field
+- `maxGuests` as a text or number field
+- `shortDescription` as a rich text or text field
+- `longDescription` as a rich text or text field
+- `images` as a multiple media field
+
+Then in Strapi, allow the Public role to `find` and `findOne` for that collection type, publish the entries, and set `STRAPI_URL` in `.env.local` to your Strapi base URL, for example `http://localhost:1337`.
+
+If you want localized villa entries, enable Strapi i18n and create one published entry per locale using the same `key` value. The page will request the locale that is stored in the browser cookie.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:

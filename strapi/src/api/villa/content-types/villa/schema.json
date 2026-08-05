@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "villas",
+  "info": {
+    "name": "Villa",
+    "singularName": "villa",
+    "pluralName": "villas",
+    "displayName": "Villa"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "key": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "bedrooms": {
+      "type": "integer",
+      "min": 0
+    },
+    "bathrooms": {
+      "type": "integer",
+      "min": 0
+    },
+    "maxGuests": {
+      "type": "string"
+    },
+    "shortDescription": {
+      "type": "text"
+    },
+    "longDescription": {
+      "type": "text"
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false
+    }
+  }
+}

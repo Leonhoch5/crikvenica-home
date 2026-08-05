@@ -1,0 +1,12 @@
+{
+  "data": {
+    "key": "ivanka",
+    "name": "Villa Ivanka",
+    "bedrooms": 1,
+    "bathrooms": 2,
+    "maxGuests": "2",
+    "shortDescription": "One Bedroom. One Pool. No One Else.",
+    "longDescription": "Villa Ivanka sits above Crikvenica and offers a peaceful retreat with sea views.",
+    "publishedAt": "2026-08-05T00:00:00.000Z"
+  }
+}

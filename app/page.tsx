@@ -3,7 +3,7 @@ import { Hero } from "./components/Hero";
 import { ContactForm } from "./components/ContactForm";
 import { Reveal } from "./components/Reveal";
 import { VillaCard } from "./components/VillaCard";
-import { villaImagesByName, villas } from "./lib/villas";
+import { getVillaContent } from "./lib/strapi";
 import { cookies } from "next/headers";
 import { getTranslations } from "next-intl/server";
 import { defaultLocale, supportedLocales } from "./i18n/getMessages";
@@ -15,6 +15,7 @@ export default async function Home() {
   const safeLocale = (supportedLocales as readonly string[]).includes(locale)
     ? (locale as (typeof supportedLocales)[number])
     : defaultLocale;
+  const villas = await getVillaContent(safeLocale);
 
   const storyText = [
     t("sections.story.paragraph1"),
@@ -77,16 +78,16 @@ export default async function Home() {
                 {/* Villa cards */}
                 <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-3" >
                   {villas.slice(0, 3).map((villa, index) => (
-                    <div key={villa.name} className="w-full">
+                    <div key={villa.key} className="w-full">
                       <VillaCard
                         compact
                         name={villa.name}
-                        description={t(`villas.${villa.key}.short`)}
-                        longDescription={t(`villas.${villa.key}.long`)}
+                        description={villa.shortDescription ?? t(`villas.${villa.key}.short`)}
+                        longDescription={villa.longDescription ?? t(`villas.${villa.key}.long`)}
                         bedrooms={villa.bedrooms}
                         bathrooms={villa.bathrooms}
                         maxGuests={villa.maxGuests}
-                        images={villaImagesByName[villa.name]}
+                        images={villa.images}
                         index={index}
                         ctaLabel={t("villa.ctaContact")}
                         amenityLabels={{

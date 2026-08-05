@@ -1,0 +1,12 @@
+{
+  "data": {
+    "key": "milka",
+    "name": "Villa Milka",
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "maxGuests": "4 + 2",
+    "shortDescription": "A bright and comfortable retreat with garden views.",
+    "longDescription": "Villa Milka is a family-friendly villa with plenty of space and easy access to the coast.",
+    "publishedAt": "2026-08-05T00:00:00.000Z"
+  }
+}
