@@ -3,6 +3,7 @@ import { Hero } from "./components/Hero";
 import { ContactForm } from "./components/ContactForm";
 import { Reveal } from "./components/Reveal";
 import { VillaCard } from "./components/VillaCard";
+import { BookingCalendar } from "./components/BookingCalendar";
 import { getVillaContent, getPageContent } from "./lib/strapi";
 import { cookies } from "next/headers";
 import { getTranslations } from "next-intl/server";
@@ -109,6 +110,22 @@ export default async function Home() {
                   ))}
                 </div>
               </div>
+            </div>
+          </Reveal>
+        </section>
+
+        <section id="availability" className="scroll-mt-16 pb-20 sm:pb-28">
+          <Reveal>
+            <div className="rounded-3xl border border-foreground/10 bg-background/60 p-6 backdrop-blur-sm sm:p-8">
+              <div className="mb-6">
+                <p className="text-xs font-medium tracking-[0.22em] text-foreground/60">
+                  {t("sections.availability.kicker")}
+                </p>
+                <h2 className="mt-4 text-2xl font-semibold tracking-[-0.02em] sm:text-3xl">
+                  {t("sections.availability.title")}
+                </h2>
+              </div>
+              <BookingCalendar bookedDates={[]} />
             </div>
           </Reveal>
         </section>

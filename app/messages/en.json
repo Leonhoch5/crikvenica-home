@@ -18,6 +18,10 @@
             "title": "Choose Your Stay",
             "subtitle": "Choose your villa and slow down in your own private stone house surrounded by Mediterranean gardens, vineyards, olive trees, and sea views across Kvarner Bay."
         },
+        "availability": {
+            "kicker": "AVAILABILITY",
+            "title": "Availability calendar"
+        },
         "contact": {
             "kicker": "CONTACT",
             "title": "Get in touch",
