@@ -176,3 +176,56 @@ body {
 .rdp-outside .rdp-day_button {
   color: color-mix(in srgb, var(--foreground) 22%, transparent);
 }
+
+
+/* Booked ranges — red, unselectable */
+.rdp-booked-single .rdp-day_button,
+.rdp-disabled.rdp-booked-single .rdp-day_button {
+  background: #ef4444;
+  color: white;
+  text-decoration: none;
+  border-radius: 9999px;
+  pointer-events: none;
+}
+
+.rdp-booked-start,
+.rdp-disabled.rdp-booked-start {
+  background: linear-gradient(to right, transparent 50%, rgba(239, 68, 68, 0.15) 50%);
+}
+
+.rdp-booked-start .rdp-day_button,
+.rdp-disabled.rdp-booked-start .rdp-day_button {
+  background: #ef4444;
+  color: white;
+  text-decoration: none;
+  border-radius: 9999px;
+  pointer-events: none;
+}
+
+.rdp-booked-middle,
+.rdp-disabled.rdp-booked-middle {
+  background: rgba(239, 68, 68, 0.15);
+}
+
+.rdp-booked-middle .rdp-day_button,
+.rdp-disabled.rdp-booked-middle .rdp-day_button {
+  background: transparent;
+  color: #ef4444;
+  text-decoration: none;
+  border-radius: 0;
+  pointer-events: none;
+}
+
+.rdp-booked-end,
+.rdp-disabled.rdp-booked-end {
+  background: linear-gradient(to left, transparent 50%, rgba(239, 68, 68, 0.15) 50%);
+}
+
+.rdp-booked-end .rdp-day_button,
+.rdp-disabled.rdp-booked-end .rdp-day_button {
+  background: #ef4444;
+  color: white;
+  text-decoration: none;
+  border-radius: 9999px;
+  pointer-events: none;
+}
