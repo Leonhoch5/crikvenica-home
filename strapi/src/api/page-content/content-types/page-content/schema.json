@@ -1,0 +1,79 @@
+{
+  "kind": "singleType",
+  "collectionName": "page_content",
+  "info": {
+    "singularName": "page-content",
+    "pluralName": "page-contents",
+    "displayName": "Page Content"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "heroHeadline": {
+      "type": "string",
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "heroSubheadline": {
+      "type": "text",
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "heroCta": {
+      "type": "string",
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "heroNote": {
+      "type": "string",
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "storyP1": {
+      "type": "text",
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "storyP2": {
+      "type": "text",
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "storyP3": {
+      "type": "text",
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "storyP4": {
+      "type": "text",
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "storyP5": {
+      "type": "text",
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "storyP6": {
+      "type": "text",
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "villasTitle": {
+      "type": "string",
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "villasSubtitle": {
+      "type": "text",
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "contactKicker": {
+      "type": "string",
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "contactTitle": {
+      "type": "string",
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "contactText": {
+      "type": "text",
+      "pluginOptions": { "i18n": { "localized": true } }
+    }
+  }
+}
