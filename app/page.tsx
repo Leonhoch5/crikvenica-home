@@ -3,7 +3,7 @@ import { Hero } from "./components/Hero";
 import { ContactForm } from "./components/ContactForm";
 import { Reveal } from "./components/Reveal";
 import { VillaCard } from "./components/VillaCard";
-import { getVillaContent } from "./lib/strapi";
+import { getVillaContent, getPageContent } from "./lib/strapi";
 import { cookies } from "next/headers";
 import { getTranslations } from "next-intl/server";
 import { defaultLocale, supportedLocales } from "./i18n/getMessages";
@@ -15,25 +15,28 @@ export default async function Home() {
   const safeLocale = (supportedLocales as readonly string[]).includes(locale)
     ? (locale as (typeof supportedLocales)[number])
     : defaultLocale;
-  const villas = await getVillaContent(safeLocale);
+  const [villas, cms] = await Promise.all([
+    getVillaContent(safeLocale),
+    getPageContent(safeLocale),
+  ]);
 
   const storyText = [
-    t("sections.story.paragraph1"),
-    t("sections.story.paragraph2"),
-    t("sections.story.paragraph3"),
-    t("sections.story.paragraph4"),
-    t("sections.story.paragraph5"),
-    t("sections.story.paragraph6"),
+    cms?.storyP1 ?? t("sections.story.paragraph1"),
+    cms?.storyP2 ?? t("sections.story.paragraph2"),
+    cms?.storyP3 ?? t("sections.story.paragraph3"),
+    cms?.storyP4 ?? t("sections.story.paragraph4"),
+    cms?.storyP5 ?? t("sections.story.paragraph5"),
+    cms?.storyP6 ?? t("sections.story.paragraph6"),
   ];
 
   return (
     <div className="min-h-screen">
       <Hero
         locale={safeLocale}
-        headline={t("hero.headline")}
-        subheadline={t("hero.subheadline")}
-        ctaExplore={t("hero.cta")}
-        note={t("hero.note")}
+        headline={cms?.heroHeadline ?? t("hero.headline")}
+        subheadline={cms?.heroSubheadline ?? t("hero.subheadline")}
+        ctaExplore={cms?.heroCta ?? t("hero.cta")}
+        note={cms?.heroNote ?? t("hero.note")}
         languageLabel={t("language.label")}
       />
       <main className="mx-auto max-w-6xl px-4 sm:px-5">
@@ -69,10 +72,10 @@ export default async function Home() {
                 </div>
                 <div id="villas">
                   <h2 className="mt-4 text-2xl font-semibold tracking-[-0.02em] sm:text-3xl">
-                    {t("sections.villas.title")}
+                    {cms?.villasTitle ?? t("sections.villas.title")}
                   </h2>
                   <p className="mt-4 text-sm leading-7 text-foreground/75 sm:text-base">
-                    {t("sections.villas.subtitle")}
+                    {cms?.villasSubtitle ?? t("sections.villas.subtitle")}
                   </p>
                 </div>
                 {/* Villa cards */}
@@ -116,13 +119,13 @@ export default async function Home() {
               <div className="grid gap-10">
                 <div>
                   <p className="text-xs font-medium tracking-[0.22em] text-foreground/60">
-                    {t("sections.contact.kicker")}
+                    {cms?.contactKicker ?? t("sections.contact.kicker")}
                   </p>
                   <h2 className="mt-4 text-2xl font-semibold tracking-[-0.02em] sm:text-3xl">
-                    {t("sections.contact.title")}
+                    {cms?.contactTitle ?? t("sections.contact.title")}
                   </h2>
                   <p className="mt-4 text-sm leading-7 text-foreground/75 sm:text-base">
-                    {t("sections.contact.text")}
+                    {cms?.contactText ?? t("sections.contact.text")}
                   </p>
                 </div>
                 <ContactForm

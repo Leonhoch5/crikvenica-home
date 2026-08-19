@@ -10,15 +10,26 @@
   "options": {
     "draftAndPublish": true
   },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "key": {
       "type": "string",
       "required": true,
       "unique": true
     },
+    "sortOrder": {
+      "type": "integer"
+    },
     "name": {
       "type": "string",
-      "required": true
+      "required": true,
+      "pluginOptions": {
+        "i18n": { "localized": true }
+      }
     },
     "bedrooms": {
       "type": "integer",
@@ -32,10 +43,16 @@
       "type": "string"
     },
     "shortDescription": {
-      "type": "text"
+      "type": "text",
+      "pluginOptions": {
+        "i18n": { "localized": true }
+      }
     },
     "longDescription": {
-      "type": "text"
+      "type": "richtext",
+      "pluginOptions": {
+        "i18n": { "localized": true }
+      }
     },
     "images": {
       "type": "media",

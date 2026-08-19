@@ -131,6 +131,68 @@ async function fetchStrapiVillas(locale: string): Promise<VillaContent[]> {
         .filter((item) => isNonEmptyString(item.key) && isNonEmptyString(item.name));
 }
 
+export type PageContent = {
+    heroHeadline: string | null;
+    heroSubheadline: string | null;
+    heroCta: string | null;
+    heroNote: string | null;
+    storyP1: string | null;
+    storyP2: string | null;
+    storyP3: string | null;
+    storyP4: string | null;
+    storyP5: string | null;
+    storyP6: string | null;
+    villasTitle: string | null;
+    villasSubtitle: string | null;
+    contactKicker: string | null;
+    contactTitle: string | null;
+    contactText: string | null;
+};
+
+async function fetchStrapiPageContent(locale: string): Promise<PageContent | null> {
+    const baseUrl = getStrapiBaseUrl();
+    if (!baseUrl) return null;
+
+    const endpoint = new URL("/api/page-content", baseUrl);
+    if (isNonEmptyString(locale)) endpoint.searchParams.set("locale", locale);
+
+    const headers: HeadersInit = {};
+    const apiToken = process.env.STRAPI_API_TOKEN;
+    if (isNonEmptyString(apiToken)) headers.Authorization = `Bearer ${apiToken}`;
+
+    const response = await fetch(endpoint.toString(), {
+        headers,
+        next: { revalidate: 300 },
+    });
+    if (!response.ok) return null;
+
+    const payload = (await response.json()) as { data?: Record<string, unknown> };
+    const data = payload.data;
+    if (!data) return null;
+
+    return {
+        heroHeadline:    (data.heroHeadline as string) ?? null,
+        heroSubheadline: (data.heroSubheadline as string) ?? null,
+        heroCta:         (data.heroCta as string) ?? null,
+        heroNote:        (data.heroNote as string) ?? null,
+        storyP1:         (data.storyP1 as string) ?? null,
+        storyP2:         (data.storyP2 as string) ?? null,
+        storyP3:         (data.storyP3 as string) ?? null,
+        storyP4:         (data.storyP4 as string) ?? null,
+        storyP5:         (data.storyP5 as string) ?? null,
+        storyP6:         (data.storyP6 as string) ?? null,
+        villasTitle:     (data.villasTitle as string) ?? null,
+        villasSubtitle:  (data.villasSubtitle as string) ?? null,
+        contactKicker:   (data.contactKicker as string) ?? null,
+        contactTitle:    (data.contactTitle as string) ?? null,
+        contactText:     (data.contactText as string) ?? null,
+    };
+}
+
+export async function getPageContent(locale: string): Promise<PageContent | null> {
+    return fetchStrapiPageContent(locale).catch(() => null);
+}
+
 export async function getVillaContent(locale: string): Promise<VillaContent[]> {
     const strapiVillas = await fetchStrapiVillas(locale).catch(() => [] as VillaContent[]);
     const strapiByKey = new Map(strapiVillas.map((villa) => [villa.key, villa]));
