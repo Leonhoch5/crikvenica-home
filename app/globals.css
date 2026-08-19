@@ -23,15 +23,118 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans);
   background:
-    radial-gradient(
-      1200px 700px at 18% 8%,
+    radial-gradient(1200px 700px at 18% 8%,
       color-mix(in srgb, var(--foreground) 8%, transparent),
-      transparent 60%
-    ),
-    radial-gradient(
-      900px 600px at 86% 12%,
+      transparent 60%),
+    radial-gradient(900px 600px at 86% 12%,
       color-mix(in srgb, var(--foreground) 6%, transparent),
-      transparent 62%
-    ),
+      transparent 62%),
     linear-gradient(to bottom, var(--background), var(--background));
+}
+
+
+.rdp {
+  --rdp-cell-size: 40px;
+  --rdp-accent-color: #000;
+  /* oder deine Primärfarbe */
+  --rdp-background-color: #e5e5e5;
+  --rdp-range-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Dunkler Modus */
+.dark .rdp {
+  --rdp-accent-color: #fff;
+  --rdp-background-color: #333;
+}
+
+/* Anpassung der Monatsüberschrift */
+.rdp-caption {
+  font-weight: 600;
+  font-size: 0.875rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+}
+
+/* Navigation Buttons */
+.rdp-nav_button {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 9999px;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+}
+
+.dark .rdp-nav_button {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Tabellenkopf */
+.rdp-head_cell {
+  font-size: 0.75rem;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: normal;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dark .rdp-head_cell {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Tage */
+.rdp-day {
+  width: 40px;
+  height: 40px;
+  border-radius: 9999px;
+  transition: background 0.2s;
+}
+
+.rdp-day:hover:not(.rdp-day_disabled) {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.dark .rdp-day:hover:not(.rdp-day_disabled) {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Ausgewählter Tag */
+.rdp-day_selected {
+  background: #000;
+  color: #fff;
+}
+
+.dark .rdp-day_selected {
+  background: #fff;
+  color: #000;
+}
+
+/* Deaktivierte (gebuchte) Tage */
+.rdp-day_disabled {
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: line-through;
+}
+
+.dark .rdp-day_disabled {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* Bereichsauswahl-Mitte */
+.rdp-day_range_middle {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 0;
+}
+
+.dark .rdp-day_range_middle {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Bereichsstart und -ende */
+.rdp-day_range_start,
+.rdp-day_range_end {
+  border-radius: 9999px;
 }

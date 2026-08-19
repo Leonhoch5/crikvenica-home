@@ -4,6 +4,7 @@ import * as React from "react";
 import { createPortal } from "react-dom";
 import { Reveal } from "./Reveal";
 import { VillaGallery } from "./VillaGallery";
+import { BookingCalendar } from "./BookingCalendar";
 
 type VillaCardProps = {
   name: string;
@@ -27,6 +28,7 @@ type VillaCardProps = {
     bathrooms: string;
     sleeps: string;
   };
+  bookedDates?: string[]; // ISO-Strings, z.B. ["2026-08-20"]
 };
 
 export function VillaCard({
@@ -42,6 +44,7 @@ export function VillaCard({
   compact = false,
   amenityLabels,
   factLabels,
+  bookedDates = [],
 }: VillaCardProps) {
   // Controls the fullscreen preview modal.
   const [isOpen, setIsOpen] = React.useState(false);
@@ -170,7 +173,13 @@ export function VillaCard({
                     <div className="flex flex-col gap-6">
                       {/* Big preview images */}
                       <VillaGallery images={images} alt={name} />
-
+                      <BookingCalendar
+                        bookedDates={bookedDates?.map((d) => new Date(d)) ?? []}
+                        onSelectRange={(range) => {
+                          // Hier kannst du den ausgewählten Bereich speichern
+                          console.log("Ausgewählter Bereich:", range);
+                        }}
+                      />
                       {/* Prices table (structure only; data to be added later) */}
                       <div className="overflow-hidden rounded-2xl border border-foreground/10 bg-background">
                         <table className="w-full border-collapse text-sm">
