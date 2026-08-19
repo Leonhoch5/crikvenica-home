@@ -29,7 +29,12 @@ export default async function Home() {
     cms?.storyP5 ?? t("sections.story.paragraph5"),
     cms?.storyP6 ?? t("sections.story.paragraph6"),
   ];
-
+const mockBookedDates: Record<string, string[]> = {
+    vesna: Array.from({ length: 14 }, (_, i) => {
+      const d = new Date(2026, 7, 4 + i);
+      return d.toISOString().split("T")[0];
+    }),
+  };
   return (
     <div className="min-h-screen">
       <Hero
@@ -94,6 +99,7 @@ export default async function Home() {
                         images={villa.images}
                         index={index}
                         ctaLabel={t("villa.ctaContact")}
+                        bookedDates={mockBookedDates[villa.key] || []}
                         amenityLabels={{
                           pool: t("amenities.pool"),
                           wifi: t("amenities.wifi"),
@@ -114,21 +120,7 @@ export default async function Home() {
           </Reveal>
         </section>
 
-        <section id="availability" className="scroll-mt-16 pb-20 sm:pb-28">
-          <Reveal>
-            <div className="rounded-3xl border border-foreground/10 bg-background/60 p-6 backdrop-blur-sm sm:p-8">
-              <div className="mb-6">
-                <p className="text-xs font-medium tracking-[0.22em] text-foreground/60">
-                  {t("sections.availability.kicker")}
-                </p>
-                <h2 className="mt-4 text-2xl font-semibold tracking-[-0.02em] sm:text-3xl">
-                  {t("sections.availability.title")}
-                </h2>
-              </div>
-              <BookingCalendar bookedDates={[]} />
-            </div>
-          </Reveal>
-        </section>
+
 
         <section id="contact" className="scroll-mt-16 pb-20 sm:pb-28">
           <Reveal>
