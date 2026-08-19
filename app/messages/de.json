@@ -18,6 +18,10 @@
             "title": "Villen wählen",
             "subtitle": "Wählen Sie Ihre Villa und entschleunigen Sie in einem privaten Steinhaus mit mediterranen Gärten, Weinbergen, Olivenbäumen und Blick über die Kvarner Bucht."
         },
+        "availability": {
+            "kicker": "VERFÜGBARKEIT",
+            "title": "Belegungskalender"
+        },
         "contact": {
             "kicker": "KONTAKT",
             "title": "Kontakt aufnehmen",

@@ -18,6 +18,10 @@
             "title": "Scegli il tuo soggiorno",
             "subtitle": "Scegli la tua villa e rallenta nel tuo casale in pietra privato, circondato da giardini mediterranei, vigneti, ulivi e viste sul Golfo del Quarnero."
         },
+        "availability": {
+            "kicker": "DISPONIBILITÀ",
+            "title": "Calendario disponibilità"
+        },
         "contact": {
             "kicker": "CONTATTO",
             "title": "Contattaci",

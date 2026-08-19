@@ -18,6 +18,10 @@
             "title": "Odaberite svoj boravak",
             "subtitle": "Odaberite svoju vilu i usporite u vlastitoj kamenoj kući okruženoj mediteranskim vrtovima, vinogradima, maslinama i pogledom na Kvarnerski zaljev."
         },
+        "availability": {
+            "kicker": "DOSTUPNOST",
+            "title": "Kalendar dostupnosti"
+        },
         "contact": {
             "kicker": "KONTAKT",
             "title": "Javite nam se",

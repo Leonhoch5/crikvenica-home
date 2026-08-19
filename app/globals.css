@@ -33,108 +33,146 @@ body {
 }
 
 
-.rdp {
-  --rdp-cell-size: 40px;
-  --rdp-accent-color: #000;
-  /* oder deine Primärfarbe */
-  --rdp-background-color: #e5e5e5;
-  --rdp-range-color: rgba(0, 0, 0, 0.2);
-}
-
-/* Dunkler Modus */
-.dark .rdp {
-  --rdp-accent-color: #fff;
-  --rdp-background-color: #333;
-}
-
-/* Anpassung der Monatsüberschrift */
-.rdp-caption {
-  font-weight: 600;
+/* react-day-picker v10 */
+.rdp-root {
+  --rdp-cell-size: 36px;
   font-size: 0.875rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 2.5rem;
+  width: 100%;
 }
 
-/* Navigation Buttons */
-.rdp-nav_button {
-  border: 1px solid rgba(0, 0, 0, 0.1);
+.rdp-month {
+  width: 100%;
+}
+
+.rdp-month_caption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.25rem;
+  position: relative;
+  margin-bottom: 0.375rem;
+}
+
+.rdp-caption_label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--foreground);
+}
+
+.rdp-nav {
+  position: absolute;
+  inset-inline: 0;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2.25rem;
+}
+
+.rdp-button_previous,
+.rdp-button_next {
+  width: 1.75rem;
+  height: 1.75rem;
   border-radius: 9999px;
-  width: 2rem;
-  height: 2rem;
+  border: 1px solid color-mix(in srgb, var(--foreground) 12%, transparent);
   background: transparent;
-}
-
-.dark .rdp-nav_button {
-  border-color: rgba(255, 255, 255, 0.1);
-}
-
-/* Tabellenkopf */
-.rdp-head_cell {
-  font-size: 0.75rem;
-  color: rgba(0, 0, 0, 0.6);
-  font-weight: normal;
-  width: 40px;
-  height: 40px;
+  color: color-mix(in srgb, var(--foreground) 50%, transparent);
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+  padding: 0;
 }
 
-.dark .rdp-head_cell {
-  color: rgba(255, 255, 255, 0.6);
+.rdp-button_previous:hover,
+.rdp-button_next:hover {
+  background: color-mix(in srgb, var(--foreground) 8%, transparent);
+  color: var(--foreground);
 }
 
-/* Tage */
+.rdp-weekdays {
+  display: flex;
+  margin-bottom: 0.125rem;
+}
+
+.rdp-weekday {
+  flex: 1;
+  text-align: center;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  color: color-mix(in srgb, var(--foreground) 40%, transparent);
+  padding: 0.25rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.rdp-week {
+  display: flex;
+}
+
 .rdp-day {
-  width: 40px;
-  height: 40px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.rdp-day_button {
+  width: var(--rdp-cell-size);
+  height: var(--rdp-cell-size);
   border-radius: 9999px;
-  transition: background 0.2s;
+  border: none;
+  background: transparent;
+  color: var(--foreground);
+  font-size: 0.8125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.15s;
+  margin: 0 auto;
+  padding: 0;
 }
 
-.rdp-day:hover:not(.rdp-day_disabled) {
-  background: rgba(0, 0, 0, 0.05);
+.rdp-day_button:hover {
+  background: color-mix(in srgb, var(--foreground) 8%, transparent);
 }
 
-.dark .rdp-day:hover:not(.rdp-day_disabled) {
-  background: rgba(255, 255, 255, 0.1);
+.rdp-today .rdp-day_button {
+  font-weight: 700;
 }
 
-/* Ausgewählter Tag */
-.rdp-day_selected {
-  background: #000;
-  color: #fff;
+.rdp-selected .rdp-day_button {
+  background: var(--foreground);
+  color: var(--background);
 }
 
-.dark .rdp-day_selected {
-  background: #fff;
-  color: #000;
+.rdp-selected .rdp-day_button:hover {
+  background: color-mix(in srgb, var(--foreground) 88%, transparent);
 }
 
-/* Deaktivierte (gebuchte) Tage */
-.rdp-day_disabled {
-  color: rgba(0, 0, 0, 0.3);
-  text-decoration: line-through;
-}
-
-.dark .rdp-day_disabled {
-  color: rgba(255, 255, 255, 0.3);
-}
-
-/* Bereichsauswahl-Mitte */
-.rdp-day_range_middle {
-  background: rgba(0, 0, 0, 0.1);
+.rdp-range_middle .rdp-day_button {
+  background: color-mix(in srgb, var(--foreground) 10%, transparent);
   border-radius: 0;
+  color: var(--foreground);
 }
 
-.dark .rdp-day_range_middle {
-  background: rgba(255, 255, 255, 0.1);
-}
-
-/* Bereichsstart und -ende */
-.rdp-day_range_start,
-.rdp-day_range_end {
+.rdp-range_start .rdp-day_button,
+.rdp-range_end .rdp-day_button {
+  background: var(--foreground);
+  color: var(--background);
   border-radius: 9999px;
+}
+
+.rdp-disabled .rdp-day_button {
+  color: color-mix(in srgb, var(--foreground) 22%, transparent);
+  text-decoration: line-through;
+  cursor: default;
+  pointer-events: none;
+}
+
+.rdp-outside .rdp-day_button {
+  color: color-mix(in srgb, var(--foreground) 22%, transparent);
 }
