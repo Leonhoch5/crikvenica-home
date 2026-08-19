@@ -35,6 +35,7 @@ export function BookingCalendar({ bookedDates, onSelectRange }: BookingCalendarP
     }
 
     return (
+        <div className="relative pt-10">
         <DayPicker
             locale={de}
             numberOfMonths={3}
@@ -54,5 +55,6 @@ export function BookingCalendar({ bookedDates, onSelectRange }: BookingCalendarP
                 months: "grid grid-cols-1 sm:grid-cols-3 gap-6",
             }}
         />
+        </div>
     );
 }
