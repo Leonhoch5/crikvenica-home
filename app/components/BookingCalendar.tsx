@@ -2,7 +2,6 @@
 
 import * as React from "react";
 import { DayPicker, DateRange } from "react-day-picker";
-import { subMonths } from "date-fns";
 import { de } from "date-fns/locale";
 
 type BookingCalendarProps = {
@@ -12,7 +11,6 @@ type BookingCalendarProps = {
 
 export function BookingCalendar({ bookedDates, onSelectRange }: BookingCalendarProps) {
     const today = new Date();
-    const firstMonth = subMonths(today, 1);
 
     const sorted = [...bookedDates].sort((a, b) => a.getTime() - b.getTime());
 
@@ -39,7 +37,7 @@ export function BookingCalendar({ bookedDates, onSelectRange }: BookingCalendarP
         <DayPicker
             locale={de}
             numberOfMonths={3}
-            defaultMonth={firstMonth}
+            defaultMonth={today}
             disabled={bookedDates}
             mode="range"
             onSelect={onSelectRange}

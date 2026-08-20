@@ -3,8 +3,8 @@ import { Hero } from "./components/Hero";
 import { ContactForm } from "./components/ContactForm";
 import { Reveal } from "./components/Reveal";
 import { VillaCard } from "./components/VillaCard";
-import { BookingCalendar } from "./components/BookingCalendar";
 import { getVillaContent, getPageContent } from "./lib/strapi";
+import { getBookedDates } from "./lib/availability";
 import { cookies } from "next/headers";
 import { getTranslations } from "next-intl/server";
 import { defaultLocale, supportedLocales } from "./i18n/getMessages";
@@ -16,11 +16,19 @@ export default async function Home() {
   const safeLocale = (supportedLocales as readonly string[]).includes(locale)
     ? (locale as (typeof supportedLocales)[number])
     : defaultLocale;
-  const [villas, cms] = await Promise.all([
+  const [villas, cms, bookedIvanka, bookedMilka, bookedVesna] = await Promise.all([
     getVillaContent(safeLocale),
     getPageContent(safeLocale),
+    getBookedDates("ivanka"),
+    getBookedDates("milka"),
+    getBookedDates("vesna"),
   ]);
 
+  const bookedDates: Record<string, string[]> = {
+    ivanka: bookedIvanka,
+    milka: bookedMilka,
+    vesna: bookedVesna,
+  };
   const storyText = [
     cms?.storyP1 ?? t("sections.story.paragraph1"),
     cms?.storyP2 ?? t("sections.story.paragraph2"),
@@ -29,12 +37,6 @@ export default async function Home() {
     cms?.storyP5 ?? t("sections.story.paragraph5"),
     cms?.storyP6 ?? t("sections.story.paragraph6"),
   ];
-const mockBookedDates: Record<string, string[]> = {
-    vesna: Array.from({ length: 14 }, (_, i) => {
-      const d = new Date(2026, 7, 4 + i);
-      return d.toISOString().split("T")[0];
-    }),
-  };
   return (
     <div className="min-h-screen">
       <Hero
@@ -99,7 +101,7 @@ const mockBookedDates: Record<string, string[]> = {
                         images={villa.images}
                         index={index}
                         ctaLabel={t("villa.ctaContact")}
-                        bookedDates={mockBookedDates[villa.key] || []}
+                        bookedDates={bookedDates[villa.key] || []}
                         amenityLabels={{
                           pool: t("amenities.pool"),
                           wifi: t("amenities.wifi"),

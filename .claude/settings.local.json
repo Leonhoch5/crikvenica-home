@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s \"https://calendar.hundeurlaub.de/de/api/widgets/accommodation/property/6646/2026-08/yearly-availability/\")"
+    ]
+  }
+}
