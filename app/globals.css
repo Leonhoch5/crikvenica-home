@@ -179,14 +179,16 @@ body {
 }
 
 
-/* Available days — green tint */
+/* Available days — green rectangle */
 .rdp-available .rdp-day_button {
-  background: rgba(34, 197, 94, 0.18);
-  border-radius: 9999px;
+  width: 100%;
+  height: var(--rdp-cell-size);
+  background: rgba(34, 197, 94, 0.2);
+  border-radius: 0;
   text-decoration: none;
 }
 
-/* Selection overrides available color */
+/* Selection overrides available */
 .rdp-selected.rdp-available .rdp-day_button,
 .rdp-range_start.rdp-available .rdp-day_button,
 .rdp-range_end.rdp-available .rdp-day_button {
@@ -200,54 +202,20 @@ body {
   border-radius: 0;
 }
 
-/* Booked ranges — soft red band, no big solid circles */
+/* Booked ranges — flat red rectangles, no bubbles */
 .rdp-booked-single .rdp-day_button,
-.rdp-disabled.rdp-booked-single .rdp-day_button {
-  background: rgba(239, 68, 68, 0.22);
-  color: #ef4444;
-  text-decoration: none;
-  border-radius: 9999px;
-  pointer-events: none;
-}
-
-.rdp-booked-start,
-.rdp-disabled.rdp-booked-start {
-  background: linear-gradient(to right, transparent 50%, rgba(239, 68, 68, 0.12) 50%);
-}
-
+.rdp-disabled.rdp-booked-single .rdp-day_button,
 .rdp-booked-start .rdp-day_button,
-.rdp-disabled.rdp-booked-start .rdp-day_button {
-  background: rgba(239, 68, 68, 0.22);
-  color: #ef4444;
-  text-decoration: none;
-  border-radius: 9999px;
-  pointer-events: none;
-}
-
-.rdp-booked-middle,
-.rdp-disabled.rdp-booked-middle {
-  background: rgba(239, 68, 68, 0.12);
-}
-
+.rdp-disabled.rdp-booked-start .rdp-day_button,
 .rdp-booked-middle .rdp-day_button,
-.rdp-disabled.rdp-booked-middle .rdp-day_button {
-  background: transparent;
+.rdp-disabled.rdp-booked-middle .rdp-day_button,
+.rdp-booked-end .rdp-day_button,
+.rdp-disabled.rdp-booked-end .rdp-day_button {
+  width: 100%;
+  height: var(--rdp-cell-size);
+  background: rgba(239, 68, 68, 0.22);
   color: #ef4444;
   text-decoration: none;
   border-radius: 0;
-  pointer-events: none;
-}
-
-.rdp-booked-end,
-.rdp-disabled.rdp-booked-end {
-  background: linear-gradient(to left, transparent 50%, rgba(239, 68, 68, 0.12) 50%);
-}
-
-.rdp-booked-end .rdp-day_button,
-.rdp-disabled.rdp-booked-end .rdp-day_button {
-  background: rgba(239, 68, 68, 0.22);
-  color: #ef4444;
-  text-decoration: none;
-  border-radius: 9999px;
   pointer-events: none;
 }
