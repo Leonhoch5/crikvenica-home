@@ -179,118 +179,35 @@ body {
 }
 
 
-/* Available ranges — green band, square buttons */
-.rdp-available-start,
-.rdp-disabled.rdp-available-start {
-  background: linear-gradient(to right, transparent 50%, rgba(34, 197, 94, 0.15) 50%);
-}
-
-.rdp-available-start .rdp-day_button,
-.rdp-disabled.rdp-available-start .rdp-day_button {
+/* Available — green square */
+.rdp-available .rdp-day_button {
   background: rgba(34, 197, 94, 0.28);
   color: var(--foreground);
   text-decoration: none;
   border-radius: 0;
 }
 
-.rdp-available-middle,
-.rdp-disabled.rdp-available-middle {
-  background: rgba(34, 197, 94, 0.15);
-}
-
-.rdp-available-middle .rdp-day_button,
-.rdp-disabled.rdp-available-middle .rdp-day_button {
-  background: transparent;
-  color: var(--foreground);
+/* Booked — red square, unselectable */
+.rdp-booked .rdp-day_button,
+.rdp-disabled.rdp-booked .rdp-day_button {
+  background: rgba(239, 68, 68, 0.22);
+  color: #ef4444;
   text-decoration: none;
   border-radius: 0;
-}
-
-.rdp-available-end,
-.rdp-disabled.rdp-available-end {
-  background: linear-gradient(to left, transparent 50%, rgba(34, 197, 94, 0.15) 50%);
-}
-
-.rdp-available-end .rdp-day_button,
-.rdp-disabled.rdp-available-end .rdp-day_button {
-  background: rgba(34, 197, 94, 0.28);
-  color: var(--foreground);
-  text-decoration: none;
-  border-radius: 0;
-}
-
-.rdp-available-single .rdp-day_button {
-  background: rgba(34, 197, 94, 0.28);
-  color: var(--foreground);
-  text-decoration: none;
-  border-radius: 0;
+  pointer-events: none;
 }
 
 /* Selection overrides available */
-.rdp-selected.rdp-available-start .rdp-day_button,
-.rdp-selected.rdp-available-end .rdp-day_button,
-.rdp-selected.rdp-available-single .rdp-day_button,
-.rdp-range_start.rdp-available-start .rdp-day_button,
-.rdp-range_end.rdp-available-end .rdp-day_button {
+.rdp-selected.rdp-available .rdp-day_button,
+.rdp-range_start.rdp-available .rdp-day_button,
+.rdp-range_end.rdp-available .rdp-day_button {
   background: var(--foreground);
   color: var(--background);
   border-radius: 0;
 }
 
-.rdp-range_middle.rdp-available-middle .rdp-day_button {
+.rdp-range_middle.rdp-available .rdp-day_button {
   background: color-mix(in srgb, var(--foreground) 10%, transparent);
   color: var(--foreground);
   border-radius: 0;
-}
-
-/* Booked ranges — red band, square buttons */
-.rdp-booked-single .rdp-day_button,
-.rdp-disabled.rdp-booked-single .rdp-day_button {
-  background: rgba(239, 68, 68, 0.22);
-  color: #ef4444;
-  text-decoration: none;
-  border-radius: 0;
-  pointer-events: none;
-}
-
-.rdp-booked-start,
-.rdp-disabled.rdp-booked-start {
-  background: linear-gradient(to right, transparent 50%, rgba(239, 68, 68, 0.12) 50%);
-}
-
-.rdp-booked-start .rdp-day_button,
-.rdp-disabled.rdp-booked-start .rdp-day_button {
-  background: rgba(239, 68, 68, 0.22);
-  color: #ef4444;
-  text-decoration: none;
-  border-radius: 0;
-  pointer-events: none;
-}
-
-.rdp-booked-middle,
-.rdp-disabled.rdp-booked-middle {
-  background: rgba(239, 68, 68, 0.12);
-}
-
-.rdp-booked-middle .rdp-day_button,
-.rdp-disabled.rdp-booked-middle .rdp-day_button {
-  background: transparent;
-  color: #ef4444;
-  text-decoration: none;
-  border-radius: 0;
-  pointer-events: none;
-}
-
-.rdp-booked-end,
-.rdp-disabled.rdp-booked-end {
-  background: linear-gradient(to left, transparent 50%, rgba(239, 68, 68, 0.12) 50%);
-}
-
-.rdp-booked-end .rdp-day_button,
-.rdp-disabled.rdp-booked-end .rdp-day_button {
-  background: rgba(239, 68, 68, 0.22);
-  color: #ef4444;
-  text-decoration: none;
-  border-radius: 0;
-  pointer-events: none;
 }
