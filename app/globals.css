@@ -92,6 +92,10 @@ body {
   color: var(--foreground);
 }
 
+.rdp-chevron {
+  fill: var(--foreground);
+}
+
 .rdp-weekdays {
   display: flex;
   margin-bottom: 0.125rem;
