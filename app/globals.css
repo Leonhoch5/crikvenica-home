@@ -72,6 +72,7 @@ body {
 
 .rdp-button_previous,
 .rdp-button_next {
+  color: var(--foreground);
   width: 1.75rem;
   height: 1.75rem;
   border-radius: 9999px;
