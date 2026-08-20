@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import { createPortal } from "react-dom";
+import { AvailabilityDay } from "../lib/availability";
 import { Reveal } from "./Reveal";
 import { VillaGallery } from "./VillaGallery";
 import { BookingCalendar } from "./BookingCalendar";
@@ -28,7 +29,7 @@ type VillaCardProps = {
     bathrooms: string;
     sleeps: string;
   };
-  bookedDates?: string[]; // ISO-Strings, z.B. ["2026-08-20"]
+  bookedDates?: AvailabilityDay[];
 };
 
 export function VillaCard({
@@ -174,9 +175,8 @@ export function VillaCard({
                       {/* Big preview images */}
                       <VillaGallery images={images} alt={name} />
                       <BookingCalendar
-                        bookedDates={bookedDates?.map((d) => new Date(d)) ?? []}
+                        availability={bookedDates ?? []}
                         onSelectRange={(range) => {
-                          // Hier kannst du den ausgewählten Bereich speichern
                           console.log("Ausgewählter Bereich:", range);
                         }}
                       />

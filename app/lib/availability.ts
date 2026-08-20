@@ -1,10 +1,17 @@
+export type AvailabilityDay = {
+    date: string;
+    is_occupied: boolean;
+    is_start: boolean;
+    is_end: boolean;
+};
+
 const VILLA_IDS: Record<string, string> = {
     ivanka: "6743",
     milka: "6647",
     vesna: "6646",
 };
 
-export async function getBookedDates(villaKey: string): Promise<string[]> {
+export async function getAvailability(villaKey: string): Promise<AvailabilityDay[]> {
     const id = VILLA_IDS[villaKey];
     if (!id) return [];
 
@@ -15,10 +22,13 @@ export async function getBookedDates(villaKey: string): Promise<string[]> {
     try {
         const res = await fetch(url, { next: { revalidate: 3600 } });
         if (!res.ok) return [];
-        const data: Record<string, { is_occupied: boolean }> = await res.json();
-        return Object.entries(data)
-            .filter(([, v]) => v.is_occupied)
-            .map(([date]) => date);
+        const data: Record<string, { is_occupied: boolean; is_start: boolean; is_end: boolean }> = await res.json();
+        return Object.entries(data).map(([date, v]) => ({
+            date,
+            is_occupied: v.is_occupied,
+            is_start: v.is_start,
+            is_end: v.is_end,
+        }));
     } catch {
         return [];
     }

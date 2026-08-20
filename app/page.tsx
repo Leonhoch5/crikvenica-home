@@ -4,7 +4,7 @@ import { ContactForm } from "./components/ContactForm";
 import { Reveal } from "./components/Reveal";
 import { VillaCard } from "./components/VillaCard";
 import { getVillaContent, getPageContent } from "./lib/strapi";
-import { getBookedDates } from "./lib/availability";
+import { getAvailability } from "./lib/availability";
 import { cookies } from "next/headers";
 import { getTranslations } from "next-intl/server";
 import { defaultLocale, supportedLocales } from "./i18n/getMessages";
@@ -19,12 +19,12 @@ export default async function Home() {
   const [villas, cms, bookedIvanka, bookedMilka, bookedVesna] = await Promise.all([
     getVillaContent(safeLocale),
     getPageContent(safeLocale),
-    getBookedDates("ivanka"),
-    getBookedDates("milka"),
-    getBookedDates("vesna"),
+    getAvailability("ivanka"),
+    getAvailability("milka"),
+    getAvailability("vesna"),
   ]);
 
-  const bookedDates: Record<string, string[]> = {
+  const bookedDates: Record<string, import("./lib/availability").AvailabilityDay[]> = {
     ivanka: bookedIvanka,
     milka: bookedMilka,
     vesna: bookedVesna,

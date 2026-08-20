@@ -179,11 +179,32 @@ body {
 }
 
 
-/* Booked ranges — red, unselectable */
+/* Available days — green tint */
+.rdp-available .rdp-day_button {
+  background: rgba(34, 197, 94, 0.18);
+  border-radius: 9999px;
+  text-decoration: none;
+}
+
+/* Selection overrides available color */
+.rdp-selected.rdp-available .rdp-day_button,
+.rdp-range_start.rdp-available .rdp-day_button,
+.rdp-range_end.rdp-available .rdp-day_button {
+  background: var(--foreground);
+  color: var(--background);
+}
+
+.rdp-range_middle.rdp-available .rdp-day_button {
+  background: color-mix(in srgb, var(--foreground) 10%, transparent);
+  color: var(--foreground);
+  border-radius: 0;
+}
+
+/* Booked ranges — soft red band, no big solid circles */
 .rdp-booked-single .rdp-day_button,
 .rdp-disabled.rdp-booked-single .rdp-day_button {
-  background: #ef4444;
-  color: white;
+  background: rgba(239, 68, 68, 0.22);
+  color: #ef4444;
   text-decoration: none;
   border-radius: 9999px;
   pointer-events: none;
@@ -191,13 +212,13 @@ body {
 
 .rdp-booked-start,
 .rdp-disabled.rdp-booked-start {
-  background: linear-gradient(to right, transparent 50%, rgba(239, 68, 68, 0.15) 50%);
+  background: linear-gradient(to right, transparent 50%, rgba(239, 68, 68, 0.12) 50%);
 }
 
 .rdp-booked-start .rdp-day_button,
 .rdp-disabled.rdp-booked-start .rdp-day_button {
-  background: #ef4444;
-  color: white;
+  background: rgba(239, 68, 68, 0.22);
+  color: #ef4444;
   text-decoration: none;
   border-radius: 9999px;
   pointer-events: none;
@@ -205,7 +226,7 @@ body {
 
 .rdp-booked-middle,
 .rdp-disabled.rdp-booked-middle {
-  background: rgba(239, 68, 68, 0.15);
+  background: rgba(239, 68, 68, 0.12);
 }
 
 .rdp-booked-middle .rdp-day_button,
@@ -219,13 +240,13 @@ body {
 
 .rdp-booked-end,
 .rdp-disabled.rdp-booked-end {
-  background: linear-gradient(to left, transparent 50%, rgba(239, 68, 68, 0.15) 50%);
+  background: linear-gradient(to left, transparent 50%, rgba(239, 68, 68, 0.12) 50%);
 }
 
 .rdp-booked-end .rdp-day_button,
 .rdp-disabled.rdp-booked-end .rdp-day_button {
-  background: #ef4444;
-  color: white;
+  background: rgba(239, 68, 68, 0.22);
+  color: #ef4444;
   text-decoration: none;
   border-radius: 9999px;
   pointer-events: none;
