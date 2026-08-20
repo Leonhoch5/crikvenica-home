@@ -5,6 +5,7 @@ import { Reveal } from "./components/Reveal";
 import { VillaCard } from "./components/VillaCard";
 import { getVillaContent, getPageContent } from "./lib/strapi";
 import { getAvailability } from "./lib/availability";
+import { getVillaPrices } from "./lib/prices";
 import { cookies } from "next/headers";
 import { getTranslations } from "next-intl/server";
 import { defaultLocale, supportedLocales } from "./i18n/getMessages";
@@ -16,18 +17,27 @@ export default async function Home() {
   const safeLocale = (supportedLocales as readonly string[]).includes(locale)
     ? (locale as (typeof supportedLocales)[number])
     : defaultLocale;
-  const [villas, cms, bookedIvanka, bookedMilka, bookedVesna] = await Promise.all([
+  const [villas, cms, bookedIvanka, bookedMilka, bookedVesna, pricesIvanka, pricesMilka, pricesVesna] = await Promise.all([
     getVillaContent(safeLocale),
     getPageContent(safeLocale),
     getAvailability("ivanka"),
     getAvailability("milka"),
     getAvailability("vesna"),
+    getVillaPrices("ivanka"),
+    getVillaPrices("milka"),
+    getVillaPrices("vesna"),
   ]);
 
   const bookedDates: Record<string, import("./lib/availability").AvailabilityDay[]> = {
     ivanka: bookedIvanka,
     milka: bookedMilka,
     vesna: bookedVesna,
+  };
+
+  const villaPrices: Record<string, import("./lib/prices").SeasonPrice[]> = {
+    ivanka: pricesIvanka,
+    milka: pricesMilka,
+    vesna: pricesVesna,
   };
   const storyText = [
     cms?.storyP1 ?? t("sections.story.paragraph1"),
@@ -102,6 +112,7 @@ export default async function Home() {
                         index={index}
                         ctaLabel={t("villa.ctaContact")}
                         bookedDates={bookedDates[villa.key] || []}
+                        prices={villaPrices[villa.key] || []}
                         amenityLabels={{
                           pool: t("amenities.pool"),
                           wifi: t("amenities.wifi"),

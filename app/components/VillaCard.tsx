@@ -3,6 +3,7 @@
 import * as React from "react";
 import { createPortal } from "react-dom";
 import { AvailabilityDay } from "../lib/availability";
+import { SeasonPrice } from "../lib/prices";
 import { Reveal } from "./Reveal";
 import { VillaGallery } from "./VillaGallery";
 import { BookingCalendar } from "./BookingCalendar";
@@ -30,6 +31,7 @@ type VillaCardProps = {
     sleeps: string;
   };
   bookedDates?: AvailabilityDay[];
+  prices?: SeasonPrice[];
 };
 
 export function VillaCard({
@@ -46,6 +48,7 @@ export function VillaCard({
   amenityLabels,
   factLabels,
   bookedDates = [],
+  prices = [],
 }: VillaCardProps) {
   // Controls the fullscreen preview modal.
   const [isOpen, setIsOpen] = React.useState(false);
@@ -180,25 +183,34 @@ export function VillaCard({
                           console.log("Ausgewählter Bereich:", range);
                         }}
                       />
-                      {/* Prices table (structure only; data to be added later) */}
+                      {/* Prices table */}
+                      {prices.length > 0 && (
                       <div className="overflow-hidden rounded-2xl border border-foreground/10 bg-background">
                         <table className="w-full border-collapse text-sm">
                           <caption className="px-4 py-3 text-left text-xs font-medium text-foreground/70">
-                            Prices
+                            Preise &amp; Saisonzeiten
                           </caption>
                           <thead className="border-t border-foreground/10">
                             <tr className="text-left text-xs text-foreground/60">
-                              <th scope="col" className="px-4 py-3 font-medium">
-                                Season
-                              </th>
-                              <th scope="col" className="px-4 py-3 font-medium">
-                                Price
-                              </th>
+                              <th scope="col" className="px-4 py-3 font-medium">Saison</th>
+                              <th scope="col" className="px-4 py-3 font-medium">Zeitraum</th>
+                              <th scope="col" className="px-4 py-3 font-medium text-right">p. Nacht</th>
+                              <th scope="col" className="px-4 py-3 font-medium text-right">p. Woche</th>
                             </tr>
                           </thead>
-                          <tbody />
+                          <tbody>
+                            {prices.map((p) => (
+                              <tr key={p.season} className="border-t border-foreground/10">
+                                <td className="px-4 py-3 font-medium text-foreground/80">{p.season}</td>
+                                <td className="px-4 py-3 text-foreground/60 text-xs">{p.dateRange}</td>
+                                <td className="px-4 py-3 text-right font-medium text-foreground/80">{p.perNight}</td>
+                                <td className="px-4 py-3 text-right font-medium text-foreground/80">{p.perWeek}</td>
+                              </tr>
+                            ))}
+                          </tbody>
                         </table>
                       </div>
+                      )}
                     </div>
 
                     {/* Long description + facts + amenities + CTA */}
