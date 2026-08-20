@@ -72,13 +72,12 @@ body {
 
 .rdp-button_previous,
 .rdp-button_next {
-  color: var(--foreground);
   width: 1.75rem;
   height: 1.75rem;
   border-radius: 9999px;
   border: 1px solid color-mix(in srgb, var(--foreground) 12%, transparent);
   background: transparent;
-  color: color-mix(in srgb, var(--foreground) 50%, transparent);
+  color: var(--foreground);
   display: flex;
   align-items: center;
   justify-content: center;
