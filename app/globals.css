@@ -169,7 +169,6 @@ body {
 
 .rdp-disabled .rdp-day_button {
   color: color-mix(in srgb, var(--foreground) 22%, transparent);
-  text-decoration: line-through;
   cursor: default;
   pointer-events: none;
 }

@@ -21,7 +21,7 @@ export function BookingCalendar({ availability, onSelectRange }: BookingCalendar
         const [y, m, d] = day.date.split("-").map(Number);
         const date = new Date(y, m - 1, d);
         if (day.is_occupied) {
-            booked.push(date);
+            if (date >= today) booked.push(date);
         } else if (date >= today) {
             available.push(date);
         }
@@ -33,7 +33,8 @@ export function BookingCalendar({ availability, onSelectRange }: BookingCalendar
                 locale={de}
                 numberOfMonths={3}
                 defaultMonth={today}
-                disabled={booked}
+                disabled={[{ before: today }, ...booked]}
+                startMonth={today}
                 mode="range"
                 onSelect={onSelectRange}
                 showOutsideDays
