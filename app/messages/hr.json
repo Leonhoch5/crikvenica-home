@@ -79,6 +79,18 @@
         "copyright": "© 2026 Crikvenica Villas",
         "disclaimer": "Obiteljsko imanje"
     },
+    "prices": {
+        "caption": "Cijene i sezone",
+        "season": "Sezona",
+        "period": "Razdoblje",
+        "perNight": "po noći",
+        "perWeek": "tjedno",
+        "seasonA": "Predsezone",
+        "seasonB": "Međusezona",
+        "seasonC": "Glavna sezona",
+        "seasonD": "Međusezona",
+        "seasonE": "Postsezone"
+    },
     "language": {
         "label": "Jezik"
     }

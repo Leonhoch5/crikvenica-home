@@ -79,6 +79,18 @@
         "copyright": "© 2026 Crikvenica Villas",
         "disclaimer": "Familiengeführtes Anwesen"
     },
+    "prices": {
+        "caption": "Preise & Saisonzeiten",
+        "season": "Saison",
+        "period": "Zeitraum",
+        "perNight": "p. Nacht",
+        "perWeek": "p. Woche",
+        "seasonA": "Vorsaison",
+        "seasonB": "Nebensaison",
+        "seasonC": "Hauptsaison",
+        "seasonD": "Nebensaison",
+        "seasonE": "Nachsaison"
+    },
     "language": {
         "label": "Sprache"
     }

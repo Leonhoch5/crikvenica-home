@@ -113,6 +113,18 @@ export default async function Home() {
                         ctaLabel={t("villa.ctaContact")}
                         bookedDates={bookedDates[villa.key] || []}
                         prices={villaPrices[villa.key] || []}
+                        priceLabels={{
+                          caption: t("prices.caption"),
+                          season: t("prices.season"),
+                          period: t("prices.period"),
+                          perNight: t("prices.perNight"),
+                          perWeek: t("prices.perWeek"),
+                          seasonA: t("prices.seasonA"),
+                          seasonB: t("prices.seasonB"),
+                          seasonC: t("prices.seasonC"),
+                          seasonD: t("prices.seasonD"),
+                          seasonE: t("prices.seasonE"),
+                        }}
                         amenityLabels={{
                           pool: t("amenities.pool"),
                           wifi: t("amenities.wifi"),

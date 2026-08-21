@@ -32,6 +32,18 @@ type VillaCardProps = {
   };
   bookedDates?: AvailabilityDay[];
   prices?: SeasonPrice[];
+  priceLabels: {
+    caption: string;
+    season: string;
+    period: string;
+    perNight: string;
+    perWeek: string;
+    seasonA: string;
+    seasonB: string;
+    seasonC: string;
+    seasonD: string;
+    seasonE: string;
+  };
 };
 
 export function VillaCard({
@@ -49,6 +61,7 @@ export function VillaCard({
   factLabels,
   bookedDates = [],
   prices = [],
+  priceLabels,
 }: VillaCardProps) {
   // Controls the fullscreen preview modal.
   const [isOpen, setIsOpen] = React.useState(false);
