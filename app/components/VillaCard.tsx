@@ -201,7 +201,7 @@ export function VillaCard({
                           <tbody>
                             {prices.map((p) => (
                               <tr key={p.season} className="border-t border-foreground/10">
-                                <td className="px-4 py-3 font-medium text-foreground/80">{p.season}</td>
+                                <td className="px-4 py-3 font-medium text-foreground/80">{SEASON_LABELS[p.season] ?? p.season}</td>
                                 <td className="px-4 py-3 text-foreground/60 text-xs">{p.dateRange}</td>
                                 <td className="px-4 py-3 text-right font-medium text-foreground/80">{p.perNight}</td>
                                 <td className="px-4 py-3 text-right font-medium text-foreground/80">{p.perWeek}</td>
@@ -256,6 +256,14 @@ export function VillaCard({
     </Reveal>
   );
 }
+
+const SEASON_LABELS: Record<string, string> = {
+  "Saison A": "Vorsaison",
+  "Saison B": "Nebensaison",
+  "Saison C": "Hauptsaison",
+  "Saison D": "Nebensaison",
+  "Saison E": "Nachsaison",
+};
 
 function Fact({ label, value }: { label: string; value: number | string }) {
   return (
