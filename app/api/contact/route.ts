@@ -33,6 +33,7 @@ export async function POST(request: Request) {
   }
 
   const smtpHost = process.env.SMTP_HOST;
+  const smtpServername = process.env.SMTP_SERVERNAME;
   const smtpPort = process.env.SMTP_PORT;
   const smtpUser = process.env.SMTP_USER;
   const smtpPass = process.env.SMTP_PASS;
@@ -40,7 +41,7 @@ export async function POST(request: Request) {
 
   const contactFrom = process.env.CONTACT_FROM;
 
-  if (!smtpHost || !smtpPort || !smtpUser || !smtpPass || !contactTo) {
+  if (!smtpHost || !smtpServername || !smtpPort || !smtpUser || !smtpPass || !contactTo) {
     return NextResponse.json(
       { ok: false, error: "server_not_configured" },
       { status: 500 },
@@ -51,6 +52,7 @@ export async function POST(request: Request) {
     host: smtpHost,
     port: Number(smtpPort),
     secure: Number(smtpPort) === 465,
+    tls: { servername: smtpServername },
     auth: { user: smtpUser, pass: smtpPass },
   });
 
