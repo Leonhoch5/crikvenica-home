@@ -49,7 +49,14 @@
         }
     },
     "villa": {
-        "ctaContact": "Kontakt aufnehmen"
+        "ctaContact": "Kontakt aufnehmen",
+        "closePreview": "Vorschau schließen",
+        "close": "Schließen"
+    },
+    "gallery": {
+        "prevImage": "Vorheriges Bild",
+        "nextImage": "Nächstes Bild",
+        "openImage": "Bild öffnen"
     },
     "contact": {
         "emailLabel": "E‑Mail:",

@@ -113,6 +113,14 @@ export default async function Home() {
                         ctaLabel={t("villa.ctaContact")}
                         bookedDates={bookedDates[villa.key] || []}
                         prices={villaPrices[villa.key] || []}
+                        calendarLocale={safeLocale}
+                        galleryLabels={{
+                          prev: t("gallery.prevImage"),
+                          next: t("gallery.nextImage"),
+                          openImage: t("gallery.openImage"),
+                        }}
+                        closePreviewLabel={t("villa.closePreview")}
+                        closeLabel={t("villa.close")}
                         priceLabels={{
                           caption: t("prices.caption"),
                           season: t("prices.season"),

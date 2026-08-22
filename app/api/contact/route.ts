@@ -74,6 +74,7 @@ export async function POST(request: Request) {
     return NextResponse.json({ ok: true });
   } catch (error) {
     console.error("Error sending email:", error);
-    return NextResponse.json({ ok: false, error: "send_failed" }, { status: 500 });
+    const message = error instanceof Error ? error.message : String(error);
+    return NextResponse.json({ ok: false, error: "send_failed", detail: message }, { status: 500 });
   }
 }

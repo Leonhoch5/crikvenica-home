@@ -49,7 +49,14 @@
         }
     },
     "villa": {
-        "ctaContact": "Contattaci"
+        "ctaContact": "Contattaci",
+        "closePreview": "Chiudi anteprima",
+        "close": "Chiudi"
+    },
+    "gallery": {
+        "prevImage": "Immagine precedente",
+        "nextImage": "Immagine successiva",
+        "openImage": "Apri immagine"
     },
     "contact": {
         "emailLabel": "Email:",

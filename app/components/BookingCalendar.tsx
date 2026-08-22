@@ -2,15 +2,18 @@
 
 import * as React from "react";
 import { DayPicker, DateRange } from "react-day-picker";
-import { de } from "date-fns/locale";
+import { de, enUS, hr, it } from "date-fns/locale";
 import { AvailabilityDay } from "../lib/availability";
+
+const DATE_FNS_LOCALES: Record<string, typeof de> = { de, en: enUS, hr, it };
 
 type BookingCalendarProps = {
     availability: AvailabilityDay[];
+    locale?: string;
     onSelectRange?: (range: DateRange | undefined) => void;
 };
 
-export function BookingCalendar({ availability, onSelectRange }: BookingCalendarProps) {
+export function BookingCalendar({ availability, locale = "de", onSelectRange }: BookingCalendarProps) {
     const today = new Date();
     today.setHours(0, 0, 0, 0);
 
@@ -27,10 +30,12 @@ export function BookingCalendar({ availability, onSelectRange }: BookingCalendar
         }
     }
 
+    const dateFnsLocale = DATE_FNS_LOCALES[locale] ?? de;
+
     return (
         <div className="relative pt-10">
             <DayPicker
-                locale={de}
+                locale={dateFnsLocale}
                 numberOfMonths={3}
                 defaultMonth={today}
                 disabled={[{ before: today }, ...booked]}

@@ -49,7 +49,14 @@
         }
     },
     "villa": {
-        "ctaContact": "Javite nam se"
+        "ctaContact": "Javite nam se",
+        "closePreview": "Zatvori pregled",
+        "close": "Zatvori"
+    },
+    "gallery": {
+        "prevImage": "Prethodna slika",
+        "nextImage": "Sljedeća slika",
+        "openImage": "Otvori sliku"
     },
     "contact": {
         "emailLabel": "E‑mail:",

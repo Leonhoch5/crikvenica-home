@@ -44,6 +44,10 @@ type VillaCardProps = {
     seasonD: string;
     seasonE: string;
   };
+  galleryLabels: { prev: string; next: string; openImage: string };
+  closePreviewLabel: string;
+  closeLabel: string;
+  calendarLocale: string;
 };
 
 export function VillaCard({
@@ -62,6 +66,10 @@ export function VillaCard({
   bookedDates = [],
   prices = [],
   priceLabels,
+  galleryLabels,
+  closePreviewLabel,
+  closeLabel,
+  calendarLocale,
 }: VillaCardProps) {
   // Controls the fullscreen preview modal.
   const [isOpen, setIsOpen] = React.useState(false);
@@ -121,7 +129,7 @@ export function VillaCard({
         }}
       >
         {/* Card images (small gallery preview) */}
-        <VillaGallery images={images} alt={name} />
+        <VillaGallery images={images} alt={name} prevLabel={galleryLabels.prev} nextLabel={galleryLabels.next} openImageLabel={galleryLabels.openImage} />
 
         {/* Card summary (title, short description, facts, amenities, CTA) */}
         <div className="flex flex-1 flex-col px-1 pb-2 pt-5">
@@ -155,7 +163,7 @@ export function VillaCard({
             {/* Backdrop: clicking outside closes the preview */}
             <button
               type="button"
-              aria-label="Close preview"
+              aria-label={closePreviewLabel}
               className="absolute inset-0 bg-black/40 backdrop-blur-sm"
               onClick={() => setIsOpen(false)}
             />
@@ -179,7 +187,7 @@ export function VillaCard({
                       type="button"
                       onClick={() => setIsOpen(false)}
                       className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-foreground/10 bg-background text-foreground/70 transition-colors hover:bg-foreground/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-foreground/35"
-                      aria-label="Close"
+                      aria-label={closeLabel}
                     >
                       <XIcon className="h-5 w-5" />
                     </button>
@@ -189,9 +197,10 @@ export function VillaCard({
                   <div className="grid flex-1 gap-10 overflow-y-auto p-6 lg:grid-cols-2 lg:items-start">
                     <div className="flex flex-col gap-6">
                       {/* Big preview images */}
-                      <VillaGallery images={images} alt={name} />
+                      <VillaGallery images={images} alt={name} prevLabel={galleryLabels.prev} nextLabel={galleryLabels.next} openImageLabel={galleryLabels.openImage} />
                       <BookingCalendar
                         availability={bookedDates ?? []}
+                        locale={calendarLocale}
                         onSelectRange={(range) => {
                           console.log("Ausgewählter Bereich:", range);
                         }}
@@ -201,25 +210,30 @@ export function VillaCard({
                       <div className="overflow-hidden rounded-2xl border border-foreground/10 bg-background">
                         <table className="w-full border-collapse text-sm">
                           <caption className="px-4 py-3 text-left text-xs font-medium text-foreground/70">
-                            Preise &amp; Saisonzeiten
+                            {priceLabels.caption}
                           </caption>
                           <thead className="border-t border-foreground/10">
                             <tr className="text-left text-xs text-foreground/60">
-                              <th scope="col" className="px-4 py-3 font-medium">Saison</th>
-                              <th scope="col" className="px-4 py-3 font-medium">Zeitraum</th>
-                              <th scope="col" className="px-4 py-3 font-medium text-right">p. Nacht</th>
-                              <th scope="col" className="px-4 py-3 font-medium text-right">p. Woche</th>
+                              <th scope="col" className="px-4 py-3 font-medium">{priceLabels.season}</th>
+                              <th scope="col" className="px-4 py-3 font-medium">{priceLabels.period}</th>
+                              <th scope="col" className="px-4 py-3 font-medium text-right">{priceLabels.perNight}</th>
+                              <th scope="col" className="px-4 py-3 font-medium text-right">{priceLabels.perWeek}</th>
                             </tr>
                           </thead>
                           <tbody>
-                            {prices.map((p) => (
-                              <tr key={p.season} className="border-t border-foreground/10">
-                                <td className="px-4 py-3 font-medium text-foreground/80">{SEASON_LABELS[p.season] ?? p.season}</td>
-                                <td className="px-4 py-3 text-foreground/60 text-xs">{p.dateRange}</td>
-                                <td className="px-4 py-3 text-right font-medium text-foreground/80">{p.perNight}</td>
-                                <td className="px-4 py-3 text-right font-medium text-foreground/80">{p.perWeek}</td>
-                              </tr>
-                            ))}
+                            {prices.map((p) => {
+                              const letter = p.season.replace("Saison ", "").toUpperCase();
+                              const seasonKey = `season${letter}` as keyof typeof priceLabels;
+                              const label = priceLabels[seasonKey] ?? p.season;
+                              return (
+                                <tr key={p.season} className="border-t border-foreground/10">
+                                  <td className="px-4 py-3 font-medium text-foreground/80">{label}</td>
+                                  <td className="px-4 py-3 text-foreground/60 text-xs">{p.dateRange}</td>
+                                  <td className="px-4 py-3 text-right font-medium text-foreground/80">{p.perNight}</td>
+                                  <td className="px-4 py-3 text-right font-medium text-foreground/80">{p.perWeek}</td>
+                                </tr>
+                              );
+                            })}
                           </tbody>
                         </table>
                       </div>
@@ -269,14 +283,6 @@ export function VillaCard({
     </Reveal>
   );
 }
-
-const SEASON_LABELS: Record<string, string> = {
-  "Saison A": "Vorsaison",
-  "Saison B": "Nebensaison",
-  "Saison C": "Hauptsaison",
-  "Saison D": "Nebensaison",
-  "Saison E": "Nachsaison",
-};
 
 function Fact({ label, value }: { label: string; value: number | string }) {
   return (

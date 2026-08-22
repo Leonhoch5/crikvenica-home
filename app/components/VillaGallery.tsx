@@ -6,11 +6,14 @@ import * as React from "react";
 type VillaGalleryProps = {
   images: readonly string[];
   alt: string;
+  prevLabel: string;
+  nextLabel: string;
+  openImageLabel: string;
 };
 
 const FALLBACK_SRC = "/villas/fallback.jpg";
 
-export function VillaGallery({ images, alt }: VillaGalleryProps) {
+export function VillaGallery({ images, alt, prevLabel, nextLabel, openImageLabel }: VillaGalleryProps) {
   const [activeIndex, setActiveIndex] = React.useState(0);
   const [safeSources, setSafeSources] = React.useState<string[]>(() => images.map((src) => src));
 
@@ -58,7 +61,7 @@ export function VillaGallery({ images, alt }: VillaGalleryProps) {
           <button
             type="button"
             onClick={goPrevious}
-            aria-label="Previous image"
+            aria-label={prevLabel}
             className="pointer-events-auto inline-flex h-10 w-10 items-center justify-center rounded-full border border-foreground/15 bg-background/70 text-foreground/80 backdrop-blur transition-transform duration-200 hover:-translate-y-0.5 hover:bg-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-foreground/35"
           >
             <ChevronLeftIcon className="h-5 w-5" />
@@ -67,7 +70,7 @@ export function VillaGallery({ images, alt }: VillaGalleryProps) {
           <button
             type="button"
             onClick={goNext}
-            aria-label="Next image"
+            aria-label={nextLabel}
             className="pointer-events-auto inline-flex h-10 w-10 items-center justify-center rounded-full border border-foreground/15 bg-background/70 text-foreground/80 backdrop-blur transition-transform duration-200 hover:-translate-y-0.5 hover:bg-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-foreground/35"
           >
             <ChevronRightIcon className="h-5 w-5" />
@@ -89,7 +92,7 @@ export function VillaGallery({ images, alt }: VillaGalleryProps) {
                   ? "border-foreground/30"
                   : "border-foreground/10 hover:border-foreground/25")
               }
-              aria-label={`Open image ${index + 1}`}
+              aria-label={`${openImageLabel} ${index + 1}`}
             >
               <Image
                 src={src}
