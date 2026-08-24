@@ -13,9 +13,23 @@ type BookingCalendarProps = {
     onSelectRange?: (range: DateRange | undefined) => void;
 };
 
+function useMonthCount() {
+    const [count, setCount] = React.useState(1);
+    React.useEffect(() => {
+        function update() {
+            setCount(window.innerWidth >= 640 ? 2 : 1);
+        }
+        update();
+        window.addEventListener("resize", update);
+        return () => window.removeEventListener("resize", update);
+    }, []);
+    return count;
+}
+
 export function BookingCalendar({ availability, locale = "de", onSelectRange }: BookingCalendarProps) {
     const today = new Date();
     today.setHours(0, 0, 0, 0);
+    const monthCount = useMonthCount();
 
     const available: Date[] = [];
     const booked: Date[] = [];
@@ -36,7 +50,7 @@ export function BookingCalendar({ availability, locale = "de", onSelectRange }: 
         <div className="relative pt-10">
             <DayPicker
                 locale={dateFnsLocale}
-                numberOfMonths={3}
+                numberOfMonths={monthCount}
                 defaultMonth={today}
                 disabled={[{ before: today }, ...booked]}
                 startMonth={today}
@@ -49,7 +63,7 @@ export function BookingCalendar({ availability, locale = "de", onSelectRange }: 
                     booked: "rdp-booked",
                 }}
                 classNames={{
-                    months: "grid grid-cols-1 sm:grid-cols-3 gap-6",
+                    months: monthCount === 2 ? "grid grid-cols-2 gap-6" : "grid grid-cols-1 gap-6",
                 }}
             />
         </div>

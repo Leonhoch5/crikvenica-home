@@ -64,9 +64,9 @@ export default async function Home() {
               <div className="grid gap-8">
                 {/* Text container – no max-width restriction */}
                 <div>
-                  {/* Map – floated right, compact size */}
-                  <div className="float-right ml-6 mb-4 w-full max-w-xs h-72 overflow-hidden rounded-2xl border border-foreground/10 bg-background">
-                    <div className="relative w-full h-full">
+                  {/* Map – full-width on mobile, floated right on sm+ */}
+                  <div className="mb-6 h-56 w-full overflow-hidden rounded-2xl border border-foreground/10 bg-background sm:float-right sm:mb-4 sm:ml-6 sm:h-72 sm:w-72">
+                    <div className="relative h-full w-full">
                       <iframe
                         title={t("sections.location.mapTitle")}
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d679.625034542714!2d14.713653386830547!3d45.17470800163428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47637b8b1475e16f%3A0x6e62c1f71f20026a!2sKu%C4%87e%20kamene%20d.o.o.!5e1!3m2!1sde!2shr!4v1785511855481!5m2!1sde!2shr"

@@ -177,7 +177,7 @@ export function VillaCard({
               >
                 <div className="flex h-full flex-col">
                   {/* Preview header */}
-                  <div className="flex items-start justify-between gap-4 border-b border-foreground/10 px-6 py-5">
+                  <div className="flex items-start justify-between gap-4 border-b border-foreground/10 px-4 py-4 sm:px-6 sm:py-5">
                     <div className="min-w-0">
                       <h3 className="text-xl font-semibold tracking-[-0.02em]">{name}</h3>
                       <p className="mt-2 text-sm text-foreground/70">{description}</p>
@@ -194,7 +194,7 @@ export function VillaCard({
                   </div>
 
                   {/* Preview content: big images + details */}
-                  <div className="grid flex-1 gap-10 overflow-y-auto p-6 lg:grid-cols-2 lg:items-start">
+                  <div className="grid flex-1 gap-8 overflow-y-auto p-4 sm:p-6 lg:grid-cols-2 lg:items-start">
                     <div className="flex flex-col gap-6">
                       {/* Big preview images */}
                       <VillaGallery images={images} alt={name} prevLabel={galleryLabels.prev} nextLabel={galleryLabels.next} openImageLabel={galleryLabels.openImage} />
@@ -207,7 +207,7 @@ export function VillaCard({
                       />
                       {/* Prices table */}
                       {prices.length > 0 && (
-                      <div className="overflow-hidden rounded-2xl border border-foreground/10 bg-background">
+                      <div className="overflow-x-auto overflow-hidden rounded-2xl border border-foreground/10 bg-background">
                         <table className="w-full border-collapse text-sm">
                           <caption className="px-4 py-3 text-left text-xs font-medium text-foreground/70">
                             {priceLabels.caption}
