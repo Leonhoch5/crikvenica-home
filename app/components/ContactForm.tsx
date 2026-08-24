@@ -53,6 +53,7 @@ export function ContactForm({
   const [name, setName] = React.useState("");
   const [email, setEmail] = React.useState("");
   const [message, setMessage] = React.useState("");
+  const [honeypot, setHoneypot] = React.useState("");
   const [status, setStatus] = React.useState<"idle" | "sending" | "success" | "error">("idle");
 
   React.useEffect(() => {
@@ -76,7 +77,7 @@ export function ContactForm({
       const response = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ villa, name, email, message, recaptchaToken }),
+        body: JSON.stringify({ villa, name, email, message, recaptchaToken, website: honeypot }),
       });
 
       if (!response.ok) {
@@ -95,6 +96,17 @@ export function ContactForm({
 
   return (
     <form onSubmit={onSubmit} className="rounded-2xl border border-foreground/10 bg-background p-6">
+      {/* Honeypot: hidden from humans, bots fill it and get silently rejected */}
+      <div aria-hidden="true" style={{ position: "absolute", left: "-9999px", top: "-9999px" }}>
+        <input
+          type="text"
+          name="website"
+          value={honeypot}
+          onChange={(e) => setHoneypot(e.target.value)}
+          tabIndex={-1}
+          autoComplete="off"
+        />
+      </div>
       <div className="grid gap-4">
         <label className="grid gap-2 text-sm">
           <span className="text-foreground/80">{villaLabel}</span>
