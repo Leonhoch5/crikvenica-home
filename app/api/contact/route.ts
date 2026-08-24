@@ -49,11 +49,9 @@ export async function POST(request: Request) {
   }
 
   const recaptchaToken = payload.recaptchaToken ?? "";
-  if (recaptchaToken) {
-    const isHuman = await verifyRecaptcha(recaptchaToken);
-    if (!isHuman) {
-      return NextResponse.json({ ok: false, error: "recaptcha_failed" }, { status: 400 });
-    }
+  const isHuman = await verifyRecaptcha(recaptchaToken);
+  if (!isHuman) {
+    return NextResponse.json({ ok: false, error: "recaptcha_failed" }, { status: 400 });
   }
 
   const smtpHost = process.env.SMTP_HOST;
