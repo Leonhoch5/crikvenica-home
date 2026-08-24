@@ -9,10 +9,26 @@ type ContactPayload = {
   name: string;
   email: string;
   message: string;
+  recaptchaToken?: string;
 };
 
 function isNonEmptyString(value: unknown): value is string {
   return typeof value === "string" && value.trim().length > 0;
+}
+
+async function verifyRecaptcha(token: string): Promise<boolean> {
+  const secret = process.env.RECAPTCHA_SECRET_KEY;
+  if (!secret) return true; // skip verification if not configured
+
+  const res = await fetch("https://www.google.com/recaptcha/api/siteverify", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams({ secret, response: token }).toString(),
+  });
+
+  type RecaptchaResponse = { success: boolean; score: number; action: string };
+  const data = (await res.json()) as RecaptchaResponse;
+  return data.success && data.score >= 0.5;
 }
 
 export async function POST(request: Request) {
@@ -30,6 +46,14 @@ export async function POST(request: Request) {
 
   if (!villa || !name || !email || !message) {
     return NextResponse.json({ ok: false, error: "missing_fields" }, { status: 400 });
+  }
+
+  const recaptchaToken = payload.recaptchaToken ?? "";
+  if (recaptchaToken) {
+    const isHuman = await verifyRecaptcha(recaptchaToken);
+    if (!isHuman) {
+      return NextResponse.json({ ok: false, error: "recaptcha_failed" }, { status: 400 });
+    }
   }
 
   const smtpHost = process.env.SMTP_HOST;
@@ -76,7 +100,7 @@ export async function POST(request: Request) {
     return NextResponse.json({ ok: true });
   } catch (error) {
     console.error("Error sending email:", error);
-    const message = error instanceof Error ? error.message : String(error);
-    return NextResponse.json({ ok: false, error: "send_failed", detail: message }, { status: 500 });
+    const detail = error instanceof Error ? error.message : String(error);
+    return NextResponse.json({ ok: false, error: "send_failed", detail }, { status: 500 });
   }
 }
