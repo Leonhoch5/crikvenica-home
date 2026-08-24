@@ -26,8 +26,9 @@ async function verifyRecaptcha(token: string): Promise<boolean> {
     body: new URLSearchParams({ secret, response: token }).toString(),
   });
 
-  type RecaptchaResponse = { success: boolean; score: number; action: string };
+  type RecaptchaResponse = { success: boolean; score: number; action: string; "error-codes"?: string[] };
   const data = (await res.json()) as RecaptchaResponse;
+  console.log("reCAPTCHA verify response:", JSON.stringify(data));
   return data.success && data.score >= 0.5;
 }
 
