@@ -154,7 +154,6 @@ export default async function Home() {
         </section>
 
 
-
         <section id="contact" className="scroll-mt-16 pb-20 sm:pb-28">
           <Reveal>
             <div className="rounded-3xl border border-foreground/10 bg-background/60 p-6 backdrop-blur-sm sm:p-10">

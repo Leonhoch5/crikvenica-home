@@ -10,9 +10,16 @@ type RevealProps = {
 
 export function Reveal({ children, className, delayMs = 0 }: RevealProps) {
   const ref = React.useRef<HTMLDivElement | null>(null);
-  const [isVisible, setIsVisible] = React.useState(false);
+  const [isVisible, setIsVisible] = React.useState(() => {
+    // If the user prefers reduced motion, or IntersectionObserver isn't available
+    // (older mobile browsers, privacy modes), just show the content immediately.
+    if (typeof window === "undefined") return false;
+    const prefersReducedMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
+    return Boolean(prefersReducedMotion) || typeof IntersectionObserver === "undefined";
+  });
 
   React.useEffect(() => {
+    if (isVisible) return;
     const element = ref.current;
     if (!element) return;
 
@@ -26,12 +33,25 @@ export function Reveal({ children, className, delayMs = 0 }: RevealProps) {
           }
         }
       },
-      { root: null, rootMargin: "0px 0px -10% 0px", threshold: 0.1 },
+      // A small positive margin so content just below the fold reveals slightly
+      // early instead of waiting for a large negative margin to be crossed
+      // (which can make the animation feel like it never fires, especially on
+      // short mobile viewports with tall sections).
+      { root: null, rootMargin: "0px 0px 40px 0px", threshold: 0 },
     );
 
     observer.observe(element);
-    return () => observer.disconnect();
-  }, []);
+
+    // Safety net: if the observer never fires (e.g. layout quirks on some
+    // mobile browsers), make sure the content still becomes visible.
+    const fallback = window.setTimeout(() => setIsVisible(true), 1500);
+
+    return () => {
+      observer.disconnect();
+      window.clearTimeout(fallback);
+    };
+  }, [isVisible]);
+
 
   return (
     <div
