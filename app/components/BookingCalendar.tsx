@@ -14,8 +14,8 @@ type BookingCalendarProps = {
 };
 
 // Minimum px width a single month needs so days/weekday labels don't get cramped.
-const MIN_MONTH_WIDTH = 260;
-const MONTH_GAP = 24;
+const MIN_MONTH_WIDTH = 220;
+const MONTH_GAP = 22;
 
 function useMonthCount(containerRef: React.RefObject<HTMLDivElement | null>) {
     const [count, setCount] = React.useState(1);
