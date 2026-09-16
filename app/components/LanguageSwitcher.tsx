@@ -23,7 +23,7 @@ export function LanguageSwitcher({ value, label }: LanguageSwitcherProps) {
 
     const oneYear = 60 * 60 * 24 * 365;
     document.cookie = `locale=${nextLocale}; Max-Age=${oneYear}; Path=/; SameSite=Lax`;
-    router.refresh();
+    router.push(`/${nextLocale}`);
   }
 
   return (

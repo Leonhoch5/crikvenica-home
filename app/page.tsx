@@ -6,20 +6,16 @@ import { VillaCard } from "./components/VillaCard";
 import { getVillaContent, getPageContent } from "./lib/strapi";
 import { getAvailability } from "./lib/availability";
 import { getVillaPrices } from "./lib/prices";
-import { cookies } from "next/headers";
 import { getTranslations } from "next-intl/server";
-import { defaultLocale, supportedLocales } from "./i18n/getMessages";
+import type { SupportedLocale } from "./i18n/getMessages";
+import { redirect } from "next/navigation";
 
-export default async function Home() {
-  const t = await getTranslations();
-  const cookieStore = await cookies();
-  const locale = cookieStore.get("locale")?.value ?? defaultLocale;
-  const safeLocale = (supportedLocales as readonly string[]).includes(locale)
-    ? (locale as (typeof supportedLocales)[number])
-    : defaultLocale;
+export default async function Home({ locale }: { locale?: SupportedLocale }) {
+  if (!locale) redirect("/en");
+  const t = await getTranslations({ locale });
   const [villas, cms, bookedIvanka, bookedMilka, bookedVesna, pricesIvanka, pricesMilka, pricesVesna] = await Promise.all([
-    getVillaContent(safeLocale),
-    getPageContent(safeLocale),
+    getVillaContent(locale),
+    getPageContent(locale),
     getAvailability("ivanka"),
     getAvailability("milka"),
     getAvailability("vesna"),
@@ -50,7 +46,7 @@ export default async function Home() {
   return (
     <div className="min-h-screen">
       <Hero
-        locale={safeLocale}
+        locale={locale}
         headline={cms?.heroHeadline ?? t("hero.headline")}
         subheadline={cms?.heroSubheadline ?? t("hero.subheadline")}
         ctaExplore={cms?.heroCta ?? t("hero.cta")}
@@ -113,7 +109,7 @@ export default async function Home() {
                         ctaLabel={t("villa.ctaContact")}
                         bookedDates={bookedDates[villa.key] || []}
                         prices={villaPrices[villa.key] || []}
-                        calendarLocale={safeLocale}
+                        calendarLocale={locale}
                         galleryLabels={{
                           prev: t("gallery.prevImage"),
                           next: t("gallery.nextImage"),
